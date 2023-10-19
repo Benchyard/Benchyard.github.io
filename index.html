@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="benchyard">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico?v=123" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benchyard</title>
+    <script type="module" crossorigin src="/assets/index-b5355031.js"></script>
+    <link rel="stylesheet" href="/assets/index-b4e812a3.css">
+    <script type="module">import.meta.url;import("_").catch(()=>1);async function* g(){};if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but BenchYard doesn't work properly without JavaScript enabled. Please enable
+        it to continue.</strong
+      >
+    </noscript>
+    <div id="app">
+      <style>
+        @media (prefers-color-scheme: dark) {
+          /* This will invert the colors of the favicon.ico when in dark mode */
+          #favicon {
+            filter: invert(100%);
+          }
+        }
+        body {
+          background: #202020;
+        }
+        .app {
+          height: 100%;
+          width: 100%;
+        }
+        .app-loading {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background-color: #f4f7f9;
+        }
+
+        .app-loading .app-loading-wrap {
+          position: absolute;
+          top: 48%;
+          left: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          transform: translate3d(-50%, -50%, 0);
+        }
+
+        .app-loading .dots {
+          display: flex;
+          padding: 98px;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .app-loading .app-loading-title {
+          display: flex;
+          margin-top: 30px;
+          font-size: 26px;
+          color: #fff;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .app-loading .app-loading-logo {
+          width: 30px;
+          margin-right: 20px;
+        }
+
+        .dot {
+          position: relative;
+          display: inline-block;
+          width: 48px;
+          height: 48px;
+          margin-top: 30px;
+          font-size: 32px;
+          transform: rotate(45deg);
+          box-sizing: border-box;
+          animation: antRotate 1.2s infinite linear;
+        }
+
+        .dot i {
+          position: absolute;
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-color: #5139e0;
+          border-radius: 100%;
+          opacity: 0.3;
+          transform: scale(0.75);
+          animation: antSpinMove 1s infinite linear alternate;
+          transform-origin: 50% 50%;
+        }
+
+        .dot i:nth-child(1) {
+          top: 0;
+          left: 0;
+        }
+
+        .dot i:nth-child(2) {
+          top: 0;
+          right: 0;
+          animation-delay: 0.4s;
+        }
+
+        .dot i:nth-child(3) {
+          right: 0;
+          bottom: 0;
+          animation-delay: 0.8s;
+        }
+
+        .dot i:nth-child(4) {
+          bottom: 0;
+          left: 0;
+          animation-delay: 1.2s;
+        }
+        @keyframes antRotate {
+          to {
+            transform: rotate(405deg);
+          }
+        }
+        @keyframes antSpinMove {
+          to {
+            opacity: 1;
+          }
+        }
+      </style>
+    </div>
+    
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy-b79815ee.js"></script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy-6c03a5ac.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
+  <script>
+    window.addEventListener('load', function () {
+      checkIframeLoaded()
+    })
+    function checkIframeLoaded() {
+      var iframe = document.getElementById('tidio-chat-iframe')
+      if (iframe != null) {
+        var iframeDoc = iframe.contentDocument || iframe.contentWindow.document
+
+        afterLoading(iframeDoc)
+      } else {
+        window.setTimeout(checkIframeLoaded, 100)
+      }
+    }
+    function afterLoading(iframeDoc) {
+      // console.log(iframeDoc)
+      setTimeout(function () {
+        var body = iframeDoc.getElementsByClassName('awesome-iframe')
+
+        body[0].style.zoom = '0.8'
+        var button = iframeDoc.getElementById('button-body')
+        // console.log(button)
+        button.addEventListener('click', function () {
+          console.log('click')
+          setTimeout(function () {
+            var logo = iframeDoc.getElementsByClassName('tidio-5hhiig') //
+            logo[0].style.display = 'none'
+          }, 1)
+        })
+      }, 10)
+
+      // if(body[0]!=null&&logo[0]!=null){
+      //   body[0].style.zoom = '0.8'
+      //   logo[0].style.display = 'none'
+      // }else{
+      //   // window.setTimeout(afterLoading(iframeDoc), 1000)
+      // }
+    }
+  </script>
+  <script src="//code.tidio.co/s08osvddx5wvc1khp9ezk2gdtqwjpzew.js" async></script>
+</html>

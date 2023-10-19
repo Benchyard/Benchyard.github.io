@@ -1,0 +1,18 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="36" height="36" rx="18" fill="url(#paint0_linear_241_1072)"/>
+<path d="M10.8283 15.5029V18.6155C10.8283 19.2756 10.2931 19.8109 9.6329 19.8109C8.97273 19.8109 8.4375 19.2756 8.4375 18.6155V17.3364" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M10.8284 18.6156V15.503C10.8284 14.8429 11.3636 14.3076 12.0238 14.3076C12.6839 14.3076 13.2192 14.8429 13.2192 15.503V18.6156" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M15.6096 15.8584V23.2227C15.6096 23.8829 15.0743 24.4181 14.4142 24.4181C13.754 24.4181 13.2188 23.8829 13.2188 23.2227V15.8584" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M15.6094 19.9076V11.3985C15.6094 10.7384 16.1446 10.2031 16.8048 10.2031C17.4649 10.2031 18.0002 10.7384 18.0002 11.3985V19.9079" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M18 19.9082L18 14.3076" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M20.3908 14.3076V24.6009C20.3908 25.2611 19.8556 25.7963 19.1954 25.7963C18.5352 25.7963 18 25.2611 18 24.6009V23.0151" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M20.3906 18.6151V11.3985C20.3906 10.7384 20.9259 10.2031 21.586 10.2031C22.2462 10.2031 22.7814 10.7384 22.7814 11.3985V18.6151" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M25.1718 15.5029V21.6896C25.1718 22.3498 24.6366 22.885 23.9764 22.885C23.3162 22.885 22.781 22.3498 22.781 21.6896V15.5029" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M25.1719 21.1154V15.7605C25.1719 14.958 25.7071 14.3076 26.3673 14.3076C27.0274 14.3076 27.5627 14.958 27.5627 15.7605V21.1154" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round"/>
+<defs>
+<linearGradient id="paint0_linear_241_1072" x1="3.64564" y1="7.59802" x2="32.7527" y2="27.4977" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E1237D"/>
+<stop offset="1" stop-color="#FF6C37"/>
+</linearGradient>
+</defs>
+</svg>
