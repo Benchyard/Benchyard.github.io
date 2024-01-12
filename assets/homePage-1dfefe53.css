@@ -1,0 +1,38 @@
+.app-drag[data-v-61b2a195] {
+  -webkit-app-region: drag;
+  flex-shrink: 0;
+}
+.bg-gridient[data-v-61b2a195] {
+  transition: all 0.3s ease-in-out;
+}
+.bg-gridient[data-v-61b2a195]:hover {
+  background: linear-gradient(359deg, #1f183c -1.35%, rgba(0, 0, 0, 0) 99.04%, rgba(32, 24, 64, 0) 99.04%);
+  transform-origin: bottom;
+  transform: translateY(-60px);
+}
+.text-gridient1[data-v-61b2a195] {
+  text-align: center;
+  font-family: InterBold;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 70px;
+  /* 105.714% */
+  background: linear-gradient(90deg, #fff -7.09%, #aaa 112.41%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gridient2[data-v-61b2a195] {
+  text-align: center;
+  font-family: InterBold;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  /* 66.667% */
+  background: linear-gradient(90deg, #fff -7.09%, #aaa 112.41%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

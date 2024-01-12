@@ -1,0 +1,125 @@
+.menu-item[data-v-813eb021] {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 14px 12px;
+  margin: 4px 8px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.menu-item[data-v-813eb021]:hover {
+  background-color: var(--panel-bg);
+}
+.menu-item:hover .menu-text1[data-v-813eb021] {
+  color: #FFF;
+}
+.menu-item:hover .menu-text2[data-v-813eb021] {
+  color: #FF7167;
+}
+.menu-item:hover .icon-color1[data-v-813eb021] {
+  stroke: #FFF;
+}
+.menu-item:hover .icon-color2[data-v-813eb021] {
+  stroke: #FF7167;
+}
+.menu-item .menu-icon[data-v-813eb021] {
+  min-width: 20px;
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+}
+.menu-item .icon-color1[data-v-813eb021] {
+  stroke: #7C878E;
+}
+.menu-item .icon-color2[data-v-813eb021] {
+  stroke: #7C878E;
+}
+.menu-item .menu-text1[data-v-813eb021] {
+  color: #7C878E;
+  font-family: RobotoMedium;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.14px;
+  padding-left: 12px;
+  white-space: nowrap;
+}
+.menu-item .menu-text2[data-v-813eb021] {
+  color: #7C878E;
+  font-family: RobotoMedium;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.14px;
+  padding-left: 12px;
+  white-space: nowrap;
+}
+.account[data-v-813eb021] {
+  position: relative;
+  border-top: 1px solid transparent;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.account[data-v-813eb021]:hover {
+  border-top: 1px solid #31363C;
+  background: var(--panel-bg);
+}
+.account:hover .account-menu[data-v-813eb021] {
+  height: 104px;
+}
+.account .account-content[data-v-813eb021] {
+  max-width: 200px;
+  transition: all 0.15s;
+  margin: 20px 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+.account .account-content .avatar[data-v-813eb021] {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  background-color: #4bab71;
+  border-radius: 50%;
+  margin-right: 23px;
+}
+.account .account-content .avatar-txt[data-v-813eb021] {
+  font-family: RobotoMedium;
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #4bab71;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+}
+.account .account-content .username[data-v-813eb021] {
+  color: #fff;
+  font-family: RobotoMedium;
+  font-size: 14px;
+  line-height: 14px;
+  /* 100% */
+  letter-spacing: -0.14px;
+}
+.account .account-content .email[data-v-813eb021] {
+  color: #7C878E;
+  font-family: RobotoRegular;
+  font-size: 10px;
+  line-height: 14px;
+  /* 100% */
+  width: 120px;
+  overflow: hidden;
+  letter-spacing: -0.1px;
+  text-overflow: ellipsis;
+}
+.account .account-menu[data-v-813eb021] {
+  height: 0px;
+  transition: all 0.15s;
+  transition-delay: 100ms;
+  bottom: 80px;
+}

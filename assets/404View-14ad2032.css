@@ -1,0 +1,30 @@
+.head-wrap[data-v-a04c5c84] {
+  width: 100%;
+  height: 80px;
+  background-color: var(--color-background);
+  border-bottom: 1px solid #323232;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.head-wrap .logo[data-v-a04c5c84] {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.head-wrap .logo[data-v-a04c5c84]:hover {
+  opacity: 0.9;
+}
+.wrap[data-v-a04c5c84] {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img404[data-v-a04c5c84] {
+  display: block;
+}
