@@ -1,16 +1,16 @@
-.app-drag[data-v-61b2a195] {
+.app-drag[data-v-278a6a5f] {
   -webkit-app-region: drag;
   flex-shrink: 0;
 }
-.bg-gridient[data-v-61b2a195] {
+.bg-gridient[data-v-278a6a5f] {
   transition: all 0.3s ease-in-out;
 }
-.bg-gridient[data-v-61b2a195]:hover {
+.bg-gridient[data-v-278a6a5f]:hover {
   background: linear-gradient(359deg, #1f183c -1.35%, rgba(0, 0, 0, 0) 99.04%, rgba(32, 24, 64, 0) 99.04%);
   transform-origin: bottom;
   transform: translateY(-60px);
 }
-.text-gridient1[data-v-61b2a195] {
+.text-gridient1[data-v-278a6a5f] {
   text-align: center;
   font-family: InterBold;
   font-size: 70px;
@@ -23,7 +23,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.text-gridient2[data-v-61b2a195] {
+.text-gridient2[data-v-278a6a5f] {
   text-align: center;
   font-family: InterBold;
   font-size: 36px;
@@ -35,4 +35,18 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.rotate[data-v-278a6a5f] {
+  animation: rotateAnimation-278a6a5f 60s linear infinite;
+  /* 设置动画名称、时长、速度曲线和重复次数 */
+}
+@keyframes rotateAnimation-278a6a5f {
+0% {
+    transform: rotate(0deg);
+}
+  /* 初始状态为0° */
+100% {
+    transform: rotate(360deg);
+}
+  /* 结束状态为360°（完成一周）*/
 }

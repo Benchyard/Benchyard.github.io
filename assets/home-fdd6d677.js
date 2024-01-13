@@ -1,45 +1,46 @@
 import { _ as _export_sfc } from "./_plugin-vue_export-helper-cc2b3d55.js";
-import { o as openBlock, c as createElementBlock, f as createStaticVNode, d as defineComponent, a as ref, h as resolveComponent, b as createBaseVNode, e as createVNode, w as watch, n as normalizeStyle, i as withDirectives, v as vShow, F as Fragment, j as renderList, t as toDisplayString, k as createCommentVNode, l as renderSlot, p as pushScopeId, g as popScopeId, u as useAuthStore, m as reactive, q as resolveDirective, s as withCtx, x as createBlock, y as unref, z as createTextVNode, E as ElMessage, A as apiUserInfo, B as onMounted, T as Tribute, C as withKeys, D as withModifiers, G as apiFileAdd, H as usePanelStore, I as usePrivateChatStore, J as useChatGroupStore, K as useBotStore, L as addTab, M as nextTick, N as arrow_left_bold_default, O as arrow_right_bold_default, P as vModelCheckbox, Q as h, R as arrow_down_bold_default, S as apiBotCreate, U as updateBotList, V as ElLoading, W as apiBotFileAdd, X as apiBotUploadAvatar, Y as vModelText, Z as apiSendInvitationEmail, _ as apiBotUpdate, $ as apiBotFileRemove, a0 as addPrivateChat, a1 as SocketChat, a2 as savePrivateChat, a3 as removeTab, a4 as addWindow, a5 as useRoute, a6 as removePanel, a7 as addPanel, a8 as apiGetBotInfoFromCode, a9 as apiAcceptInvitation, aa as apiBotInfo, ab as apiShareCode, ac as apiBotDelete, ad as removeTabByChatId, ae as apiUserInfoAttributeSet } from "./index-4273cbe6.js";
-import { C as CompRegister, a as CompLogin, b as CompFindPassword, r as resetPsd, c as botInvitation } from "./botInvitation-4d7cd288.js";
+import { o as openBlock, c as createElementBlock, f as createStaticVNode, d as defineComponent, a as ref, h as resolveComponent, b as createBaseVNode, e as createVNode, w as watch, n as normalizeStyle, i as withDirectives, v as vShow, F as Fragment, j as renderList, t as toDisplayString, k as createCommentVNode, l as renderSlot, p as pushScopeId, g as popScopeId, u as useAuthStore, m as useBotStore, q as usePanelStore, s as reactive, x as resolveDirective, y as withCtx, z as createBlock, A as unref, B as createTextVNode, E as ElMessage, C as apiUserInfo, D as onMounted, T as Tribute, G as withKeys, H as withModifiers, I as apiFileAdd, J as usePrivateChatStore, K as useChatGroupStore, L as addTab, M as nextTick, N as arrow_left_bold_default, O as arrow_right_bold_default, P as vModelCheckbox, Q as h, R as arrow_down_bold_default, S as apiBotCreate, U as updateBotList, V as ElLoading, W as apiBotFileAdd, X as apiBotUploadAvatar, Y as vModelText, Z as apiSendInvitationEmail, _ as apiBotUpdate, $ as apiBotFileRemove, a0 as addPrivateChat, a1 as SocketChat, a2 as savePrivateChat, a3 as removeTab, a4 as addWindow, a5 as useRoute, a6 as removePanel, a7 as addPanel, a8 as apiGetBotInfoFromCode, a9 as apiAcceptInvitation, aa as apiBotInfo, ab as apiShareCode, ac as apiBotDelete, ad as removeTabByChatId } from "./index-fb62e72d.js";
+import { s as scrollMessage } from "./scrollMessage-55360828.js";
+import { C as CompRegister, a as CompLogin, b as CompFindPassword, r as resetPsd, c as botInvitation } from "./botInvitation-e56b6d88.js";
 const baseUrl = "https://api-test.benchyard.com";
-const _sfc_main$n = {};
-const _hoisted_1$m = { class: "partial-code main no-scrollbar" };
-const _hoisted_2$j = /* @__PURE__ */ createStaticVNode('<section class="section1_1"><div class="flex_col"><h1 class="hero_title">Unlock the power of AI</h1><h4 class="highlights">Meet the synapse of our ai chat app revolutionizing conversations</h4></div><div class="box"><div class="box1"><div class="text">Monthly</div></div><div class="box1" style="background:transparent;"><div class="text">Anualy (-20%)</div></div></div><div class="flex_row"><div class="flex_row__cell"><div class="box2"><div class="flex_col1"><h1 class="title">Free</h1><h5 class="highlights1">Basic chat functionality</h5><div class="flex_row1"><div class="flex_row1__cell"><h1 class="title1">$</h1></div><div class="flex_row1__cell1"><h1 class="hero_title1">0</h1></div><div class="flex_row1__cell2"><h1 class="title11">/ mo</h1></div></div><div class="text11">Free forever</div></div><div class="box3"><div class="flex_row2"><div class="flex_row2__cell"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="text2">5 chatbots</div></div><div class="flex_row3"><div class="flex_row3__cell"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer"></div><div class="text2">Up to 1000 messages/mo</div></div><div class="flex_row3"><div class="flex_row3__cell1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer1"></div><div class="text2">Basic analytics</div></div><div class="flex_row3"><div class="flex_row3__cell2"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer2"></div><div class="text2">Basic analytics</div></div><div class="flex_row4"><div class="icon1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row4__spacer"></div><div class="text12">Custom chatbot</div></div><div class="flex_row41"><div class="icon1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row41__spacer"></div><div class="text12">No support</div></div><div class="box4"><div class="text21">Current plan</div></div></div></div></div><div class="flex_row__spacer"></div><div class="flex_row__cell"><div class="box5"><div class="flex_col1"><div class="flex_row5"><div class="flex_row5__cell"><h1 class="title2">Standard</h1></div><div class="flex_row5__spacer"></div><div class="flex_row5__cell1"><div class="box6"><div class="info">Popular</div></div></div></div><h5 class="highlights1">Advanced chat features</h5><div class="flex_row1"><div class="flex_row1__cell3"><h1 class="title1">$</h1></div><div class="flex_row1__cell4"><h1 class="hero_title11">29</h1></div><div class="flex_row1__cell5"><h1 class="title11">/ mo</h1></div></div><div class="text11">Per month, per team members</div></div><div class="box7"><div class="flex_row6"><div class="flex_row6__cell"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row6__spacer"></div><div class="text2">10 chatbots</div></div><div class="flex_row3"><div class="flex_row3__cell3"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer3"></div><div class="text2">Up to 5000 messages/mo</div></div><div class="flex_row3"><div class="flex_row3__cell4"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer4"></div><div class="text2">Basic analytics</div></div><div class="flex_row3"><div class="flex_row3__cell5"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer5"></div><div class="text2">Basic analytics</div></div><div class="flex_row3"><div class="flex_row3__cell6"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer6"></div><div class="text2">Custom chatbot</div></div><div class="flex_row3"><div class="flex_row3__cell7"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer7"></div><div class="text2">Email support</div></div><div class="box8"><div class="text22">Upgrade</div></div></div></div></div><div class="flex_row__spacer"></div><div class="flex_row__cell"><div class="box9"><h1 class="title3">Pro</h1><h5 class="highlights11">Custom chat solutions</h5><div class="flex_row14"><h1 class="title12">$</h1><div class="flex_row14__cell"><h1 class="hero_title12">49</h1></div><div class="flex_row14__cell1"><h1 class="title13">/ mo</h1></div></div><div class="text13">Per month, per team members</div><div class="box7"><div class="flex_row6"><div class="flex_row6__cell1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row6__spacer1"></div><div class="text2">Unlimited chatbots</div></div><div class="flex_row3"><div class="flex_row3__cell8"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer8"></div><div class="text2">Unlimited messages</div></div><div class="flex_row3"><div class="flex_row3__cell9"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer9"></div><div class="text2">Custom analytics</div></div><div class="flex_row3"><div class="flex_row3__cell10"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer10"></div><div class="text2">Custom integrations</div></div><div class="flex_row3"><div class="flex_row3__cell11"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer11"></div><div class="text2">Custom chatbot</div></div><div class="flex_row3"><div class="flex_row3__cell12"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer12"></div><div class="text2">Priority email and chat support</div></div><div class="box8"><div class="text22">Upgrade</div></div></div></div></div></div></section><section class="section2_1"><section class="section2"><div class="flex_col2"><h2 class="medium_title">Usage</h2><div class="flex_row7"><div class="flex_row7__cell" style="background-color:rgb(75, 171, 113);"></div><div class="flex_row7__cell1"><div class="text14">Used</div></div><div class="flex_row7__spacer"></div><div class="flex_row7__cell" style="background-color:#5F44FF;"></div><div class="flex_row7__cell2"><div class="text14">Left</div></div><div class="flex_row7__spacer"></div><div class="flex_row7__cell" style="background-color:#8364FF;"></div><div class="flex_row7__cell3"><div class="text14">Bonus</div></div></div><div class="flex_row8"><div class="group"><div class="group1"><div class="rect"></div><div class="rect1"></div></div><div class="rect2"></div></div><div class="flex_row8__spacer"></div><div class="text23">$0.20 / $18.00</div></div><div class="flex_col3"><h2 class="medium_title">Earn credits by inviting friends 🎉</h2><div class="text3">For every friend you invite, you&#39;ll earn 5 credits, and they&#39;ll get extra 5 credits.</div><div class="box10"><h5 class="highlights2">https://easy-peasy.ai/?from=7</h5></div></div></div></section></section><section class="section3_1"><section class="section3"><div class="flex_col4"><h2 class="medium_title1">Your referrals</h2><h5 class="highlights3_box"><span class="highlights3"><span class="highlights3_span0">Total Invite: </span><span class="highlights3_span1">4</span></span></h5><div class="text31">A list of all the users registered by your invite link.</div><div class="flex_col5"><div class="content_box"><div class="flex_row9"><div class="flex_row9__cell"><div class="text15">Referral</div></div><div class="flex_row9__spacer"></div><div class="flex_row9__cell1"><div class="text16">Updated at</div></div><div class="flex_row9__spacer1"></div><div class="flex_row9__cell2"><div class="text17">Status</div></div></div></div><div class="flex_row10"><div class="flex_row10__cell"><div class="flex_row11"><div class="flex_row11__cell"></div><div class="flex_row11__cell1"><div class="flex_col6"><h5 class="highlights12">Tran Mau Tri Tam</h5><div class="info1">qi.sun@gmail.com</div></div></div></div></div><div class="flex_row10__spacer"></div><div class="flex_row10__cell1"><h5 class="highlights13">17/05/2023</h5></div><div class="flex_row10__spacer1"></div><div class="flex_row10__cell2"><h5 class="highlights14">Registered</h5></div></div></div></div></section></section>', 3);
-const _hoisted_5$f = [
-  _hoisted_2$j
+const _sfc_main$l = {};
+const _hoisted_1$k = { class: "partial-code main no-scrollbar" };
+const _hoisted_2$h = /* @__PURE__ */ createStaticVNode('<section class="section1_1"><div class="flex_col"><h1 class="hero_title">Unlock the power of AI</h1><h4 class="highlights">Meet the synapse of our ai chat app revolutionizing conversations</h4></div><div class="box"><div class="box1"><div class="text">Monthly</div></div><div class="box1" style="background:transparent;"><div class="text">Anualy (-20%)</div></div></div><div class="flex_row"><div class="flex_row__cell"><div class="box2"><div class="flex_col1"><h1 class="title">Free</h1><h5 class="highlights1">Basic chat functionality</h5><div class="flex_row1"><div class="flex_row1__cell"><h1 class="title1">$</h1></div><div class="flex_row1__cell1"><h1 class="hero_title1">0</h1></div><div class="flex_row1__cell2"><h1 class="title11">/ mo</h1></div></div><div class="text11">Free forever</div></div><div class="box3"><div class="flex_row2"><div class="flex_row2__cell"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="text2">5 chatbots</div></div><div class="flex_row3"><div class="flex_row3__cell"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer"></div><div class="text2">Up to 1000 messages/mo</div></div><div class="flex_row3"><div class="flex_row3__cell1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer1"></div><div class="text2">Basic analytics</div></div><div class="flex_row3"><div class="flex_row3__cell2"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer2"></div><div class="text2">Basic analytics</div></div><div class="flex_row4"><div class="icon1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row4__spacer"></div><div class="text12">Custom chatbot</div></div><div class="flex_row41"><div class="icon1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row41__spacer"></div><div class="text12">No support</div></div><div class="box4"><div class="text21">Current plan</div></div></div></div></div><div class="flex_row__spacer"></div><div class="flex_row__cell"><div class="box5"><div class="flex_col1"><div class="flex_row5"><div class="flex_row5__cell"><h1 class="title2">Standard</h1></div><div class="flex_row5__spacer"></div><div class="flex_row5__cell1"><div class="box6"><div class="info">Popular</div></div></div></div><h5 class="highlights1">Advanced chat features</h5><div class="flex_row1"><div class="flex_row1__cell3"><h1 class="title1">$</h1></div><div class="flex_row1__cell4"><h1 class="hero_title11">29</h1></div><div class="flex_row1__cell5"><h1 class="title11">/ mo</h1></div></div><div class="text11">Per month, per team members</div></div><div class="box7"><div class="flex_row6"><div class="flex_row6__cell"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row6__spacer"></div><div class="text2">10 chatbots</div></div><div class="flex_row3"><div class="flex_row3__cell3"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer3"></div><div class="text2">Up to 5000 messages/mo</div></div><div class="flex_row3"><div class="flex_row3__cell4"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer4"></div><div class="text2">Basic analytics</div></div><div class="flex_row3"><div class="flex_row3__cell5"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer5"></div><div class="text2">Basic analytics</div></div><div class="flex_row3"><div class="flex_row3__cell6"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer6"></div><div class="text2">Custom chatbot</div></div><div class="flex_row3"><div class="flex_row3__cell7"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer7"></div><div class="text2">Email support</div></div><div class="box8"><div class="text22">Upgrade</div></div></div></div></div><div class="flex_row__spacer"></div><div class="flex_row__cell"><div class="box9"><h1 class="title3">Pro</h1><h5 class="highlights11">Custom chat solutions</h5><div class="flex_row14"><h1 class="title12">$</h1><div class="flex_row14__cell"><h1 class="hero_title12">49</h1></div><div class="flex_row14__cell1"><h1 class="title13">/ mo</h1></div></div><div class="text13">Per month, per team members</div><div class="box7"><div class="flex_row6"><div class="flex_row6__cell1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row6__spacer1"></div><div class="text2">Unlimited chatbots</div></div><div class="flex_row3"><div class="flex_row3__cell8"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer8"></div><div class="text2">Unlimited messages</div></div><div class="flex_row3"><div class="flex_row3__cell9"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer9"></div><div class="text2">Custom analytics</div></div><div class="flex_row3"><div class="flex_row3__cell10"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer10"></div><div class="text2">Custom integrations</div></div><div class="flex_row3"><div class="flex_row3__cell11"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer11"></div><div class="text2">Custom chatbot</div></div><div class="flex_row3"><div class="flex_row3__cell12"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer12"></div><div class="text2">Priority email and chat support</div></div><div class="box8"><div class="text22">Upgrade</div></div></div></div></div></div></section><section class="section2_1"><section class="section2"><div class="flex_col2"><h2 class="medium_title">Usage</h2><div class="flex_row7"><div class="flex_row7__cell" style="background-color:rgb(75, 171, 113);"></div><div class="flex_row7__cell1"><div class="text14">Used</div></div><div class="flex_row7__spacer"></div><div class="flex_row7__cell" style="background-color:#5F44FF;"></div><div class="flex_row7__cell2"><div class="text14">Left</div></div><div class="flex_row7__spacer"></div><div class="flex_row7__cell" style="background-color:#8364FF;"></div><div class="flex_row7__cell3"><div class="text14">Bonus</div></div></div><div class="flex_row8"><div class="group"><div class="group1"><div class="rect"></div><div class="rect1"></div></div><div class="rect2"></div></div><div class="flex_row8__spacer"></div><div class="text23">$0.20 / $18.00</div></div><div class="flex_col3"><h2 class="medium_title">Earn credits by inviting friends 🎉</h2><div class="text3">For every friend you invite, you&#39;ll earn 5 credits, and they&#39;ll get extra 5 credits.</div><div class="box10"><h5 class="highlights2">https://easy-peasy.ai/?from=7</h5></div></div></div></section></section><section class="section3_1"><section class="section3"><div class="flex_col4"><h2 class="medium_title1">Your referrals</h2><h5 class="highlights3_box"><span class="highlights3"><span class="highlights3_span0">Total Invite: </span><span class="highlights3_span1">4</span></span></h5><div class="text31">A list of all the users registered by your invite link.</div><div class="flex_col5"><div class="content_box"><div class="flex_row9"><div class="flex_row9__cell"><div class="text15">Referral</div></div><div class="flex_row9__spacer"></div><div class="flex_row9__cell1"><div class="text16">Updated at</div></div><div class="flex_row9__spacer1"></div><div class="flex_row9__cell2"><div class="text17">Status</div></div></div></div><div class="flex_row10"><div class="flex_row10__cell"><div class="flex_row11"><div class="flex_row11__cell"></div><div class="flex_row11__cell1"><div class="flex_col6"><h5 class="highlights12">Tran Mau Tri Tam</h5><div class="info1">qi.sun@gmail.com</div></div></div></div></div><div class="flex_row10__spacer"></div><div class="flex_row10__cell1"><h5 class="highlights13">17/05/2023</h5></div><div class="flex_row10__spacer1"></div><div class="flex_row10__cell2"><h5 class="highlights14">Registered</h5></div></div></div></div></section></section>', 3);
+const _hoisted_5$d = [
+  _hoisted_2$h
 ];
-function _sfc_render$3(_ctx, _cache) {
-  return openBlock(), createElementBlock("main", _hoisted_1$m, _hoisted_5$f);
-}
-const subscription = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$3]]);
-const management_vue_vue_type_style_index_0_scoped_6d972efe_lang = "";
-const _sfc_main$m = {};
-const _hoisted_1$l = /* @__PURE__ */ createStaticVNode('<div class="w-96 h-40 flex-col justify-center items-start gap-16 inline-flex" data-v-6d972efe><div class="w-96 justify-between items-center gap-8 inline-flex" data-v-6d972efe><div class="flex-col justify-start items-center gap-4 inline-flex" data-v-6d972efe><div class="text-center text-white text-xl font-medium leading-tight" data-v-6d972efe>Deactivate account</div><div class="text-center text-gray-500 text-sm font-normal leading-none" data-v-6d972efe>Hide your Pins and profile</div></div><div class="h-12 px-6 py-4 bg-zinc-700 rounded-xl justify-center items-center gap-2.5 flex" data-v-6d972efe><div class="text-white text-sm font-medium leading-none" data-v-6d972efe>Deactivate account</div></div></div><div class="w-96 h-40 flex-col justify-center items-start gap-16 inline-flex" data-v-6d972efe><div class="flex-col justify-start items-center gap-4 inline-flex" data-v-6d972efe><div class="text-center text-white text-xl font-medium leading-tight" data-v-6d972efe>Delete your data and account</div><div class="text-center text-gray-500 text-sm font-normal leading-none" data-v-6d972efe>Delete your account and account data</div></div><div class="h-12 px-6 py-4 bg-red-500 rounded-xl justify-center items-center gap-2.5 flex" data-v-6d972efe><div class="text-white text-sm font-medium leading-none" data-v-6d972efe>Delete account</div></div></div></div><div class="partial-code root" data-v-6d972efe><div class="flex_col" data-v-6d972efe><div class="flex_col__cell" data-v-6d972efe><div class="flex_col1" data-v-6d972efe><div class="flex_col1__cell" data-v-6d972efe><h3 class="subtitle" data-v-6d972efe>Deactivate account</h3></div><div class="flex_col1__cell" data-v-6d972efe><div class="text" data-v-6d972efe>Hide your Pins and profile</div></div><div class="flex_col1__cell" data-v-6d972efe><div class="box" data-v-6d972efe><div class="text1" data-v-6d972efe>Deactivate account</div></div></div></div></div><div class="flex_col__cell" data-v-6d972efe><div class="flex_col1" data-v-6d972efe><div class="flex_col1__cell1" data-v-6d972efe><h3 class="subtitle1" data-v-6d972efe>Delete your data and account</h3></div><div class="flex_col1__cell1" data-v-6d972efe><div class="text" data-v-6d972efe>Delete your account and account data</div></div><div class="flex_col1__cell1" data-v-6d972efe><div class="box" data-v-6d972efe><div class="text11" data-v-6d972efe>Delete account</div></div></div></div></div></div></div>', 2);
 function _sfc_render$2(_ctx, _cache) {
-  return _hoisted_1$l;
+  return openBlock(), createElementBlock("main", _hoisted_1$k, _hoisted_5$d);
 }
-const management = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$2], ["__scopeId", "data-v-6d972efe"]]);
-const _hoisted_1$k = { class: "flex flex-col gap-y-[23px] relative mr-[33px]" };
-const _hoisted_2$i = { class: "flex items-center gap-x-2 relative" };
-const _hoisted_3$h = /* @__PURE__ */ createStaticVNode('<div class="shrink-0 basis-[811px]"><span class="font-normal text-sm font-Roboto text-black"><span class="text-white">Allow </span><span class="font-bold text-white">Benchyard</span><span class="text-white"> to use your data for better user experience, based on</span><span class="text-[rgb(124,135,142)]"></span><span class="text-[rgb(124,130,255)]"> Benchyard Privacy Policy</span></span></div>', 1);
-const _hoisted_4$h = /* @__PURE__ */ createStaticVNode('<div class="flex items-center relative"><div class="flex justify-center font-normal text-[14px] leading-none font-Roboto text-white text-center shrink-0 basis-[102px] mt-[9px] mb-2"> Delete your data</div><div class="basis-[54px]"></div><div class="grid bg-[rgb(241,77,77)] rounded-xl shrink-0 basis-[118px] relative cursor-pointer"><div class="flex items-center font-medium text-[14px] leading-none font-Roboto text-white grow mt-[9px] mx-[23px] mb-2"> Delete data</div></div></div><div class="flex items-center relative"><p class="basis-[313px] min-h-[33px]"><span class="font-normal text-[14px] leading-none font-Roboto text-black"><span class="text-white">Download your data<br></span><span class="text-[rgb(124,135,142)]">You can request a download of your data</span></span></p><div class="cursor-pointer grid bg-[rgb(57,62,68)] rounded-xl shrink-0 basis-[118px] relative"><div class="flex justify-center items-center font-medium text-[14px] leading-none font-Roboto text-white grow h-8"> Request data</div></div></div>', 2);
-const _sfc_main$l = /* @__PURE__ */ defineComponent({
+const subscription = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$2]]);
+const management_vue_vue_type_style_index_0_scoped_6d972efe_lang = "";
+const _sfc_main$k = {};
+const _hoisted_1$j = /* @__PURE__ */ createStaticVNode('<div class="w-96 h-40 flex-col justify-center items-start gap-16 inline-flex" data-v-6d972efe><div class="w-96 justify-between items-center gap-8 inline-flex" data-v-6d972efe><div class="flex-col justify-start items-center gap-4 inline-flex" data-v-6d972efe><div class="text-center text-white text-xl font-medium leading-tight" data-v-6d972efe>Deactivate account</div><div class="text-center text-gray-500 text-sm font-normal leading-none" data-v-6d972efe>Hide your Pins and profile</div></div><div class="h-12 px-6 py-4 bg-zinc-700 rounded-xl justify-center items-center gap-2.5 flex" data-v-6d972efe><div class="text-white text-sm font-medium leading-none" data-v-6d972efe>Deactivate account</div></div></div><div class="w-96 h-40 flex-col justify-center items-start gap-16 inline-flex" data-v-6d972efe><div class="flex-col justify-start items-center gap-4 inline-flex" data-v-6d972efe><div class="text-center text-white text-xl font-medium leading-tight" data-v-6d972efe>Delete your data and account</div><div class="text-center text-gray-500 text-sm font-normal leading-none" data-v-6d972efe>Delete your account and account data</div></div><div class="h-12 px-6 py-4 bg-red-500 rounded-xl justify-center items-center gap-2.5 flex" data-v-6d972efe><div class="text-white text-sm font-medium leading-none" data-v-6d972efe>Delete account</div></div></div></div><div class="partial-code root" data-v-6d972efe><div class="flex_col" data-v-6d972efe><div class="flex_col__cell" data-v-6d972efe><div class="flex_col1" data-v-6d972efe><div class="flex_col1__cell" data-v-6d972efe><h3 class="subtitle" data-v-6d972efe>Deactivate account</h3></div><div class="flex_col1__cell" data-v-6d972efe><div class="text" data-v-6d972efe>Hide your Pins and profile</div></div><div class="flex_col1__cell" data-v-6d972efe><div class="box" data-v-6d972efe><div class="text1" data-v-6d972efe>Deactivate account</div></div></div></div></div><div class="flex_col__cell" data-v-6d972efe><div class="flex_col1" data-v-6d972efe><div class="flex_col1__cell1" data-v-6d972efe><h3 class="subtitle1" data-v-6d972efe>Delete your data and account</h3></div><div class="flex_col1__cell1" data-v-6d972efe><div class="text" data-v-6d972efe>Delete your account and account data</div></div><div class="flex_col1__cell1" data-v-6d972efe><div class="box" data-v-6d972efe><div class="text11" data-v-6d972efe>Delete account</div></div></div></div></div></div></div>', 2);
+function _sfc_render$1(_ctx, _cache) {
+  return _hoisted_1$j;
+}
+const management = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$1], ["__scopeId", "data-v-6d972efe"]]);
+const _hoisted_1$i = { class: "flex flex-col gap-y-[23px] relative mr-[33px]" };
+const _hoisted_2$g = { class: "flex items-center gap-x-2 relative" };
+const _hoisted_3$f = /* @__PURE__ */ createStaticVNode('<div class="shrink-0 basis-[811px]"><span class="font-normal text-sm font-Roboto text-black"><span class="text-white">Allow </span><span class="font-bold text-white">Benchyard</span><span class="text-white"> to use your data for better user experience, based on</span><span class="text-[rgb(124,135,142)]"></span><span class="text-[rgb(124,130,255)]"> Benchyard Privacy Policy</span></span></div>', 1);
+const _hoisted_4$f = /* @__PURE__ */ createStaticVNode('<div class="flex items-center relative"><div class="flex justify-center font-normal text-[14px] leading-none font-Roboto text-white text-center shrink-0 basis-[102px] mt-[9px] mb-2"> Delete your data</div><div class="basis-[54px]"></div><div class="grid bg-[rgb(241,77,77)] rounded-xl shrink-0 basis-[118px] relative cursor-pointer"><div class="flex items-center font-medium text-[14px] leading-none font-Roboto text-white grow mt-[9px] mx-[23px] mb-2"> Delete data</div></div></div><div class="flex items-center relative"><p class="basis-[313px] min-h-[33px]"><span class="font-normal text-[14px] leading-none font-Roboto text-black"><span class="text-white">Download your data<br></span><span class="text-[rgb(124,135,142)]">You can request a download of your data</span></span></p><div class="cursor-pointer grid bg-[rgb(57,62,68)] rounded-xl shrink-0 basis-[118px] relative"><div class="flex justify-center items-center font-medium text-[14px] leading-none font-Roboto text-white grow h-8"> Request data</div></div></div>', 2);
+const _sfc_main$j = /* @__PURE__ */ defineComponent({
   __name: "privacy",
   setup(__props) {
     const privacy = ref(true);
     return (_ctx, _cache) => {
       const _component_el_checkbox = resolveComponent("el-checkbox");
-      return openBlock(), createElementBlock("div", _hoisted_1$k, [
-        createBaseVNode("div", _hoisted_2$i, [
+      return openBlock(), createElementBlock("div", _hoisted_1$i, [
+        createBaseVNode("div", _hoisted_2$g, [
           createVNode(_component_el_checkbox, {
             modelValue: privacy.value,
             "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => privacy.value = $event),
             size: "large",
             style: { "scale": "1.4" }
           }, null, 8, ["modelValue"]),
-          _hoisted_3$h
+          _hoisted_3$f
         ]),
-        _hoisted_4$h
+        _hoisted_4$f
       ]);
     };
   }
@@ -539,19 +540,19 @@ if (typeof window !== "undefined") {
   };
   window.hotkeys = hotkeys;
 }
-const _withScopeId$f = (n) => (pushScopeId("data-v-04087243"), n = n(), popScopeId(), n);
-const _hoisted_1$j = { class: "relative w-[300px]" };
-const _hoisted_2$h = {
+const _withScopeId$d = (n) => (pushScopeId("data-v-04087243"), n = n(), popScopeId(), n);
+const _hoisted_1$h = { class: "relative w-[300px]" };
+const _hoisted_2$f = {
   class: "tooltips absolute z-10 bg-[var(--dialog-bg)] rounded-[6px] px-3 py-2 text-[var(--text-color)] text-sm shadow-md",
   style: { top: `${-80}px`, left: 0, right: 0, margin: "auto" }
 };
-const _hoisted_3$g = { class: "flex flex-row gap-1 justify-center" };
-const _hoisted_4$g = /* @__PURE__ */ _withScopeId$f(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-gray-400" }, "e.g.", -1));
-const _hoisted_5$e = { class: "rounded bg-gray-300 w-6 h-6 leading-6 text-gray-400 text-center flex items-center justify-center shadow-lg" };
-const _hoisted_6$e = { class: "bg-gray-300 text-center" };
-const _hoisted_7$c = { class: "rounded bg-gray-300 w-6 h-6 leading-6 text-gray-400 text-center flex items-center justify-center shadow-lg" };
-const _hoisted_8$c = { class: "bg-gray-300 text-center" };
-const _sfc_main$k = /* @__PURE__ */ defineComponent({
+const _hoisted_3$e = { class: "flex flex-row gap-1 justify-center" };
+const _hoisted_4$e = /* @__PURE__ */ _withScopeId$d(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-gray-400" }, "e.g.", -1));
+const _hoisted_5$c = { class: "rounded bg-gray-300 w-6 h-6 leading-6 text-gray-400 text-center flex items-center justify-center shadow-lg" };
+const _hoisted_6$c = { class: "bg-gray-300 text-center" };
+const _hoisted_7$b = { class: "rounded bg-gray-300 w-6 h-6 leading-6 text-gray-400 text-center flex items-center justify-center shadow-lg" };
+const _hoisted_8$b = { class: "bg-gray-300 text-center" };
+const _sfc_main$i = /* @__PURE__ */ defineComponent({
   __name: "shortCut",
   props: {
     shortcut: {
@@ -623,20 +624,20 @@ const _sfc_main$k = /* @__PURE__ */ defineComponent({
           onClick: _cache[0] || (_cache[0] = ($event) => recording.value = !recording.value),
           style: normalizeStyle({ display: recording.value ? "flex" : "none" })
         }, null, 4),
-        createBaseVNode("div", _hoisted_1$j, [
-          withDirectives(createBaseVNode("div", _hoisted_2$h, [
-            createBaseVNode("div", _hoisted_3$g, [
+        createBaseVNode("div", _hoisted_1$h, [
+          withDirectives(createBaseVNode("div", _hoisted_2$f, [
+            createBaseVNode("div", _hoisted_3$e, [
               shortcut.value.length == 0 ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
-                _hoisted_4$g,
+                _hoisted_4$e,
                 (openBlock(), createElementBlock(Fragment, null, renderList(["⌘", "⇧", "A"], (key) => {
-                  return createBaseVNode("div", _hoisted_5$e, [
-                    createBaseVNode("span", _hoisted_6$e, toDisplayString(key), 1)
+                  return createBaseVNode("div", _hoisted_5$c, [
+                    createBaseVNode("span", _hoisted_6$c, toDisplayString(key), 1)
                   ]);
                 }), 64))
               ], 64)) : createCommentVNode("", true),
               (openBlock(true), createElementBlock(Fragment, null, renderList(shortcut.value, (key) => {
-                return openBlock(), createElementBlock("div", _hoisted_7$c, [
-                  createBaseVNode("span", _hoisted_8$c, toDisplayString(key), 1)
+                return openBlock(), createElementBlock("div", _hoisted_7$b, [
+                  createBaseVNode("span", _hoisted_8$b, toDisplayString(key), 1)
                 ]);
               }), 256))
             ]),
@@ -658,56 +659,63 @@ const _sfc_main$k = /* @__PURE__ */ defineComponent({
   }
 });
 const shortCut_vue_vue_type_style_index_0_scoped_04087243_lang = "";
-const shortCut = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["__scopeId", "data-v-04087243"]]);
-const _withScopeId$e = (n) => (pushScopeId("data-v-9ffa6d27"), n = n(), popScopeId(), n);
-const _hoisted_1$i = { class: "setting" };
-const _hoisted_2$g = { class: "w-[252px] h-[899px] px-5 pt-8 pb-[751px] border-r border-neutral-700 flex-col justify-start items-start gap-2.5 inline-flex" };
-const _hoisted_3$f = { class: "flex-col justify-start items-start gap-5 flex" };
-const _hoisted_4$f = { class: "w-5 h-5 relative" };
-const _hoisted_5$d = ["stroke"];
-const _hoisted_6$d = { class: "w-5 h-5 relative" };
-const _hoisted_7$b = ["stroke"];
-const _hoisted_8$b = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-sm font-['RobotoMedium'] leading-normal cursor-pointer" }, "FastPanel", -1));
-const _hoisted_9$b = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("div", { class: "justify-start items-start gap-2 flex" }, [
+const shortCut = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["__scopeId", "data-v-04087243"]]);
+const _withScopeId$c = (n) => (pushScopeId("data-v-98da6cc4"), n = n(), popScopeId(), n);
+const _hoisted_1$g = { class: "setting" };
+const _hoisted_2$e = { class: "w-[252px] h-[899px] px-5 pt-8 pb-[751px] border-r border-neutral-700 flex-col justify-start items-start gap-2.5 inline-flex" };
+const _hoisted_3$d = { class: "flex-col justify-start items-start gap-5 flex" };
+const _hoisted_4$d = { class: "w-5 h-5 relative" };
+const _hoisted_5$b = ["stroke"];
+const _hoisted_6$b = { class: "w-5 h-5 relative" };
+const _hoisted_7$a = ["stroke"];
+const _hoisted_8$a = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-sm font-['RobotoMedium'] leading-normal cursor-pointer" }, "FastPanel", -1));
+const _hoisted_9$a = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "justify-start items-start gap-2 flex" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "w-5 h-5 relative bg-[#292D32] rounded text-center" }, "⌘"),
   /* @__PURE__ */ createBaseVNode("div", { class: "w-5 h-5 relative bg-[#292D32] rounded text-center" }, "B")
 ], -1));
-const _hoisted_10$a = [
-  _hoisted_8$b,
-  _hoisted_9$b
+const _hoisted_10$9 = [
+  _hoisted_8$a,
+  _hoisted_9$a
 ];
-const _hoisted_11$a = { class: "setting-content" };
-const _hoisted_12$9 = {
+const _hoisted_11$9 = { class: "setting-content" };
+const _hoisted_12$8 = {
   key: 0,
   class: "form"
 };
-const _hoisted_13$9 = { class: "flex flex-col gap-6" };
-const _hoisted_14$9 = { class: "flex flex-row items-center gap-2" };
-const _hoisted_15$8 = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-right text-gray-500 text-sm font-['RobotoMedium'] leading-[14px] w-[100px] mr-11" }, " Startup ", -1));
-const _hoisted_16$7 = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-['RobotoMedium'] leading-[14px]" }, " Launch Benchyard at Login ", -1));
+const _hoisted_13$8 = { class: "flex flex-col gap-6" };
+const _hoisted_14$8 = { class: "flex flex-row items-center gap-2" };
+const _hoisted_15$8 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-right text-gray-500 text-sm font-['RobotoMedium'] leading-[14px] w-[100px] mr-11" }, " Startup ", -1));
+const _hoisted_16$7 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-['RobotoMedium'] leading-[14px]" }, " Launch Benchyard at Login ", -1));
 const _hoisted_17$6 = { class: "flex flex-row items-center gap-2" };
-const _hoisted_18$6 = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-right text-gray-500 text-sm font-['RobotoMedium'] leading-[14px] w-[100px] mr-11" }, " FastPanel ", -1));
+const _hoisted_18$6 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-right text-gray-500 text-sm font-['RobotoMedium'] leading-[14px] w-[100px] mr-11" }, " FastPanel ", -1));
 const _hoisted_19$6 = { class: "w-[294px] h-9 px-[120px] py-2 bg-zinc-600 rounded-lg flex-col justify-center items-center gap-2 inline-flex" };
 const _hoisted_20$6 = { class: "text-white text-center text-sm font-['RobotoMedium'] leading-[14px] cursor-pointer w-[100px]" };
 const _hoisted_21$5 = { class: "flex flex-row items-center gap-2" };
-const _hoisted_22$5 = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-right text-gray-500 text-sm font-['RobotoMedium'] leading-[14px] w-[100px] mr-11" }, " Menu bar icon ", -1));
-const _hoisted_23$5 = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-['RobotoMedium'] leading-[14px]" }, " Show Benchyard in menu bar ", -1));
-const _hoisted_24$5 = {
+const _hoisted_22$5 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-right text-gray-500 text-sm font-['RobotoMedium'] leading-[14px] w-[100px] mr-11" }, " Menu bar icon ", -1));
+const _hoisted_23$5 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-['RobotoMedium'] leading-[14px]" }, " Show Benchyard in menu bar ", -1));
+const _hoisted_24$5 = { class: "flex flex-row items-center gap-2" };
+const _hoisted_25$5 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-right text-gray-500 text-sm font-['RobotoMedium'] leading-[14px] w-[100px] mr-11" }, " Default bot ", -1));
+const _hoisted_26$5 = { class: "flex flex-row mr-[5px] ml-[5px]" };
+const _hoisted_27$5 = ["src"];
+const _hoisted_28$5 = { class: "flex flex-row ml-3 my-2" };
+const _hoisted_29$5 = ["src"];
+const _hoisted_30$5 = { class: "font-medium text-[14px] leading-[20px] font-Roboto text-[rgb(124,135,142)] pl-[14px]" };
+const _hoisted_31$5 = {
   key: 1,
   class: "form"
 };
-const _hoisted_25$5 = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("div", null, null, -1));
-const _hoisted_26$5 = { style: { "position": "relative" } };
-const _hoisted_27$5 = ["src"];
-const _hoisted_28$5 = {
+const _hoisted_32$5 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", null, null, -1));
+const _hoisted_33$5 = { style: { "position": "relative" } };
+const _hoisted_34$5 = ["src"];
+const _hoisted_35$5 = {
   key: 1,
   class: "headimg-txt"
 };
-const _hoisted_29$5 = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("svg", { class: "img-edit" }, [
+const _hoisted_36$5 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("svg", { class: "img-edit" }, [
   /* @__PURE__ */ createBaseVNode("use", { href: "#edit" })
 ], -1));
-const _hoisted_30$5 = { class: "flex items-center gap-x-2 relative" };
-const _hoisted_31$5 = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("div", { class: "shrink-0 basis-[400px]" }, [
+const _hoisted_37$5 = { class: "flex items-center gap-x-2 relative" };
+const _hoisted_38$5 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "shrink-0 basis-[400px]" }, [
   /* @__PURE__ */ createBaseVNode("span", { class: "font-normal text-[12px] font-[RobotoRegular] text-black" }, [
     /* @__PURE__ */ createBaseVNode("span", { class: "text-white" }, "Allow "),
     /* @__PURE__ */ createBaseVNode("span", { class: "font-bold text-white font-[RobotoRegular]" }, "Benchyard"),
@@ -716,19 +724,19 @@ const _hoisted_31$5 = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ creat
     /* @__PURE__ */ createBaseVNode("span", { class: "text-[rgb(124,130,255)] font-[RobotoRegular]" }, " Benchyard Privacy Policy")
   ])
 ], -1));
-const _hoisted_32$5 = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("div", { style: { "width": "320px", "display": "flex", "flex-direction": "row", "justify-content": "space-between" } }, [
+const _hoisted_39$4 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { style: { "width": "320px", "display": "flex", "flex-direction": "row", "justify-content": "space-between" } }, [
   /* @__PURE__ */ createBaseVNode("div", null, "English"),
   /* @__PURE__ */ createBaseVNode("div", { style: { "font-size": "30px" } }, "🇺🇸")
 ], -1));
-const _hoisted_33$5 = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("div", { style: { "width": "320px", "display": "flex", "flex-direction": "row", "justify-content": "space-between" } }, [
+const _hoisted_40$4 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { style: { "width": "320px", "display": "flex", "flex-direction": "row", "justify-content": "space-between" } }, [
   /* @__PURE__ */ createBaseVNode("div", null, "Chinese"),
   /* @__PURE__ */ createBaseVNode("div", { style: { "font-size": "30px" } }, "🇨🇳")
 ], -1));
-const _hoisted_34$5 = {
+const _hoisted_41$4 = {
   key: 2,
   class: "form"
 };
-const _sfc_main$j = /* @__PURE__ */ defineComponent({
+const _sfc_main$h = /* @__PURE__ */ defineComponent({
   __name: "settings",
   setup(__props) {
     const uploadUrl = baseUrl + "/api/user/info/avatar";
@@ -736,6 +744,14 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
     const form = ref("Profile");
     const language = ref("1");
     const authStore = useAuthStore();
+    const botStore = useBotStore();
+    const panels = usePanelStore();
+    const selectionChange = (val) => {
+      const bot = botStore.bots.find((item) => item.name === val);
+      if (!bot)
+        return;
+      appSetting.defaultBot.avatar = bot.avatar || "";
+    };
     const imgloading = ref(false);
     const formData1 = reactive({
       username: authStore.getUserInfo.username,
@@ -815,16 +831,17 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
       console.log(formData1);
     };
     const appSetting = reactive({
-      lunchAtlogin: false,
-      shortCutKey: "⌘  ⇧  A",
-      showTray: true
+      ...panels.setting
     });
     watch(() => appSetting, (newProp) => {
       console.log(newProp);
       window.api?.appSetting(JSON.stringify(newProp));
+      panels.setting = newProp;
     }, { deep: true });
     return (_ctx, _cache) => {
       const _component_el_checkbox = resolveComponent("el-checkbox");
+      const _component_el_option = resolveComponent("el-option");
+      const _component_el_select = resolveComponent("el-select");
       const _component_el_upload = resolveComponent("el-upload");
       const _component_el_input = resolveComponent("el-input");
       const _component_el_form_item = resolveComponent("el-form-item");
@@ -833,19 +850,19 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
       const _component_el_radio_group = resolveComponent("el-radio-group");
       const _component_el_button = resolveComponent("el-button");
       const _directive_loading = resolveDirective("loading");
-      return openBlock(), createElementBlock("div", _hoisted_1$i, [
-        createBaseVNode("div", _hoisted_2$g, [
-          createBaseVNode("div", _hoisted_3$f, [
+      return openBlock(), createElementBlock("div", _hoisted_1$g, [
+        createBaseVNode("div", _hoisted_2$e, [
+          createBaseVNode("div", _hoisted_3$d, [
             createBaseVNode("div", {
               onClick: _cache[0] || (_cache[0] = ($event) => form.value = "Profile"),
               style: normalizeStyle({ borderColor: form.value === "Profile" ? "white" : "#7C878E" }),
               class: "w-[212px] px-6 py-3 rounded-lg border border-indigo-400 justify-start items-center gap-2 inline-flex"
             }, [
-              (openBlock(), createElementBlock("svg", _hoisted_4$f, [
+              (openBlock(), createElementBlock("svg", _hoisted_4$d, [
                 createBaseVNode("use", {
                   stroke: form.value === "Profile" ? "white" : "#7C878E",
                   href: "#profile"
-                }, null, 8, _hoisted_5$d)
+                }, null, 8, _hoisted_5$b)
               ])),
               createBaseVNode("div", {
                 style: normalizeStyle({ color: form.value === "Profile" ? "white" : "#7C878E" }),
@@ -857,23 +874,23 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
               style: normalizeStyle({ borderColor: form.value === "FastPanel" ? "white" : "#7C878E" }),
               class: "w-[212px] px-6 py-3 rounded-lg border justify-start items-center gap-2 inline-flex"
             }, [
-              (openBlock(), createElementBlock("svg", _hoisted_6$d, [
+              (openBlock(), createElementBlock("svg", _hoisted_6$b, [
                 createBaseVNode("use", {
                   stroke: form.value === "FastPanel" ? "white" : "#7C878E",
                   href: "#fastPanel"
-                }, null, 8, _hoisted_7$b)
+                }, null, 8, _hoisted_7$a)
               ])),
               createBaseVNode("div", {
                 style: normalizeStyle({ color: form.value === "FastPanel" ? "white" : "#7C878E" }),
                 class: "justify-center items-center gap-[26px] flex"
-              }, _hoisted_10$a, 4)
+              }, _hoisted_10$9, 4)
             ], 4)
           ])
         ]),
-        createBaseVNode("div", _hoisted_11$a, [
-          form.value === "FastPanel" ? (openBlock(), createElementBlock("div", _hoisted_12$9, [
-            createBaseVNode("div", _hoisted_13$9, [
-              createBaseVNode("div", _hoisted_14$9, [
+        createBaseVNode("div", _hoisted_11$9, [
+          form.value === "FastPanel" ? (openBlock(), createElementBlock("div", _hoisted_12$8, [
+            createBaseVNode("div", _hoisted_13$8, [
+              createBaseVNode("div", _hoisted_14$8, [
                 _hoisted_15$8,
                 createVNode(_component_el_checkbox, {
                   modelValue: appSetting.lunchAtlogin,
@@ -906,11 +923,51 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
                   style: { "zoom": "1.4" }
                 }, null, 8, ["modelValue"]),
                 _hoisted_23$5
+              ]),
+              createBaseVNode("div", _hoisted_24$5, [
+                _hoisted_25$5,
+                createVNode(_component_el_select, {
+                  modelValue: appSetting.defaultBot.name,
+                  "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => appSetting.defaultBot.name = $event),
+                  onChange: selectionChange,
+                  class: "w-[300px] createBotInput"
+                }, {
+                  prefix: withCtx(({}) => [
+                    createBaseVNode("div", _hoisted_26$5, [
+                      appSetting.defaultBot.name ? (openBlock(), createElementBlock("img", {
+                        key: 0,
+                        class: "rounded w-5 h-5 object-cover",
+                        src: appSetting.defaultBot.avatar
+                      }, null, 8, _hoisted_27$5)) : createCommentVNode("", true)
+                    ])
+                  ]),
+                  default: withCtx(() => [
+                    (openBlock(true), createElementBlock(Fragment, null, renderList(unref(botStore).bots, (item) => {
+                      return openBlock(), createBlock(_component_el_option, {
+                        key: item.title,
+                        label: item.title,
+                        value: item.title
+                      }, {
+                        default: withCtx(() => [
+                          createBaseVNode("div", _hoisted_28$5, [
+                            createBaseVNode("img", {
+                              class: "rounded w-5 h-5 object-cover",
+                              src: item.avatar
+                            }, null, 8, _hoisted_29$5),
+                            createBaseVNode("div", _hoisted_30$5, toDisplayString(item.title), 1)
+                          ])
+                        ]),
+                        _: 2
+                      }, 1032, ["label", "value"]);
+                    }), 128))
+                  ]),
+                  _: 1
+                }, 8, ["modelValue"])
               ])
             ])
           ])) : createCommentVNode("", true),
-          form.value === "Profile" || form.value === "Password" || form.value === "Language" ? (openBlock(), createElementBlock("div", _hoisted_24$5, [
-            _hoisted_25$5,
+          form.value === "Profile" || form.value === "Password" || form.value === "Language" ? (openBlock(), createElementBlock("div", _hoisted_31$5, [
+            _hoisted_32$5,
             form.value === "Profile" ? (openBlock(), createBlock(_component_el_form, {
               key: 0,
               ref: "ruleFormRef1",
@@ -929,7 +986,7 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
                   "before-upload": beforeAvatarUpload
                 }, {
                   default: withCtx(() => [
-                    createBaseVNode("div", _hoisted_26$5, [
+                    createBaseVNode("div", _hoisted_33$5, [
                       unref(authStore).getUserInfo.avatar ? (openBlock(), createElementBlock("img", {
                         key: 0,
                         src: unref(authStore).getUserInfo.avatar,
@@ -937,8 +994,8 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
                         height: "72",
                         class: "headImg",
                         alt: ""
-                      }, null, 8, _hoisted_27$5)) : (openBlock(), createElementBlock("div", _hoisted_28$5, toDisplayString(defaultHeadImgTxt()), 1)),
-                      _hoisted_29$5
+                      }, null, 8, _hoisted_34$5)) : (openBlock(), createElementBlock("div", _hoisted_35$5, toDisplayString(defaultHeadImgTxt()), 1)),
+                      _hoisted_36$5
                     ])
                   ]),
                   _: 1
@@ -949,7 +1006,7 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
                   default: withCtx(() => [
                     createVNode(_component_el_input, {
                       modelValue: formData1.username,
-                      "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => formData1.username = $event)
+                      "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => formData1.username = $event)
                     }, null, 8, ["modelValue"])
                   ]),
                   _: 1
@@ -959,19 +1016,19 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
                     createVNode(_component_el_input, {
                       disabled: "",
                       modelValue: formData1.email,
-                      "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => formData1.email = $event)
+                      "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => formData1.email = $event)
                     }, null, 8, ["modelValue"])
                   ]),
                   _: 1
                 }),
-                createBaseVNode("div", _hoisted_30$5, [
+                createBaseVNode("div", _hoisted_37$5, [
                   createVNode(_component_el_checkbox, {
                     modelValue: formData1.privacy,
-                    "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => formData1.privacy = $event),
+                    "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => formData1.privacy = $event),
                     size: "large",
                     style: { "zoom": "1.4" }
                   }, null, 8, ["modelValue"]),
-                  _hoisted_31$5
+                  _hoisted_38$5
                 ])
               ]),
               _: 1
@@ -989,7 +1046,7 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
                   default: withCtx(() => [
                     createVNode(_component_el_input, {
                       modelValue: formData2.pass,
-                      "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => formData2.pass = $event),
+                      "onUpdate:modelValue": _cache[9] || (_cache[9] = ($event) => formData2.pass = $event),
                       "show-password": ""
                     }, null, 8, ["modelValue"])
                   ]),
@@ -999,7 +1056,7 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
                   default: withCtx(() => [
                     createVNode(_component_el_input, {
                       modelValue: formData2.newPass,
-                      "onUpdate:modelValue": _cache[9] || (_cache[9] = ($event) => formData2.newPass = $event),
+                      "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => formData2.newPass = $event),
                       autosize: { minRows: 4 },
                       "show-password": ""
                     }, null, 8, ["modelValue"])
@@ -1010,7 +1067,7 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
                   default: withCtx(() => [
                     createVNode(_component_el_input, {
                       modelValue: formData2.checkPass,
-                      "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => formData2.checkPass = $event),
+                      "onUpdate:modelValue": _cache[11] || (_cache[11] = ($event) => formData2.checkPass = $event),
                       "show-password": ""
                     }, null, 8, ["modelValue"])
                   ]),
@@ -1029,7 +1086,7 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
                   default: withCtx(() => [
                     createVNode(_component_el_radio_group, {
                       modelValue: language.value,
-                      "onUpdate:modelValue": _cache[11] || (_cache[11] = ($event) => language.value = $event)
+                      "onUpdate:modelValue": _cache[12] || (_cache[12] = ($event) => language.value = $event)
                     }, {
                       default: withCtx(() => [
                         createVNode(_component_el_radio, {
@@ -1037,7 +1094,7 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
                           size: "large"
                         }, {
                           default: withCtx(() => [
-                            _hoisted_32$5
+                            _hoisted_39$4
                           ]),
                           _: 1
                         }),
@@ -1046,7 +1103,7 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
                           size: "large"
                         }, {
                           default: withCtx(() => [
-                            _hoisted_33$5
+                            _hoisted_40$4
                           ]),
                           _: 1
                         })
@@ -1071,158 +1128,17 @@ const _sfc_main$j = /* @__PURE__ */ defineComponent({
               _: 1
             })) : createCommentVNode("", true)
           ])) : createCommentVNode("", true),
-          form.value === "Management" || form.value === "Privacy" ? (openBlock(), createElementBlock("div", _hoisted_34$5, [
+          form.value === "Management" || form.value === "Privacy" ? (openBlock(), createElementBlock("div", _hoisted_41$4, [
             form.value === "Management" ? (openBlock(), createBlock(management, { key: 0 })) : createCommentVNode("", true),
-            form.value === "Privacy" ? (openBlock(), createBlock(_sfc_main$l, { key: 1 })) : createCommentVNode("", true)
+            form.value === "Privacy" ? (openBlock(), createBlock(_sfc_main$j, { key: 1 })) : createCommentVNode("", true)
           ])) : createCommentVNode("", true)
         ])
       ]);
     };
   }
 });
-const settings_vue_vue_type_style_index_0_scoped_9ffa6d27_lang = "";
-const setting = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["__scopeId", "data-v-9ffa6d27"]]);
-const loadingAnimation_vue_vue_type_style_index_0_scoped_ba575b6b_lang = "";
-const _sfc_main$i = {};
-const _withScopeId$d = (n) => (pushScopeId("data-v-ba575b6b"), n = n(), popScopeId(), n);
-const _hoisted_1$h = { class: "lds-ellipsis" };
-const _hoisted_2$f = /* @__PURE__ */ _withScopeId$d(() => /* @__PURE__ */ createBaseVNode("div", null, null, -1));
-const _hoisted_3$e = /* @__PURE__ */ _withScopeId$d(() => /* @__PURE__ */ createBaseVNode("div", null, null, -1));
-const _hoisted_4$e = /* @__PURE__ */ _withScopeId$d(() => /* @__PURE__ */ createBaseVNode("div", null, null, -1));
-const _hoisted_5$c = /* @__PURE__ */ _withScopeId$d(() => /* @__PURE__ */ createBaseVNode("div", null, null, -1));
-const _hoisted_6$c = [
-  _hoisted_2$f,
-  _hoisted_3$e,
-  _hoisted_4$e,
-  _hoisted_5$c
-];
-function _sfc_render$1(_ctx, _cache) {
-  return openBlock(), createElementBlock("div", _hoisted_1$h, _hoisted_6$c);
-}
-const loading = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$1], ["__scopeId", "data-v-ba575b6b"]]);
-const _withScopeId$c = (n) => (pushScopeId("data-v-adfaae11"), n = n(), popScopeId(), n);
-const _hoisted_1$g = ["src"];
-const _hoisted_2$e = {
-  key: 0,
-  class: "message-text"
-};
-const _hoisted_3$d = { key: 1 };
-const _hoisted_4$d = {
-  key: 0,
-  style: { "display": "flex" }
-};
-const _hoisted_5$b = ["id"];
-const _hoisted_6$b = { class: "flex flex-row gap-3" };
-const _hoisted_7$a = ["onClick"];
-const _hoisted_8$a = { class: "relative m-3" };
-const _hoisted_9$a = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("svg", { class: "h-10 w-8" }, [
-  /* @__PURE__ */ createBaseVNode("use", { href: "#fileIcon" })
-], -1));
-const _hoisted_10$9 = { class: "top-0 text-[10px] text-center bottom-0 right-0 left-0 absolute leading-[40px]" };
-const _hoisted_11$9 = { class: "flex-col" };
-const _hoisted_12$8 = { class: "truncate w-40" };
-const _hoisted_13$8 = { class: "text-sm" };
-const _hoisted_14$8 = { class: "m-3" };
-const _sfc_main$h = /* @__PURE__ */ defineComponent({
-  __name: "scrollMessage",
-  props: {
-    chat: {
-      type: Object,
-      required: true
-    }
-  },
-  setup(__props) {
-    const scrollView = ref(null);
-    return (_ctx, _cache) => {
-      const _component_v_md_preview = resolveComponent("v-md-preview");
-      const _component_el_dialog = resolveComponent("el-dialog");
-      return openBlock(), createElementBlock("div", {
-        ref_key: "scrollView",
-        ref: scrollView,
-        class: "messages"
-      }, [
-        (openBlock(true), createElementBlock(Fragment, null, renderList(__props.chat.messages, (msg, index) => {
-          return openBlock(), createElementBlock("div", {
-            class: "message",
-            style: normalizeStyle({ justifyContent: msg.role === "user" ? "flex-end" : "flex-start" }),
-            key: index
-          }, [
-            msg.role != "user" ? (openBlock(), createElementBlock("img", {
-              key: 0,
-              class: "h-8 w-8",
-              src: msg.avatar,
-              alt: ""
-            }, null, 8, _hoisted_1$g)) : createCommentVNode("", true),
-            createBaseVNode("div", {
-              class: "flex flex-col w-full",
-              style: normalizeStyle({ alignItems: msg.role === "user" ? "end" : "start" })
-            }, [
-              typeof msg.content === "string" && msg.content.length > 0 ? (openBlock(), createElementBlock("div", {
-                key: 0,
-                class: "message-content",
-                style: normalizeStyle({ background: msg.role === "user" ? "transparent" : "" })
-              }, [
-                msg.role === "user" ? (openBlock(), createElementBlock("span", _hoisted_2$e, [
-                  createVNode(_component_v_md_preview, {
-                    style: normalizeStyle([{ "word-break": "normal", "background-color": "transparent !important" }, { textAlign: "left" }]),
-                    text: msg.content
-                  }, null, 8, ["text"])
-                ])) : (openBlock(), createElementBlock("div", _hoisted_3$d, [
-                  typeof msg.content === "string" && msg.content.length == 0 ? (openBlock(), createElementBlock("div", _hoisted_4$d, [
-                    createVNode(loading)
-                  ])) : (openBlock(), createBlock(_component_v_md_preview, {
-                    key: 1,
-                    style: normalizeStyle([{ "word-break": "normal" }, { textAlign: "left" }]),
-                    text: msg.content
-                  }, null, 8, ["text"]))
-                ]))
-              ], 4)) : createCommentVNode("", true),
-              (openBlock(true), createElementBlock(Fragment, null, renderList(msg.refs, (ref2) => {
-                return openBlock(), createElementBlock("div", {
-                  id: msg.id,
-                  class: "ref"
-                }, [
-                  createBaseVNode("div", _hoisted_6$b, [
-                    createBaseVNode("div", null, "File name:" + toDisplayString(ref2.filename), 1),
-                    createBaseVNode("div", null, "Page:" + toDisplayString(ref2.page), 1),
-                    createBaseVNode("div", null, "Position:" + toDisplayString(ref2.position), 1)
-                  ]),
-                  createBaseVNode("div", null, "Content:" + toDisplayString(ref2.page_content), 1)
-                ], 8, _hoisted_5$b);
-              }), 256))
-            ], 4),
-            typeof msg.content === "object" ? (openBlock(), createElementBlock("div", {
-              key: 1,
-              onClick: ($event) => msg.dialogVisible = true,
-              class: "shadow p-1 rounded-xl bg-black flex items-center"
-            }, [
-              createBaseVNode("div", _hoisted_8$a, [
-                _hoisted_9$a,
-                createBaseVNode("div", _hoisted_10$9, toDisplayString(msg.content.filename.match(/^(.*?)\.([^.]+)$/)[2]), 1)
-              ]),
-              createBaseVNode("div", _hoisted_11$9, [
-                createBaseVNode("div", _hoisted_12$8, toDisplayString(msg.content.filename.match(/^(.*?)\.([^.]+)$/)[1]), 1),
-                createBaseVNode("div", _hoisted_13$8, toDisplayString(msg.content.size), 1)
-              ]),
-              createVNode(_component_el_dialog, {
-                modelValue: msg.dialogVisible,
-                "onUpdate:modelValue": ($event) => msg.dialogVisible = $event
-              }, {
-                header: withCtx(({}) => []),
-                default: withCtx(() => [
-                  createBaseVNode("div", _hoisted_14$8, toDisplayString(msg.content.content), 1)
-                ]),
-                _: 2
-              }, 1032, ["modelValue", "onUpdate:modelValue"])
-            ], 8, _hoisted_7$a)) : createCommentVNode("", true)
-          ], 4);
-        }), 128))
-      ], 512);
-    };
-  }
-});
-const scrollMessage_vue_vue_type_style_index_0_scoped_adfaae11_lang = "";
-const scrollMessage = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["__scopeId", "data-v-adfaae11"]]);
+const settings_vue_vue_type_style_index_0_scoped_98da6cc4_lang = "";
+const setting = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["__scopeId", "data-v-98da6cc4"]]);
 const _withScopeId$b = (n) => (pushScopeId("data-v-3a5c0210"), n = n(), popScopeId(), n);
 const _hoisted_1$f = {
   class: "input-area",
@@ -2655,7 +2571,7 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
         const uploadFiles = async () => {
           for (const file of filesToUpload.value) {
             try {
-              const loading2 = ElLoading.service({
+              const loading = ElLoading.service({
                 lock: true,
                 text: "Uploading " + file.name,
                 background: "rgba(0, 0, 0, 0.7)"
@@ -2667,7 +2583,7 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
                 id: res.data.id
               });
               console.log(response);
-              loading2.close();
+              loading.close();
             } catch (error) {
               console.error(error);
             }
@@ -3164,7 +3080,7 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
             return;
           for (const file of filesToUpload.value) {
             try {
-              const loading2 = ElLoading.service({
+              const loading = ElLoading.service({
                 lock: true,
                 text: "Uploading " + file.name,
                 background: "rgba(0, 0, 0, 0.7)"
@@ -3176,7 +3092,7 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                 id: res.data.id
               });
               console.log(response);
-              loading2.close();
+              loading.close();
             } catch (error) {
               console.error(error);
             }
@@ -4716,7 +4632,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
 });
 const avatarStack2_vue_vue_type_style_index_0_scoped_f7bc0de3_lang = "";
 const avatarStack2 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-f7bc0de3"]]);
-const _withScopeId$1 = (n) => (pushScopeId("data-v-3f05129e"), n = n(), popScopeId(), n);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-3401f1b7"), n = n(), popScopeId(), n);
 const _hoisted_1$1 = { style: { "cursor": "pointer" } };
 const _hoisted_2$1 = ["href"];
 const _hoisted_3$1 = { class: "w-[200px] flex-1 transition-all duration-500" };
@@ -4811,6 +4727,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     const chatGroupStore = useChatGroupStore();
     const privateChatStore = usePrivateChatStore();
     const authStore = useAuthStore();
+    console.log(privateChatStore.getPrivateChat);
     const botInfo = ref({
       name: "",
       description: "",
@@ -4840,7 +4757,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
     const createBotBasedOnCurrentBot = () => {
       console.log("createBotBasedOnCurrentBot");
-      const loading2 = ElLoading.service({
+      const loading = ElLoading.service({
         lock: true,
         text: "Cloning Bot... Please wait",
         background: "rgba(0, 0, 0, 0.95)"
@@ -4857,7 +4774,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
           bot: botInfo.value
         });
         ShowBotInfoFlag.value = false;
-        loading2.close();
+        loading.close();
       }).catch((err) => {
         console.log(err);
       });
@@ -4936,8 +4853,10 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         if (panelStore.openChatIfExistInTabs(bot.chatId))
           return;
         console.log(panelStore.openChatIfExistInTabs(bot.chatId));
-        console.log("openChatWindow");
+        console.log("openChatWindow", "bot.chatId", bot.chatId);
+        console.log(privateChatStore.getPrivateChat);
         const chat = privateChatStore.getPrivateChatById(bot.chatId);
+        console.log(chat);
         addTab(panelStore.windowId, {
           id: (/* @__PURE__ */ new Date()).getTime().toString(),
           title: bot.title || "",
@@ -4974,7 +4893,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
           if (!chat)
             return;
           const chatInstance = new SocketChat(bot.id, chat.id);
-          const loading2 = ElLoading.service({
+          const loading = ElLoading.service({
             lock: true,
             text: "Connecting to " + bot.title + " ...",
             background: "rgba(0, 0, 0, 0.95)"
@@ -4989,7 +4908,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
             });
             bot.chatId = chat.id;
             savePrivateChat();
-            loading2.close();
+            loading.close();
           });
           chat.chatInstance = chatInstance;
         }
@@ -5236,11 +5155,11 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const selectedBotCol_vue_vue_type_style_index_0_scoped_3f05129e_lang = "";
-const selectedBotCol = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-3f05129e"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-04fa7590"), n = n(), popScopeId(), n);
+const selectedBotCol_vue_vue_type_style_index_0_scoped_3401f1b7_lang = "";
+const selectedBotCol = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-3401f1b7"]]);
+const _withScopeId = (n) => (pushScopeId("data-v-c0999639"), n = n(), popScopeId(), n);
 const _hoisted_1 = { class: "main" };
-const _hoisted_2 = /* @__PURE__ */ createStaticVNode('<div class="absolute top-0 right-0 left-0 h-10 flex flex-row items-center justify-center bg-[#1D2126]" data-v-04fa7590><div class="w-[30%] h-full shrink-0 app-drag" data-v-04fa7590></div><div class="bg-[var(--panel-bg)] rounded w-[40%] h-[30px] flex flex-row items-center justify-between px-5 py-[11px]" data-v-04fa7590><div class="flex flex-row items-center gap-3 w-full" data-v-04fa7590><svg class="w-4 h-4 object-cover min-h-[16px] cursor-pointer" data-v-04fa7590><use href="#search" data-v-04fa7590></use></svg><input type="text" class="w-full h-full bg-transparent outline-none text-[rgb(124,135,142)] tracking-[-0.15px] font-[RobotoRegular] text-[14px] leading-none" placeholder="Search..." data-v-04fa7590></div></div><div class="w-[30%] h-full shrink-0 app-drag" data-v-04fa7590></div></div>', 1);
+const _hoisted_2 = /* @__PURE__ */ createStaticVNode('<div class="absolute top-0 right-0 left-0 h-10 flex flex-row items-center justify-center bg-[#1D2126]" data-v-c0999639><div class="w-[30%] h-full shrink-0 app-drag" data-v-c0999639></div><div class="bg-[var(--panel-bg)] rounded w-[40%] h-[30px] flex flex-row items-center justify-between px-5 py-[11px]" data-v-c0999639><div class="flex flex-row items-center gap-3 w-full" data-v-c0999639><svg class="w-4 h-4 object-cover min-h-[16px] cursor-pointer" data-v-c0999639><use href="#search" data-v-c0999639></use></svg><input type="text" class="w-full h-full bg-transparent outline-none text-[rgb(124,135,142)] tracking-[-0.15px] font-[RobotoRegular] text-[14px] leading-none" placeholder="Search..." data-v-c0999639></div></div><div class="w-[30%] h-full shrink-0 app-drag" data-v-c0999639></div></div>', 1);
 const _hoisted_3 = {
   key: 0,
   class: "main-view"
@@ -5270,11 +5189,6 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
   setup(__props) {
     const panelStore = usePanelStore();
     const authStore = useAuthStore();
-    const clearAllStorage = () => {
-      apiUserInfoAttributeSet({ key: "panels", value: null });
-      apiUserInfoAttributeSet({ key: "privateChat", value: null });
-      apiUserInfoAttributeSet({ key: "bots", value: null });
-    };
     onMounted(() => {
       if (authStore.getUserInfo == null) {
         authStore.loginRef.showModal();
@@ -5282,10 +5196,6 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     });
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1, [
-        createBaseVNode("button", {
-          class: "w-10 h-10",
-          onClick: clearAllStorage
-        }, "Clear All Storage"),
         _hoisted_2,
         createVNode(Menu),
         unref(panelStore).panelId == "-3" ? (openBlock(), createElementBlock("div", _hoisted_3, _hoisted_5)) : unref(panelStore).panelId == "-2" ? (openBlock(), createElementBlock("div", _hoisted_6, [
@@ -5307,8 +5217,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const home_vue_vue_type_style_index_0_scoped_04fa7590_lang = "";
-const home = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-04fa7590"]]);
+const home_vue_vue_type_style_index_0_scoped_c0999639_lang = "";
+const home = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-c0999639"]]);
 export {
   home as default
 };

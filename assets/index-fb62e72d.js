@@ -11109,34 +11109,34 @@ const pageRouter = [
   {
     path: "/",
     name: "home",
-    component: () => __vitePreload(() => import("./homePage-86c90f05.js"), true ? ["./homePage-86c90f05.js","./homeBackground-bf4b476d.js","./botInvitation-4d7cd288.js","./_plugin-vue_export-helper-cc2b3d55.js","./botInvitation-f99d2318.css","./homePage-1dfefe53.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./homePage-f6efb115.js"), true ? ["./homePage-f6efb115.js","./homeBackground-bf4b476d.js","./botInvitation-e56b6d88.js","./_plugin-vue_export-helper-cc2b3d55.js","./botInvitation-f99d2318.css","./homePage-66e6dbd5.css"] : void 0, import.meta.url)
   },
   {
     path: "/app",
     name: "app",
     // meta: {isAuth: true},
-    component: () => __vitePreload(() => import("./home-5aeb1b7c.js"), true ? ["./home-5aeb1b7c.js","./_plugin-vue_export-helper-cc2b3d55.js","./botInvitation-4d7cd288.js","./botInvitation-f99d2318.css","./home-288ca46c.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./home-fdd6d677.js"), true ? ["./home-fdd6d677.js","./_plugin-vue_export-helper-cc2b3d55.js","./scrollMessage-55360828.js","./scrollMessage-700a3347.css","./botInvitation-e56b6d88.js","./botInvitation-f99d2318.css","./home-d5fe4aaa.css"] : void 0, import.meta.url)
   },
   {
     path: "/account",
     name: "account",
-    component: () => __vitePreload(() => import("./accountManage-a1ada94c.js"), true ? ["./accountManage-a1ada94c.js","./botInvitation-4d7cd288.js","./_plugin-vue_export-helper-cc2b3d55.js","./botInvitation-f99d2318.css","./accountManage-4e6d0308.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./accountManage-a7198dcf.js"), true ? ["./accountManage-a7198dcf.js","./botInvitation-e56b6d88.js","./_plugin-vue_export-helper-cc2b3d55.js","./botInvitation-f99d2318.css","./accountManage-4e6d0308.css"] : void 0, import.meta.url)
   },
   {
     path: "/reset-password/:token?",
     name: "resetPassword",
-    component: () => __vitePreload(() => import("./home-5aeb1b7c.js"), true ? ["./home-5aeb1b7c.js","./_plugin-vue_export-helper-cc2b3d55.js","./botInvitation-4d7cd288.js","./botInvitation-f99d2318.css","./home-288ca46c.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./home-fdd6d677.js"), true ? ["./home-fdd6d677.js","./_plugin-vue_export-helper-cc2b3d55.js","./scrollMessage-55360828.js","./scrollMessage-700a3347.css","./botInvitation-e56b6d88.js","./botInvitation-f99d2318.css","./home-d5fe4aaa.css"] : void 0, import.meta.url)
   },
   {
     path: "/invitation/:code?",
     name: "invitation",
-    component: () => __vitePreload(() => import("./home-5aeb1b7c.js"), true ? ["./home-5aeb1b7c.js","./_plugin-vue_export-helper-cc2b3d55.js","./botInvitation-4d7cd288.js","./botInvitation-f99d2318.css","./home-288ca46c.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./home-fdd6d677.js"), true ? ["./home-fdd6d677.js","./_plugin-vue_export-helper-cc2b3d55.js","./scrollMessage-55360828.js","./scrollMessage-700a3347.css","./botInvitation-e56b6d88.js","./botInvitation-f99d2318.css","./home-d5fe4aaa.css"] : void 0, import.meta.url)
   },
   {
     path: "/hoverWindow",
     name: "hoverWindow",
     // meta: {isAuth: true},
-    component: () => __vitePreload(() => import("./hoverWindow-1bd601a3.js"), true ? ["./hoverWindow-1bd601a3.js","./_plugin-vue_export-helper-cc2b3d55.js","./hoverWindow-18d737bd.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./hoverWindow-daa94301.js"), true ? ["./hoverWindow-daa94301.js","./scrollMessage-55360828.js","./_plugin-vue_export-helper-cc2b3d55.js","./scrollMessage-700a3347.css","./hoverWindow-6a787531.css"] : void 0, import.meta.url)
   },
   {
     path: "/404",
@@ -11145,7 +11145,7 @@ const pageRouter = [
       title: "Page not found",
       isAuth: false
     },
-    component: () => __vitePreload(() => import("./404View-5e1afb98.js"), true ? ["./404View-5e1afb98.js","./homeBackground-bf4b476d.js","./_plugin-vue_export-helper-cc2b3d55.js","./404View-14ad2032.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./404View-144794ff.js"), true ? ["./404View-144794ff.js","./homeBackground-bf4b476d.js","./_plugin-vue_export-helper-cc2b3d55.js","./404View-14ad2032.css"] : void 0, import.meta.url)
   },
   {
     path: "/:catchAll(.*)",
@@ -11194,6 +11194,15 @@ const LStorage = new MyStorage(
   "localStorage"
   /* l */
 );
+const defaultSetting = {
+  lunchAtlogin: false,
+  shortCutKey: "⌘ B",
+  showTray: true,
+  defaultBot: {
+    name: "gpt-3.5-turbo",
+    avatar: "/chatgpt3.svg"
+  }
+};
 const defaultModelOptions = [
   {
     value: "Chatgpt3.5",
@@ -11220,7 +11229,7 @@ const defaultBots = [
   {
     id: "1",
     title: "Chatgpt3.5",
-    avatar: "/chatgpt3.svg",
+    // avatar: '/chatgpt3.svg',
     model_vendor: "openai",
     description: "model.description",
     visibility: 0,
@@ -11232,7 +11241,7 @@ const defaultBots = [
   {
     id: "2",
     title: "Minimax",
-    avatar: "/minimax.svg",
+    // avatar: '/minimax.svg',
     model_vendor: "minimax",
     description: "model.description",
     visibility: 0,
@@ -11244,7 +11253,7 @@ const defaultBots = [
   {
     id: "3",
     title: "ChatGLM",
-    avatar: "/chatglm.png",
+    // avatar: '/chatglm.png',
     model_vendor: "chatglm",
     description: "model.description",
     visibility: 0,
@@ -11256,7 +11265,7 @@ const defaultBots = [
   {
     id: "4",
     title: "Chatgpt4",
-    avatar: "/chatgpt4.svg",
+    // avatar: '/chatgpt4.svg',
     model_vendor: "openai",
     description: "model.description",
     visibility: 0,
@@ -11357,7 +11366,8 @@ const usePanelStore = defineStore("panel", {
     //current window id
     expandRightCol: true,
     pinMenu: false,
-    panels: defaultPanel
+    panels: defaultPanel,
+    setting: defaultSetting
   }),
   getters: {
     getPanelId() {
@@ -86479,6 +86489,10 @@ const useBotStore = defineStore("bot", {
     getBotByChatId(chatId) {
       const index2 = this.bots.findIndex((b2) => b2.chatId === chatId);
       return this.bots[index2];
+    },
+    findBotByName(name) {
+      const index2 = this.bots.findIndex((b2) => b2.title === name);
+      return this.bots[index2];
     }
   }
 });
@@ -89744,7 +89758,7 @@ const usePrivateChatStore = defineStore("privateChat", {
   },
   actions: {
     getPrivateChatById(chatId) {
-      const index2 = this.privateChat.findIndex((b2) => b2.id === chatId);
+      const index2 = this.privateChat.findIndex((b2) => b2.id == chatId);
       return this.privateChat[index2];
     }
   }
@@ -89837,12 +89851,12 @@ class SocketChat {
           const setIntervalInstance = setInterval(() => {
             const msg = chat.messages.at(-1) || { cache: "", content: "" };
             if (msg.cache.length > 0) {
-              msg.content += msg.cache[0];
-              msg.cache = msg.cache.substring(1);
+              msg.content += msg.cache;
+              msg.cache = "";
             } else if (chat.enableChatSend) {
               clearInterval(setIntervalInstance);
             }
-          }, 10);
+          }, 1);
         } else {
           console.log(data);
           chat.enableChatSend = true;
@@ -89962,6 +89976,48 @@ const getPrivateChatandSet = async () => {
       const chatInstance = new SocketChat(chat.members[0].id, chat.id);
       chatInstance.connectToSocketIO(chat, () => {
         savePrivateChat();
+      });
+      chat.chatInstance = chatInstance;
+    }
+  });
+  const botStore = useBotStore();
+  botStore.bots.forEach((bot, index2) => {
+    if (!bot.chatId) {
+      if (!bot.id || !bot.title || !bot.avatar)
+        return;
+      addPrivateChat({
+        id: "",
+        title: bot.title,
+        members: [
+          {
+            id: bot.id,
+            name: bot.title,
+            avatar: bot.avatar
+          }
+        ],
+        messages: [
+          {
+            id: (/* @__PURE__ */ new Date()).getTime().toString(),
+            username: "name",
+            content: "Welcome to Benchyard, I am " + bot.title,
+            avatar: bot.avatar,
+            cache: ""
+          }
+        ],
+        sendTo: "",
+        enableChatSend: false,
+        files: []
+      });
+      const chat = privateChatStore.getPrivateChat.at(-1);
+      if (!chat)
+        return;
+      const chatInstance = new SocketChat(bot.id, chat.id);
+      chatInstance.connectToSocketIO(chat, () => {
+        bot.chatId = chat.id;
+        if (index2 == botStore.bots.length - 1) {
+          savePrivateChat();
+          console.log("saveChat");
+        }
       });
       chat.chatInstance = chatInstance;
     }
@@ -90153,17 +90209,17 @@ if (authStore.getUserInfo) {
 }
 export {
   apiBotFileRemove as $,
-  apiUserInfo as A,
-  onMounted as B,
-  withKeys as C,
-  withModifiers as D,
+  unref as A,
+  createTextVNode as B,
+  apiUserInfo as C,
+  onMounted as D,
   ElMessage as E,
   Fragment as F,
-  apiFileAdd as G,
-  usePanelStore as H,
-  usePrivateChatStore as I,
-  useChatGroupStore as J,
-  useBotStore as K,
+  withKeys as G,
+  withModifiers as H,
+  apiFileAdd as I,
+  usePrivateChatStore as J,
+  useChatGroupStore as K,
   addTab as L,
   nextTick$1 as M,
   arrow_left_bold_default as N,
@@ -90195,13 +90251,12 @@ export {
   apiShareCode as ab,
   apiBotDelete as ac,
   removeTabByChatId as ad,
-  apiUserInfoAttributeSet as ae,
-  apiRegister as af,
-  useRouter as ag,
-  apiLogin as ah,
-  getPanelandSet as ai,
-  apiSendResetPasswordEmail as aj,
-  apiResetPassword as ak,
+  apiRegister as ae,
+  useRouter as af,
+  apiLogin as ag,
+  getPanelandSet as ah,
+  apiSendResetPasswordEmail as ai,
+  apiResetPassword as aj,
   createBaseVNode as b,
   createElementBlock as c,
   defineComponent as d,
@@ -90213,18 +90268,18 @@ export {
   renderList as j,
   createCommentVNode as k,
   renderSlot as l,
-  reactive as m,
+  useBotStore as m,
   normalizeStyle as n,
   openBlock as o,
   pushScopeId as p,
-  resolveDirective as q,
+  usePanelStore as q,
   router as r,
-  withCtx as s,
+  reactive as s,
   toDisplayString as t,
   useAuthStore as u,
   vShow as v,
   watch as w,
-  createBlock as x,
-  unref as y,
-  createTextVNode as z
+  resolveDirective as x,
+  withCtx as y,
+  createBlock as z
 };
