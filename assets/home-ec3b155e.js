@@ -1,18 +1,527 @@
 import { _ as _export_sfc } from "./_plugin-vue_export-helper-cc2b3d55.js";
-import { o as openBlock, c as createElementBlock, f as createStaticVNode, d as defineComponent, a as ref, h as resolveComponent, b as createBaseVNode, e as createVNode, w as watch, n as normalizeStyle, i as withDirectives, v as vShow, F as Fragment, j as renderList, t as toDisplayString, k as createCommentVNode, l as renderSlot, p as pushScopeId, g as popScopeId, u as useAuthStore, m as useBotStore, q as usePanelStore, s as reactive, x as resolveDirective, y as withCtx, z as createBlock, A as unref, B as createTextVNode, E as ElMessage, C as apiUserInfo, D as onMounted, T as Tribute, G as withKeys, H as withModifiers, I as apiFileAdd, J as usePrivateChatStore, K as useChatGroupStore, L as addTab, M as nextTick, N as arrow_left_bold_default, O as arrow_right_bold_default, P as vModelCheckbox, Q as h, R as arrow_down_bold_default, S as apiBotCreate, U as updateBotList, V as ElLoading, W as apiBotFileAdd, X as apiBotUploadAvatar, Y as vModelText, Z as apiSendInvitationEmail, _ as apiBotUpdate, $ as apiBotFileRemove, a0 as addPrivateChat, a1 as SocketChat, a2 as savePrivateChat, a3 as removeTab, a4 as addWindow, a5 as useRoute, a6 as removePanel, a7 as addPanel, a8 as apiGetBotInfoFromCode, a9 as apiAcceptInvitation, aa as apiBotInfo, ab as apiShareCode, ac as apiBotDelete, ad as removeTabByChatId } from "./index-fb62e72d.js";
-import { s as scrollMessage } from "./scrollMessage-55360828.js";
-import { C as CompRegister, a as CompLogin, b as CompFindPassword, r as resetPsd, c as botInvitation } from "./botInvitation-e56b6d88.js";
+import { o as openBlock, c as createElementBlock, f as createStaticVNode, d as defineComponent, a as ref, h as resolveComponent, i as createBlock, w as withCtx, p as pushScopeId, g as popScopeId, b as createBaseVNode, j as createTextVNode, e as createVNode, k as watch, n as normalizeStyle, l as withDirectives, v as vShow, F as Fragment, m as renderList, t as toDisplayString, q as createCommentVNode, s as renderSlot, u as useAuthStore, x as useBotStore, y as usePanelStore, z as reactive, A as useRouter, B as resolveDirective, C as unref, E as ElMessage, D as apiGetUserInfo, G as apiUpdateUserInfo, H as apiUserInfoAttributeSet, I as onMounted, T as Tribute, J as withKeys, K as withModifiers, L as usePrivateChatStore, M as apiFileAdd, N as useChatGroupStore, O as addTabAndSave, P as nextTick, Q as arrow_left_bold_default, R as arrow_right_bold_default, S as vModelCheckbox, U as h, V as arrow_down_bold_default, W as apiBotCreate, X as UpdateBotAndSetPanel, Y as ElLoading, Z as apiBotFileAdd, _ as apiBotUploadAvatar, $ as vModelText, a0 as apiSendInvitationEmail, a1 as apiBotUpdate, a2 as apiBotFileRemove, a3 as removeTabAndSave, a4 as addWindowAndSave, a5 as useRoute, a6 as removePanelAndSave, a7 as addPanelandSave, a8 as apiGetBotInfoFromCode, a9 as apiAcceptInvitation, aa as apiBotInfo, ab as apiShareCode, ac as apiBotDelete, ad as removeTabByChatId } from "./index-cf6e881d.js";
+import { s as scrollMessage } from "./scrollMessage-75c3f3b8.js";
+import { C as CompRegister, a as CompLogin, b as CompFindPassword, r as resetPsd, c as botInvitation } from "./botInvitation-db245019.js";
 const baseUrl = "https://api-test.benchyard.com";
-const _sfc_main$l = {};
-const _hoisted_1$k = { class: "partial-code main no-scrollbar" };
-const _hoisted_2$h = /* @__PURE__ */ createStaticVNode('<section class="section1_1"><div class="flex_col"><h1 class="hero_title">Unlock the power of AI</h1><h4 class="highlights">Meet the synapse of our ai chat app revolutionizing conversations</h4></div><div class="box"><div class="box1"><div class="text">Monthly</div></div><div class="box1" style="background:transparent;"><div class="text">Anualy (-20%)</div></div></div><div class="flex_row"><div class="flex_row__cell"><div class="box2"><div class="flex_col1"><h1 class="title">Free</h1><h5 class="highlights1">Basic chat functionality</h5><div class="flex_row1"><div class="flex_row1__cell"><h1 class="title1">$</h1></div><div class="flex_row1__cell1"><h1 class="hero_title1">0</h1></div><div class="flex_row1__cell2"><h1 class="title11">/ mo</h1></div></div><div class="text11">Free forever</div></div><div class="box3"><div class="flex_row2"><div class="flex_row2__cell"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="text2">5 chatbots</div></div><div class="flex_row3"><div class="flex_row3__cell"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer"></div><div class="text2">Up to 1000 messages/mo</div></div><div class="flex_row3"><div class="flex_row3__cell1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer1"></div><div class="text2">Basic analytics</div></div><div class="flex_row3"><div class="flex_row3__cell2"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer2"></div><div class="text2">Basic analytics</div></div><div class="flex_row4"><div class="icon1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row4__spacer"></div><div class="text12">Custom chatbot</div></div><div class="flex_row41"><div class="icon1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row41__spacer"></div><div class="text12">No support</div></div><div class="box4"><div class="text21">Current plan</div></div></div></div></div><div class="flex_row__spacer"></div><div class="flex_row__cell"><div class="box5"><div class="flex_col1"><div class="flex_row5"><div class="flex_row5__cell"><h1 class="title2">Standard</h1></div><div class="flex_row5__spacer"></div><div class="flex_row5__cell1"><div class="box6"><div class="info">Popular</div></div></div></div><h5 class="highlights1">Advanced chat features</h5><div class="flex_row1"><div class="flex_row1__cell3"><h1 class="title1">$</h1></div><div class="flex_row1__cell4"><h1 class="hero_title11">29</h1></div><div class="flex_row1__cell5"><h1 class="title11">/ mo</h1></div></div><div class="text11">Per month, per team members</div></div><div class="box7"><div class="flex_row6"><div class="flex_row6__cell"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row6__spacer"></div><div class="text2">10 chatbots</div></div><div class="flex_row3"><div class="flex_row3__cell3"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer3"></div><div class="text2">Up to 5000 messages/mo</div></div><div class="flex_row3"><div class="flex_row3__cell4"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer4"></div><div class="text2">Basic analytics</div></div><div class="flex_row3"><div class="flex_row3__cell5"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer5"></div><div class="text2">Basic analytics</div></div><div class="flex_row3"><div class="flex_row3__cell6"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer6"></div><div class="text2">Custom chatbot</div></div><div class="flex_row3"><div class="flex_row3__cell7"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer7"></div><div class="text2">Email support</div></div><div class="box8"><div class="text22">Upgrade</div></div></div></div></div><div class="flex_row__spacer"></div><div class="flex_row__cell"><div class="box9"><h1 class="title3">Pro</h1><h5 class="highlights11">Custom chat solutions</h5><div class="flex_row14"><h1 class="title12">$</h1><div class="flex_row14__cell"><h1 class="hero_title12">49</h1></div><div class="flex_row14__cell1"><h1 class="title13">/ mo</h1></div></div><div class="text13">Per month, per team members</div><div class="box7"><div class="flex_row6"><div class="flex_row6__cell1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row6__spacer1"></div><div class="text2">Unlimited chatbots</div></div><div class="flex_row3"><div class="flex_row3__cell8"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer8"></div><div class="text2">Unlimited messages</div></div><div class="flex_row3"><div class="flex_row3__cell9"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer9"></div><div class="text2">Custom analytics</div></div><div class="flex_row3"><div class="flex_row3__cell10"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer10"></div><div class="text2">Custom integrations</div></div><div class="flex_row3"><div class="flex_row3__cell11"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer11"></div><div class="text2">Custom chatbot</div></div><div class="flex_row3"><div class="flex_row3__cell12"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer12"></div><div class="text2">Priority email and chat support</div></div><div class="box8"><div class="text22">Upgrade</div></div></div></div></div></div></section><section class="section2_1"><section class="section2"><div class="flex_col2"><h2 class="medium_title">Usage</h2><div class="flex_row7"><div class="flex_row7__cell" style="background-color:rgb(75, 171, 113);"></div><div class="flex_row7__cell1"><div class="text14">Used</div></div><div class="flex_row7__spacer"></div><div class="flex_row7__cell" style="background-color:#5F44FF;"></div><div class="flex_row7__cell2"><div class="text14">Left</div></div><div class="flex_row7__spacer"></div><div class="flex_row7__cell" style="background-color:#8364FF;"></div><div class="flex_row7__cell3"><div class="text14">Bonus</div></div></div><div class="flex_row8"><div class="group"><div class="group1"><div class="rect"></div><div class="rect1"></div></div><div class="rect2"></div></div><div class="flex_row8__spacer"></div><div class="text23">$0.20 / $18.00</div></div><div class="flex_col3"><h2 class="medium_title">Earn credits by inviting friends 🎉</h2><div class="text3">For every friend you invite, you&#39;ll earn 5 credits, and they&#39;ll get extra 5 credits.</div><div class="box10"><h5 class="highlights2">https://easy-peasy.ai/?from=7</h5></div></div></div></section></section><section class="section3_1"><section class="section3"><div class="flex_col4"><h2 class="medium_title1">Your referrals</h2><h5 class="highlights3_box"><span class="highlights3"><span class="highlights3_span0">Total Invite: </span><span class="highlights3_span1">4</span></span></h5><div class="text31">A list of all the users registered by your invite link.</div><div class="flex_col5"><div class="content_box"><div class="flex_row9"><div class="flex_row9__cell"><div class="text15">Referral</div></div><div class="flex_row9__spacer"></div><div class="flex_row9__cell1"><div class="text16">Updated at</div></div><div class="flex_row9__spacer1"></div><div class="flex_row9__cell2"><div class="text17">Status</div></div></div></div><div class="flex_row10"><div class="flex_row10__cell"><div class="flex_row11"><div class="flex_row11__cell"></div><div class="flex_row11__cell1"><div class="flex_col6"><h5 class="highlights12">Tran Mau Tri Tam</h5><div class="info1">qi.sun@gmail.com</div></div></div></div></div><div class="flex_row10__spacer"></div><div class="flex_row10__cell1"><h5 class="highlights13">17/05/2023</h5></div><div class="flex_row10__spacer1"></div><div class="flex_row10__cell2"><h5 class="highlights14">Registered</h5></div></div></div></div></section></section>', 3);
-const _hoisted_5$d = [
-  _hoisted_2$h
+const _sfc_main$m = {};
+const _hoisted_1$l = { class: "partial-code main no-scrollbar" };
+const _hoisted_2$i = /* @__PURE__ */ createStaticVNode('<section class="section1_1"><div class="flex_col"><h1 class="hero_title">Unlock the power of AI</h1><h4 class="highlights">Meet the synapse of our ai chat app revolutionizing conversations</h4></div><div class="box"><div class="box1"><div class="text">Monthly</div></div><div class="box1" style="background:transparent;"><div class="text">Anualy (-20%)</div></div></div><div class="flex_row"><div class="flex_row__cell"><div class="box2"><div class="flex_col1"><h1 class="title">Free</h1><h5 class="highlights1">Basic chat functionality</h5><div class="flex_row1"><div class="flex_row1__cell"><h1 class="title1">$</h1></div><div class="flex_row1__cell1"><h1 class="hero_title1">0</h1></div><div class="flex_row1__cell2"><h1 class="title11">/ mo</h1></div></div><div class="text11">Free forever</div></div><div class="box3"><div class="flex_row2"><div class="flex_row2__cell"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="text2">5 chatbots</div></div><div class="flex_row3"><div class="flex_row3__cell"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer"></div><div class="text2">Up to 1000 messages/mo</div></div><div class="flex_row3"><div class="flex_row3__cell1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer1"></div><div class="text2">Basic analytics</div></div><div class="flex_row3"><div class="flex_row3__cell2"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer2"></div><div class="text2">Basic analytics</div></div><div class="flex_row4"><div class="icon1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row4__spacer"></div><div class="text12">Custom chatbot</div></div><div class="flex_row41"><div class="icon1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row41__spacer"></div><div class="text12">No support</div></div><div class="box4"><div class="text21">Current plan</div></div></div></div></div><div class="flex_row__spacer"></div><div class="flex_row__cell"><div class="box5"><div class="flex_col1"><div class="flex_row5"><div class="flex_row5__cell"><h1 class="title2">Standard</h1></div><div class="flex_row5__spacer"></div><div class="flex_row5__cell1"><div class="box6"><div class="info">Popular</div></div></div></div><h5 class="highlights1">Advanced chat features</h5><div class="flex_row1"><div class="flex_row1__cell3"><h1 class="title1">$</h1></div><div class="flex_row1__cell4"><h1 class="hero_title11">29</h1></div><div class="flex_row1__cell5"><h1 class="title11">/ mo</h1></div></div><div class="text11">Per month, per team members</div></div><div class="box7"><div class="flex_row6"><div class="flex_row6__cell"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row6__spacer"></div><div class="text2">10 chatbots</div></div><div class="flex_row3"><div class="flex_row3__cell3"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer3"></div><div class="text2">Up to 5000 messages/mo</div></div><div class="flex_row3"><div class="flex_row3__cell4"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer4"></div><div class="text2">Basic analytics</div></div><div class="flex_row3"><div class="flex_row3__cell5"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer5"></div><div class="text2">Basic analytics</div></div><div class="flex_row3"><div class="flex_row3__cell6"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer6"></div><div class="text2">Custom chatbot</div></div><div class="flex_row3"><div class="flex_row3__cell7"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer7"></div><div class="text2">Email support</div></div><div class="box8"><div class="text22">Upgrade</div></div></div></div></div><div class="flex_row__spacer"></div><div class="flex_row__cell"><div class="box9"><h1 class="title3">Pro</h1><h5 class="highlights11">Custom chat solutions</h5><div class="flex_row14"><h1 class="title12">$</h1><div class="flex_row14__cell"><h1 class="hero_title12">49</h1></div><div class="flex_row14__cell1"><h1 class="title13">/ mo</h1></div></div><div class="text13">Per month, per team members</div><div class="box7"><div class="flex_row6"><div class="flex_row6__cell1"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row6__spacer1"></div><div class="text2">Unlimited chatbots</div></div><div class="flex_row3"><div class="flex_row3__cell8"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer8"></div><div class="text2">Unlimited messages</div></div><div class="flex_row3"><div class="flex_row3__cell9"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer9"></div><div class="text2">Custom analytics</div></div><div class="flex_row3"><div class="flex_row3__cell10"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer10"></div><div class="text2">Custom integrations</div></div><div class="flex_row3"><div class="flex_row3__cell11"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer11"></div><div class="text2">Custom chatbot</div></div><div class="flex_row3"><div class="flex_row3__cell12"><svg class="icon"><use href="#checkCircle"></use></svg></div><div class="flex_row3__spacer12"></div><div class="text2">Priority email and chat support</div></div><div class="box8"><div class="text22">Upgrade</div></div></div></div></div></div></section><section class="section2_1"><section class="section2"><div class="flex_col2"><h2 class="medium_title">Usage</h2><div class="flex_row7"><div class="flex_row7__cell" style="background-color:rgb(75, 171, 113);"></div><div class="flex_row7__cell1"><div class="text14">Used</div></div><div class="flex_row7__spacer"></div><div class="flex_row7__cell" style="background-color:#5F44FF;"></div><div class="flex_row7__cell2"><div class="text14">Left</div></div><div class="flex_row7__spacer"></div><div class="flex_row7__cell" style="background-color:#8364FF;"></div><div class="flex_row7__cell3"><div class="text14">Bonus</div></div></div><div class="flex_row8"><div class="group"><div class="group1"><div class="rect"></div><div class="rect1"></div></div><div class="rect2"></div></div><div class="flex_row8__spacer"></div><div class="text23">$0.20 / $18.00</div></div><div class="flex_col3"><h2 class="medium_title">Earn credits by inviting friends 🎉</h2><div class="text3">For every friend you invite, you&#39;ll earn 5 credits, and they&#39;ll get extra 5 credits.</div><div class="box10"><h5 class="highlights2">https://easy-peasy.ai/?from=7</h5></div></div></div></section></section><section class="section3_1"><section class="section3"><div class="flex_col4"><h2 class="medium_title1">Your referrals</h2><h5 class="highlights3_box"><span class="highlights3"><span class="highlights3_span0">Total Invite: </span><span class="highlights3_span1">4</span></span></h5><div class="text31">A list of all the users registered by your invite link.</div><div class="flex_col5"><div class="content_box"><div class="flex_row9"><div class="flex_row9__cell"><div class="text15">Referral</div></div><div class="flex_row9__spacer"></div><div class="flex_row9__cell1"><div class="text16">Updated at</div></div><div class="flex_row9__spacer1"></div><div class="flex_row9__cell2"><div class="text17">Status</div></div></div></div><div class="flex_row10"><div class="flex_row10__cell"><div class="flex_row11"><div class="flex_row11__cell"></div><div class="flex_row11__cell1"><div class="flex_col6"><h5 class="highlights12">Tran Mau Tri Tam</h5><div class="info1">qi.sun@gmail.com</div></div></div></div></div><div class="flex_row10__spacer"></div><div class="flex_row10__cell1"><h5 class="highlights13">17/05/2023</h5></div><div class="flex_row10__spacer1"></div><div class="flex_row10__cell2"><h5 class="highlights14">Registered</h5></div></div></div></div></section></section>', 3);
+const _hoisted_5$e = [
+  _hoisted_2$i
 ];
 function _sfc_render$2(_ctx, _cache) {
-  return openBlock(), createElementBlock("main", _hoisted_1$k, _hoisted_5$d);
+  return openBlock(), createElementBlock("main", _hoisted_1$l, _hoisted_5$e);
 }
-const subscription = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$2]]);
+const subscription = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$2]]);
+const _withScopeId$e = (n) => (pushScopeId("data-v-1765a2b8"), n = n(), popScopeId(), n);
+const _hoisted_1$k = {
+  class: "logo",
+  style: { "width": "70px", "height": "70px" }
+};
+const _hoisted_2$h = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("use", { href: "#BYlogo" }, null, -1));
+const _hoisted_3$g = [
+  _hoisted_2$h
+];
+const _hoisted_4$g = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("h4", null, "Private Policy", -1));
+const _hoisted_5$d = /* @__PURE__ */ _withScopeId$e(() => /* @__PURE__ */ createBaseVNode("div", { class: "page-body overflow-scroll h-[400px] text-justify" }, [
+  /* @__PURE__ */ createBaseVNode("p", {
+    id: "ecc04db0-a6e6-4990-8f0b-d6ce95dfcdb1",
+    class: ""
+  }, "Last revised: January 12, 2024"),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "53cae3ae-b6b2-4e8d-9a44-181c78cd7d45",
+    class: "numbered-list",
+    start: "1"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Introduction"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("Please carefully read this Privacy Policy before using Benchyard’s Services, including the Website, Mobile Application, and Cloud Storage (collectively, the “Service”). This Privacy Policy outlines the types of information we collect, and our practices for using, sharing, and safeguarding this information. Your access to and use of the Service are conditioned upon your acceptance of and compliance with our Terms of Service, available at: "),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createBaseVNode("a", { href: "https://www.benchyard.com/terms" }, "https://www.benchyard.com/terms"),
+      /* @__PURE__ */ createTextVNode(" (“Terms of Service”), which incorporate this Privacy Policy. Benchyard (“Company”) is responsible for operating the Service. By using the Service, you consent to the collection, use, and sharing of your data in accordance with this policy. Terms used in this Privacy Policy have the same meanings as in our Terms of Service, unless otherwise defined here. ")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "552fc5f2-e8e5-4ff1-93a2-caf7774295f1",
+    class: "numbered-list",
+    start: "2"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Definitions")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ul", {
+    id: "6523099d-4d3e-43c2-a80b-08ef1f2c9ff9",
+    class: "bulleted-list"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Application"),
+      /* @__PURE__ */ createTextVNode(" refers to the Benchyard mobile application. ")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ul", {
+    id: "71589809-3a34-4a39-91c0-b2656ac0d59a",
+    class: "bulleted-list"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Cookies"),
+      /* @__PURE__ */ createTextVNode(" are small pieces of data stored on your device. ")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ul", {
+    id: "3c9f95a9-cc22-4d8f-9f08-8d2f9c94c40a",
+    class: "bulleted-list"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Device"),
+      /* @__PURE__ */ createTextVNode(" refers to any device that can access the Service, such as a computer or a mobile phone. ")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ul", {
+    id: "60e926b5-819a-4ef5-b177-0377a21dfe84",
+    class: "bulleted-list"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Data Controller"),
+      /* @__PURE__ */ createTextVNode(" is the entity that decides how and why personal data is processed. In this case, we are the Data Controller of your data. ")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ul", {
+    id: "2ae5535b-aa17-43cc-b3ab-2f82b4be5a12",
+    class: "bulleted-list"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Data Processors (or Service Providers)"),
+      /* @__PURE__ */ createTextVNode(" are any natural or legal persons who process data on behalf of the Data Controller. ")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ul", {
+    id: "aff7d455-0ed8-4647-aa06-4a259dc65b4f",
+    class: "bulleted-list"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Data Subject"),
+      /* @__PURE__ */ createTextVNode(" is any living individual who is using our Service and is the subject of Personal Data. ")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ul", {
+    id: "3585a294-bae8-4b49-aaa3-2137a35514e4",
+    class: "bulleted-list"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Personal Data"),
+      /* @__PURE__ */ createTextVNode(" is any information that relates to an identified or identifiable individual. ")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ul", {
+    id: "e4020190-ea58-4084-894f-b9863a6b1939",
+    class: "bulleted-list"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Service"),
+      /* @__PURE__ */ createTextVNode(" collectively refers to the Website, Mobile Application, and Cloud Storage provided to the user. ")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ul", {
+    id: "fb2c1fbe-7f0f-49f3-9fdd-0f27f233b030",
+    class: "bulleted-list"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Usage Data"),
+      /* @__PURE__ */ createTextVNode(" is data collected automatically, generated either by the use of the Service or from the Service infrastructure itself (e.g., duration of a page visit). ")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "eb24fd4f-110c-4ab9-9a0f-8f94b342dbcf",
+    class: "numbered-list",
+    start: "1"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Data Controller"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("Benchyard is the controller of your Personal Data."),
+      /* @__PURE__ */ createBaseVNode("br")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "ff2649d9-e624-4cf9-bf77-41a6ef670ab8",
+    class: "numbered-list",
+    start: "2"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Information Collection and Use"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("We collect various types of information for multiple purposes to provide and enhance our Service to you."),
+      /* @__PURE__ */ createBaseVNode("br")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "cd401a53-50c8-4705-ad19-b4349b6db558",
+    class: "numbered-list",
+    start: "3"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Types of Data Collected"),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "a45d1919-c194-4dae-ab71-6a1b205f3854",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+          /* @__PURE__ */ createBaseVNode("strong", null, "Personal Data"),
+          /* @__PURE__ */ createTextVNode(": This may include, but is not limited to, email address, first name, last name, Cookies, and Usage Data. ")
+        ])
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "d1976b75-f224-420e-951f-625534642ecc",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+          /* @__PURE__ */ createBaseVNode("strong", null, "Usage Data"),
+          /* @__PURE__ */ createTextVNode(": Information such as your device's IP address, browser type and version, pages visited, time and date of your visit, time spent on those pages, unique device identifiers, and other diagnostic data. ")
+        ])
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "0ba63e84-390d-4d58-8ded-8320e6283c2e",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+          /* @__PURE__ */ createBaseVNode("strong", null, "Tracking & Cookies Data"),
+          /* @__PURE__ */ createTextVNode(": We use cookies and similar tracking technologies to monitor activity on our Service and hold certain information. ")
+        ])
+      ])
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "6fa543d4-e88c-44de-8d60-fcbf4dbbcd76",
+    class: "numbered-list",
+    start: "4"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Use of Data"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("Benchyard uses the collected data for various purposes:"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "ba2e4ef1-de07-4966-838c-2910e3aaab26",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, "To provide and maintain our Service")
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "4b1506ed-020e-46ea-9e6b-5a205a731ad1",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, "To notify you about changes to our Service")
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "52245edb-d0a2-46a4-9c9e-a6dab94dbc02",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, " To allow you to participate in interactive features of our Service when you choose to do so ")
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "2159d90c-4f05-4412-9dd6-56d506bbffa1",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, "To provide customer support")
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "b32b0fb9-1de5-449c-bce3-90bf3df8134b",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, " To gather valuable information so we can improve our Service ")
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "e4d10097-a94d-42a5-b91a-045d390dd8d6",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, "To monitor the usage of our Service")
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "957055d8-3765-4615-8e37-0580178910ae",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, "To detect, prevent, and address technical issues")
+      ])
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "97231f6c-f33c-42d5-897c-c99ad4930564",
+    class: "numbered-list",
+    start: "5"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Retention of Data"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("We retain your Personal Data only as long as necessary for the purposes set out in this Privacy Policy."),
+      /* @__PURE__ */ createBaseVNode("br")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "4c25b541-5330-4dea-a3f5-88da44c63961",
+    class: "numbered-list",
+    start: "6"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Transfer of Data"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("Your information may be transferred to computers located outside of your state, country, or other governmental jurisdiction where data protection laws may differ."),
+      /* @__PURE__ */ createBaseVNode("br")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "39d24c66-9259-43d1-9c7a-c85b411266dc",
+    class: "numbered-list",
+    start: "7"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Disclosure of Data"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("We may disclose your Personal Data under certain circumstances, such as to comply with legal obligations or protect the rights of the Company."),
+      /* @__PURE__ */ createBaseVNode("br")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "3557b1a8-6391-4ee1-af9e-10630268ade2",
+    class: "numbered-list",
+    start: "8"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Security of Data"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("The security of your data is important to us, but no method of transmission over the Internet or electronic storage is 100% secure."),
+      /* @__PURE__ */ createBaseVNode("br")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "b1fc52bf-46a4-4870-8bf1-df42c2c28352",
+    class: "numbered-list",
+    start: "9"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Your Data Protection Rights"),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "1e4873b1-eb33-4a77-8198-217fc5efbb60",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, " Right to access, update, or delete the information we have on you. ")
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "37d05b80-6e22-46bd-a32f-025463d4b074",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, "Right to rectification.")
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "22b4b72d-f040-454c-83b5-e597031e61ce",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, "Right to object.")
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "f422d408-7839-4d14-a04e-42d1d4eeba96",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, "Right to data portability.")
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "3d51d5bd-da6b-4415-837c-1dfb35bf1cf7",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, "Right to withdraw consent.")
+      ])
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "d2747a39-0a9d-48c3-add8-71b0c600b5eb",
+    class: "numbered-list",
+    start: "10"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "California Residents"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("If you are a resident of California, you have additional privacy rights and protections under the California Consumer Privacy Act (CCPA)."),
+      /* @__PURE__ */ createBaseVNode("br")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "1453fd30-912c-4fd9-bcec-2ae39c58aacc",
+    class: "numbered-list",
+    start: "11"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Service Providers"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("We may employ third-party companies and individuals to facilitate our Service, perform Service-related services, or assist us in analyzing how our Service is used."),
+      /* @__PURE__ */ createBaseVNode("br")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "5853aed0-0fac-4191-9738-df1512f66333",
+    class: "numbered-list",
+    start: "12"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Links to Other Sites"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("Our Service may contain links to other sites not operated by us. If you click on a third-party link, you will be directed to that third party's site."),
+      /* @__PURE__ */ createBaseVNode("br")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "c52861b9-06a8-4671-80e1-490e6b49624a",
+    class: "numbered-list",
+    start: "13"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Children's Privacy"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("Our Service does not address anyone under the age of 13."),
+      /* @__PURE__ */ createBaseVNode("br")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "449ef50c-342c-4384-8bb3-4036b68841a3",
+    class: "numbered-list",
+    start: "14"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Changes to This Privacy Policy"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("We may update our Privacy Policy from time to time and will notify you of any changes by posting the new Privacy Policy on this page."),
+      /* @__PURE__ */ createBaseVNode("br")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "fee0ee10-3809-4a82-9bc8-44d7574c93f2",
+    class: "numbered-list",
+    start: "15"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Contact Us"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("If you have any questions about this Privacy Policy, please contact us at "),
+      /* @__PURE__ */ createBaseVNode("a", { href: "mailto:support@benchyard.com" }, "support@benchyard.com"),
+      /* @__PURE__ */ createTextVNode(". ")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "9cb72ebb-3331-40ba-88d9-4b8f1c7c8b03",
+    class: "numbered-list",
+    start: "16"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "International Users")
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("p", {
+    id: "42a53a9b-0848-43c3-8a63-241a4a413c73",
+    class: ""
+  }, " We adhere to the principles of the EU-U.S. and Swiss-U.S. Privacy Shield frameworks. "),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "e29e2eea-c594-4f55-bd32-9f4fc10106e0",
+    class: "numbered-list",
+    start: "1"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Privacy Policy Addendum for Specific Regions"),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "f43107ea-e2e7-4258-ab59-342d2b22a8d8",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+          /* @__PURE__ */ createBaseVNode("strong", null, "EU Users"),
+          /* @__PURE__ */ createTextVNode(": Additional rights under the General Data Protection Regulation (GDPR). ")
+        ])
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "d28dbd03-aec0-47a0-8757-c8eff8931239",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+          /* @__PURE__ */ createBaseVNode("strong", null, "Canadian Users"),
+          /* @__PURE__ */ createTextVNode(": We comply with Canadian federal and provincial privacy laws. ")
+        ])
+      ]),
+      /* @__PURE__ */ createBaseVNode("ul", {
+        id: "32d4fd58-5061-4e04-b684-47b189bcb4f2",
+        class: "bulleted-list"
+      }, [
+        /* @__PURE__ */ createBaseVNode("li", { style: { "list-style-type": "disc" } }, [
+          /* @__PURE__ */ createBaseVNode("strong", null, "Australian Users"),
+          /* @__PURE__ */ createTextVNode(": We adhere to the Australian Privacy Principles (APPs). ")
+        ])
+      ])
+    ])
+  ]),
+  /* @__PURE__ */ createBaseVNode("ol", {
+    type: "1",
+    id: "87cf6dc7-f41b-449e-8d78-9bcfe5a86485",
+    class: "numbered-list",
+    start: "2"
+  }, [
+    /* @__PURE__ */ createBaseVNode("li", null, [
+      /* @__PURE__ */ createBaseVNode("strong", null, "Effective Date"),
+      /* @__PURE__ */ createBaseVNode("br"),
+      /* @__PURE__ */ createTextVNode("This Privacy Policy is effective as of January 12, 2024, and will remain in effect except with respect to any changes in its provisions in the future."),
+      /* @__PURE__ */ createBaseVNode("br")
+    ])
+  ])
+], -1));
+const _sfc_main$l = /* @__PURE__ */ defineComponent({
+  __name: "privatePolicy",
+  setup(__props, { expose: __expose }) {
+    const dialogVisible = ref(false);
+    const showModal = () => {
+      dialogVisible.value = true;
+    };
+    const hideModal = () => {
+      dialogVisible.value = false;
+    };
+    __expose({
+      showModal,
+      hideModal
+    });
+    return (_ctx, _cache) => {
+      const _component_el_dialog = resolveComponent("el-dialog");
+      return openBlock(), createBlock(_component_el_dialog, {
+        modelValue: dialogVisible.value,
+        "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => dialogVisible.value = $event),
+        width: "800",
+        class: "benchyard-dialog"
+      }, {
+        default: withCtx(() => [
+          (openBlock(), createElementBlock("svg", _hoisted_1$k, _hoisted_3$g)),
+          _hoisted_4$g,
+          _hoisted_5$d
+        ]),
+        _: 1
+      }, 8, ["modelValue"]);
+    };
+  }
+});
+const privatePolicy_vue_vue_type_style_index_0_scoped_1765a2b8_lang = "";
+const privatePolicy = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["__scopeId", "data-v-1765a2b8"]]);
 const management_vue_vue_type_style_index_0_scoped_6d972efe_lang = "";
 const _sfc_main$k = {};
 const _hoisted_1$j = /* @__PURE__ */ createStaticVNode('<div class="w-96 h-40 flex-col justify-center items-start gap-16 inline-flex" data-v-6d972efe><div class="w-96 justify-between items-center gap-8 inline-flex" data-v-6d972efe><div class="flex-col justify-start items-center gap-4 inline-flex" data-v-6d972efe><div class="text-center text-white text-xl font-medium leading-tight" data-v-6d972efe>Deactivate account</div><div class="text-center text-gray-500 text-sm font-normal leading-none" data-v-6d972efe>Hide your Pins and profile</div></div><div class="h-12 px-6 py-4 bg-zinc-700 rounded-xl justify-center items-center gap-2.5 flex" data-v-6d972efe><div class="text-white text-sm font-medium leading-none" data-v-6d972efe>Deactivate account</div></div></div><div class="w-96 h-40 flex-col justify-center items-start gap-16 inline-flex" data-v-6d972efe><div class="flex-col justify-start items-center gap-4 inline-flex" data-v-6d972efe><div class="text-center text-white text-xl font-medium leading-tight" data-v-6d972efe>Delete your data and account</div><div class="text-center text-gray-500 text-sm font-normal leading-none" data-v-6d972efe>Delete your account and account data</div></div><div class="h-12 px-6 py-4 bg-red-500 rounded-xl justify-center items-center gap-2.5 flex" data-v-6d972efe><div class="text-white text-sm font-medium leading-none" data-v-6d972efe>Delete account</div></div></div></div><div class="partial-code root" data-v-6d972efe><div class="flex_col" data-v-6d972efe><div class="flex_col__cell" data-v-6d972efe><div class="flex_col1" data-v-6d972efe><div class="flex_col1__cell" data-v-6d972efe><h3 class="subtitle" data-v-6d972efe>Deactivate account</h3></div><div class="flex_col1__cell" data-v-6d972efe><div class="text" data-v-6d972efe>Hide your Pins and profile</div></div><div class="flex_col1__cell" data-v-6d972efe><div class="box" data-v-6d972efe><div class="text1" data-v-6d972efe>Deactivate account</div></div></div></div></div><div class="flex_col__cell" data-v-6d972efe><div class="flex_col1" data-v-6d972efe><div class="flex_col1__cell1" data-v-6d972efe><h3 class="subtitle1" data-v-6d972efe>Delete your data and account</h3></div><div class="flex_col1__cell1" data-v-6d972efe><div class="text" data-v-6d972efe>Delete your account and account data</div></div><div class="flex_col1__cell1" data-v-6d972efe><div class="box" data-v-6d972efe><div class="text11" data-v-6d972efe>Delete account</div></div></div></div></div></div></div>', 2);
@@ -660,7 +1169,7 @@ const _sfc_main$i = /* @__PURE__ */ defineComponent({
 });
 const shortCut_vue_vue_type_style_index_0_scoped_04087243_lang = "";
 const shortCut = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["__scopeId", "data-v-04087243"]]);
-const _withScopeId$c = (n) => (pushScopeId("data-v-98da6cc4"), n = n(), popScopeId(), n);
+const _withScopeId$c = (n) => (pushScopeId("data-v-4c5ba795"), n = n(), popScopeId(), n);
 const _hoisted_1$g = { class: "setting" };
 const _hoisted_2$e = { class: "w-[252px] h-[899px] px-5 pt-8 pb-[751px] border-r border-neutral-700 flex-col justify-start items-start gap-2.5 inline-flex" };
 const _hoisted_3$d = { class: "flex-col justify-start items-start gap-5 flex" };
@@ -715,24 +1224,21 @@ const _hoisted_36$5 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ creat
   /* @__PURE__ */ createBaseVNode("use", { href: "#edit" })
 ], -1));
 const _hoisted_37$5 = { class: "flex items-center gap-x-2 relative" };
-const _hoisted_38$5 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "shrink-0 basis-[400px]" }, [
-  /* @__PURE__ */ createBaseVNode("span", { class: "font-normal text-[12px] font-[RobotoRegular] text-black" }, [
-    /* @__PURE__ */ createBaseVNode("span", { class: "text-white" }, "Allow "),
-    /* @__PURE__ */ createBaseVNode("span", { class: "font-bold text-white font-[RobotoRegular]" }, "Benchyard"),
-    /* @__PURE__ */ createBaseVNode("span", { class: "text-white font-[RobotoRegular]" }, " to use your data for better user experience, based on"),
-    /* @__PURE__ */ createBaseVNode("span", { class: "text-[rgb(124,135,142)]" }),
-    /* @__PURE__ */ createBaseVNode("span", { class: "text-[rgb(124,130,255)] font-[RobotoRegular]" }, " Benchyard Privacy Policy")
-  ])
-], -1));
-const _hoisted_39$4 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { style: { "width": "320px", "display": "flex", "flex-direction": "row", "justify-content": "space-between" } }, [
+const _hoisted_38$5 = { class: "shrink-0 basis-[400px]" };
+const _hoisted_39$4 = { class: "font-normal text-[12px] font-[RobotoRegular] text-black" };
+const _hoisted_40$4 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("span", { class: "text-white" }, "Allow ", -1));
+const _hoisted_41$4 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("span", { class: "font-bold text-white font-[RobotoRegular]" }, "Benchyard", -1));
+const _hoisted_42$4 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("span", { class: "text-white font-[RobotoRegular]" }, " to use your data for better user experience, based on", -1));
+const _hoisted_43$3 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("span", { class: "text-[rgb(124,135,142)]" }, null, -1));
+const _hoisted_44$3 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { style: { "width": "320px", "display": "flex", "flex-direction": "row", "justify-content": "space-between" } }, [
   /* @__PURE__ */ createBaseVNode("div", null, "English"),
   /* @__PURE__ */ createBaseVNode("div", { style: { "font-size": "30px" } }, "🇺🇸")
 ], -1));
-const _hoisted_40$4 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { style: { "width": "320px", "display": "flex", "flex-direction": "row", "justify-content": "space-between" } }, [
+const _hoisted_45$3 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { style: { "width": "320px", "display": "flex", "flex-direction": "row", "justify-content": "space-between" } }, [
   /* @__PURE__ */ createBaseVNode("div", null, "Chinese"),
   /* @__PURE__ */ createBaseVNode("div", { style: { "font-size": "30px" } }, "🇨🇳")
 ], -1));
-const _hoisted_41$4 = {
+const _hoisted_46$3 = {
   key: 2,
   class: "form"
 };
@@ -743,6 +1249,7 @@ const _sfc_main$h = /* @__PURE__ */ defineComponent({
     const ruleFormRef = ref();
     const form = ref("Profile");
     const language = ref("1");
+    const privatePolicyRef = ref();
     const authStore = useAuthStore();
     const botStore = useBotStore();
     const panels = usePanelStore();
@@ -757,7 +1264,7 @@ const _sfc_main$h = /* @__PURE__ */ defineComponent({
       username: authStore.getUserInfo.username,
       email: authStore.getUserInfo.email,
       about: "Hi, there! I am using Vue3 Admin.",
-      privacy: false
+      privacy: authStore.getUserInfo.search_privacy
     });
     const formData2 = reactive({
       pass: "",
@@ -814,7 +1321,7 @@ const _sfc_main$h = /* @__PURE__ */ defineComponent({
     };
     const handleAvatarSuccess = (response) => {
       console.log(response);
-      apiUserInfo().then((res) => {
+      apiGetUserInfo().then((res) => {
         authStore.setLogin(res.data);
         imgloading.value = false;
       });
@@ -829,15 +1336,34 @@ const _sfc_main$h = /* @__PURE__ */ defineComponent({
     };
     const submitSettings = () => {
       console.log(formData1);
+      apiUpdateUserInfo({ username: formData1.username, search_privacy: formData1.privacy }).then(
+        (res) => {
+          authStore.setLogin(res.data);
+          ElMessage({ message: "Save success", type: "success", duration: 3e3 });
+        }
+      );
     };
     const appSetting = reactive({
       ...panels.setting
     });
-    watch(() => appSetting, (newProp) => {
-      console.log(newProp);
-      window.api?.appSetting(JSON.stringify(newProp));
-      panels.setting = newProp;
-    }, { deep: true });
+    watch(
+      () => appSetting,
+      (newProp) => {
+        console.log(newProp);
+        window.api?.appSetting(JSON.stringify(newProp));
+        panels.setting = newProp;
+      },
+      { deep: true }
+    );
+    const router = useRouter();
+    const goToHoverPage = () => {
+      router.push({ name: "hoverWindow" });
+    };
+    const clearAllStorage = () => {
+      apiUserInfoAttributeSet({ key: "panels", value: null });
+      apiUserInfoAttributeSet({ key: "privateChat", value: null });
+      apiUserInfoAttributeSet({ key: "bots", value: null });
+    };
     return (_ctx, _cache) => {
       const _component_el_checkbox = resolveComponent("el-checkbox");
       const _component_el_option = resolveComponent("el-option");
@@ -850,296 +1376,321 @@ const _sfc_main$h = /* @__PURE__ */ defineComponent({
       const _component_el_radio_group = resolveComponent("el-radio-group");
       const _component_el_button = resolveComponent("el-button");
       const _directive_loading = resolveDirective("loading");
-      return openBlock(), createElementBlock("div", _hoisted_1$g, [
-        createBaseVNode("div", _hoisted_2$e, [
-          createBaseVNode("div", _hoisted_3$d, [
-            createBaseVNode("div", {
-              onClick: _cache[0] || (_cache[0] = ($event) => form.value = "Profile"),
-              style: normalizeStyle({ borderColor: form.value === "Profile" ? "white" : "#7C878E" }),
-              class: "w-[212px] px-6 py-3 rounded-lg border border-indigo-400 justify-start items-center gap-2 inline-flex"
-            }, [
-              (openBlock(), createElementBlock("svg", _hoisted_4$d, [
-                createBaseVNode("use", {
-                  stroke: form.value === "Profile" ? "white" : "#7C878E",
-                  href: "#profile"
-                }, null, 8, _hoisted_5$b)
-              ])),
+      return openBlock(), createElementBlock(Fragment, null, [
+        createBaseVNode("div", _hoisted_1$g, [
+          createBaseVNode("div", _hoisted_2$e, [
+            createBaseVNode("div", _hoisted_3$d, [
               createBaseVNode("div", {
-                style: normalizeStyle({ color: form.value === "Profile" ? "white" : "#7C878E" }),
-                class: "w-[136px]text-sm font-['RobotoMedium'] leading-normal cursor-pointer"
-              }, " Profile ", 4)
-            ], 4),
-            createBaseVNode("div", {
-              onClick: _cache[1] || (_cache[1] = ($event) => form.value = "FastPanel"),
-              style: normalizeStyle({ borderColor: form.value === "FastPanel" ? "white" : "#7C878E" }),
-              class: "w-[212px] px-6 py-3 rounded-lg border justify-start items-center gap-2 inline-flex"
-            }, [
-              (openBlock(), createElementBlock("svg", _hoisted_6$b, [
-                createBaseVNode("use", {
-                  stroke: form.value === "FastPanel" ? "white" : "#7C878E",
-                  href: "#fastPanel"
-                }, null, 8, _hoisted_7$a)
-              ])),
+                onClick: _cache[0] || (_cache[0] = ($event) => form.value = "Profile"),
+                style: normalizeStyle({ borderColor: form.value === "Profile" ? "white" : "#7C878E" }),
+                class: "w-[212px] px-6 py-3 rounded-lg border border-indigo-400 justify-start items-center gap-2 inline-flex"
+              }, [
+                (openBlock(), createElementBlock("svg", _hoisted_4$d, [
+                  createBaseVNode("use", {
+                    stroke: form.value === "Profile" ? "white" : "#7C878E",
+                    href: "#profile"
+                  }, null, 8, _hoisted_5$b)
+                ])),
+                createBaseVNode("div", {
+                  style: normalizeStyle({ color: form.value === "Profile" ? "white" : "#7C878E" }),
+                  class: "w-[136px]text-sm font-['RobotoMedium'] leading-normal cursor-pointer"
+                }, " Profile ", 4)
+              ], 4),
               createBaseVNode("div", {
-                style: normalizeStyle({ color: form.value === "FastPanel" ? "white" : "#7C878E" }),
-                class: "justify-center items-center gap-[26px] flex"
-              }, _hoisted_10$9, 4)
-            ], 4)
-          ])
-        ]),
-        createBaseVNode("div", _hoisted_11$9, [
-          form.value === "FastPanel" ? (openBlock(), createElementBlock("div", _hoisted_12$8, [
-            createBaseVNode("div", _hoisted_13$8, [
-              createBaseVNode("div", _hoisted_14$8, [
-                _hoisted_15$8,
-                createVNode(_component_el_checkbox, {
-                  modelValue: appSetting.lunchAtlogin,
-                  "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => appSetting.lunchAtlogin = $event),
-                  size: "large",
-                  style: { "zoom": "1.4" }
-                }, null, 8, ["modelValue"]),
-                _hoisted_16$7
-              ]),
-              createBaseVNode("div", _hoisted_17$6, [
-                _hoisted_18$6,
-                createVNode(shortCut, {
-                  shortcut: appSetting.shortCutKey,
-                  "onUpdate:shortcut": _cache[3] || (_cache[3] = ($event) => appSetting.shortCutKey = $event)
-                }, {
-                  default: withCtx(() => [
-                    createBaseVNode("div", _hoisted_19$6, [
-                      createBaseVNode("div", _hoisted_20$6, toDisplayString(appSetting.shortCutKey), 1)
-                    ])
-                  ]),
-                  _: 1
-                }, 8, ["shortcut"])
-              ]),
-              createBaseVNode("div", _hoisted_21$5, [
-                _hoisted_22$5,
-                createVNode(_component_el_checkbox, {
-                  modelValue: appSetting.showTray,
-                  "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => appSetting.showTray = $event),
-                  size: "large",
-                  style: { "zoom": "1.4" }
-                }, null, 8, ["modelValue"]),
-                _hoisted_23$5
-              ]),
-              createBaseVNode("div", _hoisted_24$5, [
-                _hoisted_25$5,
-                createVNode(_component_el_select, {
-                  modelValue: appSetting.defaultBot.name,
-                  "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => appSetting.defaultBot.name = $event),
-                  onChange: selectionChange,
-                  class: "w-[300px] createBotInput"
-                }, {
-                  prefix: withCtx(({}) => [
-                    createBaseVNode("div", _hoisted_26$5, [
-                      appSetting.defaultBot.name ? (openBlock(), createElementBlock("img", {
-                        key: 0,
-                        class: "rounded w-5 h-5 object-cover",
-                        src: appSetting.defaultBot.avatar
-                      }, null, 8, _hoisted_27$5)) : createCommentVNode("", true)
-                    ])
-                  ]),
-                  default: withCtx(() => [
-                    (openBlock(true), createElementBlock(Fragment, null, renderList(unref(botStore).bots, (item) => {
-                      return openBlock(), createBlock(_component_el_option, {
-                        key: item.title,
-                        label: item.title,
-                        value: item.title
-                      }, {
-                        default: withCtx(() => [
-                          createBaseVNode("div", _hoisted_28$5, [
-                            createBaseVNode("img", {
-                              class: "rounded w-5 h-5 object-cover",
-                              src: item.avatar
-                            }, null, 8, _hoisted_29$5),
-                            createBaseVNode("div", _hoisted_30$5, toDisplayString(item.title), 1)
-                          ])
-                        ]),
-                        _: 2
-                      }, 1032, ["label", "value"]);
-                    }), 128))
-                  ]),
-                  _: 1
-                }, 8, ["modelValue"])
-              ])
+                onClick: _cache[1] || (_cache[1] = ($event) => form.value = "FastPanel"),
+                style: normalizeStyle({ borderColor: form.value === "FastPanel" ? "white" : "#7C878E" }),
+                class: "w-[212px] px-6 py-3 rounded-lg border justify-start items-center gap-2 inline-flex"
+              }, [
+                (openBlock(), createElementBlock("svg", _hoisted_6$b, [
+                  createBaseVNode("use", {
+                    stroke: form.value === "FastPanel" ? "white" : "#7C878E",
+                    href: "#fastPanel"
+                  }, null, 8, _hoisted_7$a)
+                ])),
+                createBaseVNode("div", {
+                  style: normalizeStyle({ color: form.value === "FastPanel" ? "white" : "#7C878E" }),
+                  class: "justify-center items-center gap-[26px] flex"
+                }, _hoisted_10$9, 4)
+              ], 4),
+              createBaseVNode("button", {
+                class: "w-[212px] px-6 py-3 rounded-lg border justify-start items-center gap-2 inline-flex",
+                onClick: clearAllStorage
+              }, " Clear All Storage "),
+              createBaseVNode("button", {
+                class: "w-[212px] px-6 py-3 rounded-lg border justify-start items-center gap-2 inline-flex",
+                onClick: goToHoverPage
+              }, " go HoverPage ")
             ])
-          ])) : createCommentVNode("", true),
-          form.value === "Profile" || form.value === "Password" || form.value === "Language" ? (openBlock(), createElementBlock("div", _hoisted_31$5, [
-            _hoisted_32$5,
-            form.value === "Profile" ? (openBlock(), createBlock(_component_el_form, {
-              key: 0,
-              ref: "ruleFormRef1",
-              model: formData1,
-              rules: rules1,
-              "label-position": "top",
-              style: { "width": "400px" }
-            }, {
-              default: withCtx(() => [
-                withDirectives((openBlock(), createBlock(_component_el_upload, {
-                  class: "avatar-uploader",
-                  action: uploadUrl,
-                  "show-file-list": false,
-                  headers: uploadHeader,
-                  "on-success": handleAvatarSuccess,
-                  "before-upload": beforeAvatarUpload
-                }, {
-                  default: withCtx(() => [
-                    createBaseVNode("div", _hoisted_33$5, [
-                      unref(authStore).getUserInfo.avatar ? (openBlock(), createElementBlock("img", {
-                        key: 0,
-                        src: unref(authStore).getUserInfo.avatar,
-                        width: "72",
-                        height: "72",
-                        class: "headImg",
-                        alt: ""
-                      }, null, 8, _hoisted_34$5)) : (openBlock(), createElementBlock("div", _hoisted_35$5, toDisplayString(defaultHeadImgTxt()), 1)),
-                      _hoisted_36$5
-                    ])
-                  ]),
-                  _: 1
-                })), [
-                  [_directive_loading, imgloading.value]
-                ]),
-                createVNode(_component_el_form_item, { label: "Username" }, {
-                  default: withCtx(() => [
-                    createVNode(_component_el_input, {
-                      modelValue: formData1.username,
-                      "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => formData1.username = $event)
-                    }, null, 8, ["modelValue"])
-                  ]),
-                  _: 1
-                }),
-                createVNode(_component_el_form_item, { label: "Email" }, {
-                  default: withCtx(() => [
-                    createVNode(_component_el_input, {
-                      disabled: "",
-                      modelValue: formData1.email,
-                      "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => formData1.email = $event)
-                    }, null, 8, ["modelValue"])
-                  ]),
-                  _: 1
-                }),
-                createBaseVNode("div", _hoisted_37$5, [
+          ]),
+          createBaseVNode("div", _hoisted_11$9, [
+            form.value === "FastPanel" ? (openBlock(), createElementBlock("div", _hoisted_12$8, [
+              createBaseVNode("div", _hoisted_13$8, [
+                createBaseVNode("div", _hoisted_14$8, [
+                  _hoisted_15$8,
                   createVNode(_component_el_checkbox, {
-                    modelValue: formData1.privacy,
-                    "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => formData1.privacy = $event),
+                    modelValue: appSetting.lunchAtlogin,
+                    "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => appSetting.lunchAtlogin = $event),
                     size: "large",
                     style: { "zoom": "1.4" }
                   }, null, 8, ["modelValue"]),
-                  _hoisted_38$5
+                  _hoisted_16$7
+                ]),
+                createBaseVNode("div", _hoisted_17$6, [
+                  _hoisted_18$6,
+                  createVNode(shortCut, {
+                    shortcut: appSetting.shortCutKey,
+                    "onUpdate:shortcut": _cache[3] || (_cache[3] = ($event) => appSetting.shortCutKey = $event)
+                  }, {
+                    default: withCtx(() => [
+                      createBaseVNode("div", _hoisted_19$6, [
+                        createBaseVNode("div", _hoisted_20$6, toDisplayString(appSetting.shortCutKey), 1)
+                      ])
+                    ]),
+                    _: 1
+                  }, 8, ["shortcut"])
+                ]),
+                createBaseVNode("div", _hoisted_21$5, [
+                  _hoisted_22$5,
+                  createVNode(_component_el_checkbox, {
+                    modelValue: appSetting.showTray,
+                    "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => appSetting.showTray = $event),
+                    size: "large",
+                    style: { "zoom": "1.4" }
+                  }, null, 8, ["modelValue"]),
+                  _hoisted_23$5
+                ]),
+                createBaseVNode("div", _hoisted_24$5, [
+                  _hoisted_25$5,
+                  createVNode(_component_el_select, {
+                    modelValue: appSetting.defaultBot.name,
+                    "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => appSetting.defaultBot.name = $event),
+                    onChange: selectionChange,
+                    class: "w-[300px] createBotInput"
+                  }, {
+                    prefix: withCtx(({}) => [
+                      createBaseVNode("div", _hoisted_26$5, [
+                        appSetting.defaultBot.name ? (openBlock(), createElementBlock("img", {
+                          key: 0,
+                          class: "rounded w-5 h-5 object-cover",
+                          src: appSetting.defaultBot.avatar
+                        }, null, 8, _hoisted_27$5)) : createCommentVNode("", true)
+                      ])
+                    ]),
+                    default: withCtx(() => [
+                      (openBlock(true), createElementBlock(Fragment, null, renderList(unref(botStore).bots, (item) => {
+                        return openBlock(), createBlock(_component_el_option, {
+                          key: item.title,
+                          label: item.title,
+                          value: item.title
+                        }, {
+                          default: withCtx(() => [
+                            createBaseVNode("div", _hoisted_28$5, [
+                              createBaseVNode("img", {
+                                class: "rounded w-5 h-5 object-cover",
+                                src: item.avatar
+                              }, null, 8, _hoisted_29$5),
+                              createBaseVNode("div", _hoisted_30$5, toDisplayString(item.title), 1)
+                            ])
+                          ]),
+                          _: 2
+                        }, 1032, ["label", "value"]);
+                      }), 128))
+                    ]),
+                    _: 1
+                  }, 8, ["modelValue"])
                 ])
-              ]),
-              _: 1
-            }, 8, ["model", "rules"])) : createCommentVNode("", true),
-            form.value === "Password" ? (openBlock(), createBlock(_component_el_form, {
-              key: 1,
-              ref: "ruleFormRef2",
-              model: formData2,
-              rules: rules2,
-              "label-position": "top",
-              style: { "width": "338px" }
-            }, {
-              default: withCtx(() => [
-                createVNode(_component_el_form_item, { label: "Current passowrd" }, {
-                  default: withCtx(() => [
-                    createVNode(_component_el_input, {
-                      modelValue: formData2.pass,
-                      "onUpdate:modelValue": _cache[9] || (_cache[9] = ($event) => formData2.pass = $event),
-                      "show-password": ""
-                    }, null, 8, ["modelValue"])
+              ])
+            ])) : createCommentVNode("", true),
+            form.value === "Profile" || form.value === "Password" || form.value === "Language" ? (openBlock(), createElementBlock("div", _hoisted_31$5, [
+              _hoisted_32$5,
+              form.value === "Profile" ? (openBlock(), createBlock(_component_el_form, {
+                key: 0,
+                ref: "ruleFormRef1",
+                model: formData1,
+                rules: rules1,
+                "label-position": "top",
+                style: { "width": "400px" }
+              }, {
+                default: withCtx(() => [
+                  withDirectives((openBlock(), createBlock(_component_el_upload, {
+                    class: "avatar-uploader",
+                    action: uploadUrl,
+                    "show-file-list": false,
+                    headers: uploadHeader,
+                    "on-success": handleAvatarSuccess,
+                    "before-upload": beforeAvatarUpload
+                  }, {
+                    default: withCtx(() => [
+                      createBaseVNode("div", _hoisted_33$5, [
+                        unref(authStore).getUserInfo.avatar ? (openBlock(), createElementBlock("img", {
+                          key: 0,
+                          src: unref(authStore).getUserInfo.avatar,
+                          width: "72",
+                          height: "72",
+                          class: "headImg",
+                          alt: ""
+                        }, null, 8, _hoisted_34$5)) : (openBlock(), createElementBlock("div", _hoisted_35$5, toDisplayString(defaultHeadImgTxt()), 1)),
+                        _hoisted_36$5
+                      ])
+                    ]),
+                    _: 1
+                  })), [
+                    [_directive_loading, imgloading.value]
                   ]),
-                  _: 1
-                }),
-                createVNode(_component_el_form_item, { label: "New password" }, {
-                  default: withCtx(() => [
-                    createVNode(_component_el_input, {
-                      modelValue: formData2.newPass,
-                      "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => formData2.newPass = $event),
-                      autosize: { minRows: 4 },
-                      "show-password": ""
-                    }, null, 8, ["modelValue"])
-                  ]),
-                  _: 1
-                }),
-                createVNode(_component_el_form_item, { label: "Confirm new password" }, {
-                  default: withCtx(() => [
-                    createVNode(_component_el_input, {
-                      modelValue: formData2.checkPass,
-                      "onUpdate:modelValue": _cache[11] || (_cache[11] = ($event) => formData2.checkPass = $event),
-                      "show-password": ""
-                    }, null, 8, ["modelValue"])
-                  ]),
-                  _: 1
-                })
-              ]),
-              _: 1
-            }, 8, ["model", "rules"])) : createCommentVNode("", true),
-            form.value === "Language" ? (openBlock(), createBlock(_component_el_form, {
-              key: 2,
-              "label-position": "top",
-              style: { "width": "338px" }
-            }, {
-              default: withCtx(() => [
-                createVNode(_component_el_form_item, null, {
-                  default: withCtx(() => [
-                    createVNode(_component_el_radio_group, {
-                      modelValue: language.value,
-                      "onUpdate:modelValue": _cache[12] || (_cache[12] = ($event) => language.value = $event)
-                    }, {
-                      default: withCtx(() => [
-                        createVNode(_component_el_radio, {
-                          label: "1",
-                          size: "large"
-                        }, {
-                          default: withCtx(() => [
-                            _hoisted_39$4
-                          ]),
-                          _: 1
-                        }),
-                        createVNode(_component_el_radio, {
-                          label: "2",
-                          size: "large"
-                        }, {
-                          default: withCtx(() => [
-                            _hoisted_40$4
-                          ]),
-                          _: 1
-                        })
-                      ]),
-                      _: 1
-                    }, 8, ["modelValue"])
-                  ]),
-                  _: 1
-                })
-              ]),
-              _: 1
-            })) : createCommentVNode("", true),
-            form.value === "Password" || form.value === "Profile" ? (openBlock(), createBlock(_component_el_button, {
-              key: 3,
-              type: "primary",
-              style: { "width": "338px", "padding": "13px 16px", "border-radius": "8px", "height": "40px" },
-              onClick: submitSettings
-            }, {
-              default: withCtx(() => [
-                createTextVNode(" Save changes ")
-              ]),
-              _: 1
-            })) : createCommentVNode("", true)
-          ])) : createCommentVNode("", true),
-          form.value === "Management" || form.value === "Privacy" ? (openBlock(), createElementBlock("div", _hoisted_41$4, [
-            form.value === "Management" ? (openBlock(), createBlock(management, { key: 0 })) : createCommentVNode("", true),
-            form.value === "Privacy" ? (openBlock(), createBlock(_sfc_main$j, { key: 1 })) : createCommentVNode("", true)
-          ])) : createCommentVNode("", true)
-        ])
-      ]);
+                  createVNode(_component_el_form_item, { label: "Username" }, {
+                    default: withCtx(() => [
+                      createVNode(_component_el_input, {
+                        modelValue: formData1.username,
+                        "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => formData1.username = $event)
+                      }, null, 8, ["modelValue"])
+                    ]),
+                    _: 1
+                  }),
+                  createVNode(_component_el_form_item, { label: "Email" }, {
+                    default: withCtx(() => [
+                      createVNode(_component_el_input, {
+                        disabled: "",
+                        modelValue: formData1.email,
+                        "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => formData1.email = $event)
+                      }, null, 8, ["modelValue"])
+                    ]),
+                    _: 1
+                  }),
+                  createBaseVNode("div", _hoisted_37$5, [
+                    createVNode(_component_el_checkbox, {
+                      modelValue: formData1.privacy,
+                      "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => formData1.privacy = $event),
+                      size: "large",
+                      style: { "zoom": "1.4" }
+                    }, null, 8, ["modelValue"]),
+                    createBaseVNode("div", _hoisted_38$5, [
+                      createBaseVNode("span", _hoisted_39$4, [
+                        _hoisted_40$4,
+                        _hoisted_41$4,
+                        _hoisted_42$4,
+                        _hoisted_43$3,
+                        createBaseVNode("span", {
+                          onClick: _cache[9] || (_cache[9] = ($event) => privatePolicyRef.value.showModal()),
+                          class: "text-[rgb(124,130,255)] font-[RobotoRegular] cursor-pointer"
+                        }, " Benchyard Privacy Policy")
+                      ])
+                    ])
+                  ])
+                ]),
+                _: 1
+              }, 8, ["model", "rules"])) : createCommentVNode("", true),
+              form.value === "Password" ? (openBlock(), createBlock(_component_el_form, {
+                key: 1,
+                ref: "ruleFormRef2",
+                model: formData2,
+                rules: rules2,
+                "label-position": "top",
+                style: { "width": "338px" }
+              }, {
+                default: withCtx(() => [
+                  createVNode(_component_el_form_item, { label: "Current passowrd" }, {
+                    default: withCtx(() => [
+                      createVNode(_component_el_input, {
+                        modelValue: formData2.pass,
+                        "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => formData2.pass = $event),
+                        "show-password": ""
+                      }, null, 8, ["modelValue"])
+                    ]),
+                    _: 1
+                  }),
+                  createVNode(_component_el_form_item, { label: "New password" }, {
+                    default: withCtx(() => [
+                      createVNode(_component_el_input, {
+                        modelValue: formData2.newPass,
+                        "onUpdate:modelValue": _cache[11] || (_cache[11] = ($event) => formData2.newPass = $event),
+                        autosize: { minRows: 4 },
+                        "show-password": ""
+                      }, null, 8, ["modelValue"])
+                    ]),
+                    _: 1
+                  }),
+                  createVNode(_component_el_form_item, { label: "Confirm new password" }, {
+                    default: withCtx(() => [
+                      createVNode(_component_el_input, {
+                        modelValue: formData2.checkPass,
+                        "onUpdate:modelValue": _cache[12] || (_cache[12] = ($event) => formData2.checkPass = $event),
+                        "show-password": ""
+                      }, null, 8, ["modelValue"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              }, 8, ["model", "rules"])) : createCommentVNode("", true),
+              form.value === "Language" ? (openBlock(), createBlock(_component_el_form, {
+                key: 2,
+                "label-position": "top",
+                style: { "width": "338px" }
+              }, {
+                default: withCtx(() => [
+                  createVNode(_component_el_form_item, null, {
+                    default: withCtx(() => [
+                      createVNode(_component_el_radio_group, {
+                        modelValue: language.value,
+                        "onUpdate:modelValue": _cache[13] || (_cache[13] = ($event) => language.value = $event)
+                      }, {
+                        default: withCtx(() => [
+                          createVNode(_component_el_radio, {
+                            label: "1",
+                            size: "large"
+                          }, {
+                            default: withCtx(() => [
+                              _hoisted_44$3
+                            ]),
+                            _: 1
+                          }),
+                          createVNode(_component_el_radio, {
+                            label: "2",
+                            size: "large"
+                          }, {
+                            default: withCtx(() => [
+                              _hoisted_45$3
+                            ]),
+                            _: 1
+                          })
+                        ]),
+                        _: 1
+                      }, 8, ["modelValue"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })) : createCommentVNode("", true),
+              form.value === "Password" || form.value === "Profile" ? (openBlock(), createBlock(_component_el_button, {
+                key: 3,
+                type: "primary",
+                style: { "width": "338px", "padding": "13px 16px", "border-radius": "8px", "height": "40px" },
+                onClick: submitSettings
+              }, {
+                default: withCtx(() => [
+                  createTextVNode(" Save changes ")
+                ]),
+                _: 1
+              })) : createCommentVNode("", true)
+            ])) : createCommentVNode("", true),
+            form.value === "Management" || form.value === "Privacy" ? (openBlock(), createElementBlock("div", _hoisted_46$3, [
+              form.value === "Management" ? (openBlock(), createBlock(management, { key: 0 })) : createCommentVNode("", true),
+              form.value === "Privacy" ? (openBlock(), createBlock(_sfc_main$j, { key: 1 })) : createCommentVNode("", true)
+            ])) : createCommentVNode("", true)
+          ])
+        ]),
+        createVNode(privatePolicy, {
+          ref_key: "privatePolicyRef",
+          ref: privatePolicyRef
+        }, null, 512)
+      ], 64);
     };
   }
 });
-const settings_vue_vue_type_style_index_0_scoped_98da6cc4_lang = "";
-const setting = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["__scopeId", "data-v-98da6cc4"]]);
-const _withScopeId$b = (n) => (pushScopeId("data-v-3a5c0210"), n = n(), popScopeId(), n);
+const settings_vue_vue_type_style_index_0_scoped_4c5ba795_lang = "";
+const setting = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["__scopeId", "data-v-4c5ba795"]]);
+const _withScopeId$b = (n) => (pushScopeId("data-v-50f1aaf3"), n = n(), popScopeId(), n);
 const _hoisted_1$f = {
   class: "input-area",
   style: {}
@@ -1254,7 +1805,25 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
         emit("login");
         return;
       }
-      chat.chatInstance.sendMessage(sendTo.value);
+      const privateChatStore = usePrivateChatStore();
+      privateChatStore.sio.sendMessage(chat.id, sendTo.value);
+      chat.messages.push({
+        id: (/* @__PURE__ */ new Date()).getTime().toString(),
+        username: authStore.getUserInfo?.username,
+        avatar: authStore.getUserInfo?.avatar,
+        role: "user",
+        content: sendTo.value,
+        cache: ""
+      });
+      chat.messages.push({
+        id: (/* @__PURE__ */ new Date()).getTime().toString(),
+        username: authStore.getUserInfo?.username,
+        role: "assistant",
+        avatar: chat.members[0].avatar,
+        content: "",
+        cache: "",
+        refs: []
+      });
       chat.files = [];
       sendTo.value = "";
       const textarea = document.getElementById(textareaId);
@@ -1368,9 +1937,7 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
     };
     onMounted(() => {
       const Search = (text, cb) => {
-        const value = [
-          { key: "All", value: "All", icon: "/favicon.ico" }
-        ];
+        const value = [{ key: "All", value: "All", icon: "/favicon.ico" }];
         props.chat.members.forEach((m) => {
           value.push({ key: m.name, value: m.name, icon: m.avatar });
         });
@@ -1467,9 +2034,9 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const inputArea_vue_vue_type_style_index_0_scoped_3a5c0210_lang = "";
-const inputArea = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["__scopeId", "data-v-3a5c0210"]]);
-const _withScopeId$a = (n) => (pushScopeId("data-v-a32adc76"), n = n(), popScopeId(), n);
+const inputArea_vue_vue_type_style_index_0_scoped_50f1aaf3_lang = "";
+const inputArea = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["__scopeId", "data-v-50f1aaf3"]]);
+const _withScopeId$a = (n) => (pushScopeId("data-v-2695738b"), n = n(), popScopeId(), n);
 const _hoisted_1$e = /* @__PURE__ */ _withScopeId$a(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white font-[RobotoMedium] text-[20px]" }, " Create a new group chat ? ", -1));
 const _sfc_main$f = /* @__PURE__ */ defineComponent({
   __name: "privateChat",
@@ -1557,7 +2124,7 @@ const _sfc_main$f = /* @__PURE__ */ defineComponent({
         title: "group"
       };
       ChatGroupStore.addGroup(newGroup);
-      addTab(props.windowId, {
+      addTabAndSave(props.windowId, {
         id: (/* @__PURE__ */ new Date()).getTime().toString(),
         title: "groupChat",
         editing: false,
@@ -1642,8 +2209,8 @@ const _sfc_main$f = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const privateChat_vue_vue_type_style_index_0_scoped_a32adc76_lang = "";
-const privateChat = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["__scopeId", "data-v-a32adc76"]]);
+const privateChat_vue_vue_type_style_index_0_scoped_2695738b_lang = "";
+const privateChat = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["__scopeId", "data-v-2695738b"]]);
 const _sfc_main$e = /* @__PURE__ */ defineComponent({
   __name: "groupChat",
   props: {
@@ -2426,7 +2993,7 @@ function P(e, i, s, n, t, a) {
   ], 4);
 }
 const g = /* @__PURE__ */ S(x, [["render", P]]);
-const _withScopeId$7 = (n) => (pushScopeId("data-v-a6b011d5"), n = n(), popScopeId(), n);
+const _withScopeId$7 = (n) => (pushScopeId("data-v-182e241b"), n = n(), popScopeId(), n);
 const _hoisted_1$a = {
   class: "flex-row flex gap-6",
   style: { "height": "170px" }
@@ -2528,7 +3095,7 @@ const _hoisted_50$2 = {
   class: "w-5 h-5 object-cover min-h-[16px] cursor-pointer ml-5"
 };
 const _hoisted_51$2 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("use", { href: "#tick" }, null, -1));
-const _hoisted_52$2 = [
+const _hoisted_52$1 = [
   _hoisted_51$2
 ];
 const _sfc_main$a = /* @__PURE__ */ defineComponent({
@@ -2543,13 +3110,45 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
     const props = __props;
     const BotStore = useBotStore();
     const showBasebotSetting = ref(false);
+    const ruleFormRef1 = ref();
     const filesToUpload = ref([]);
     const avatarToUpload = ref(null);
     const previewImage = ref("");
+    const validateUsername = (rule, value, callback) => {
+      console.log(rule);
+      if (value === "") {
+        callback(new Error("Please input the Botname"));
+      } else {
+        const reg = /^[a-zA-Z0-9_.-]*$/;
+        if (!reg.test(value)) {
+          callback(new Error("Only letters, numbers, underscores, dots and dashes are allowed"));
+        } else {
+          callback();
+        }
+      }
+    };
+    const rules = reactive({
+      title: [
+        { required: true, message: "Please input Botname", trigger: "blur" },
+        { min: 3, max: 18, message: "Length should be 3 to 18", trigger: "blur" },
+        { validator: validateUsername, trigger: "blur" }
+      ]
+    });
     const ShowCreateBot = ref(false);
     const CreateBotFormChange = (newVal) => {
       console.log(newVal);
       formData1.value.model_params = newVal;
+    };
+    const handleSubmit = async (formEl) => {
+      if (!formEl)
+        return;
+      await formEl.validate((valid, fields) => {
+        if (valid) {
+          createBot2();
+        } else {
+          console.log("error submit!", fields);
+        }
+      });
     };
     const createBot2 = () => {
       console.log("createBot");
@@ -2569,9 +3168,10 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
       }).then(async (res) => {
         console.log("createdBot", res);
         const uploadFiles = async () => {
+          let loading;
           for (const file of filesToUpload.value) {
             try {
-              const loading = ElLoading.service({
+              loading = ElLoading.service({
                 lock: true,
                 text: "Uploading " + file.name,
                 background: "rgba(0, 0, 0, 0.7)"
@@ -2586,8 +3186,11 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
               loading.close();
             } catch (error) {
               console.error(error);
+              loading.close();
             }
           }
+          if (avatarToUpload.value === null)
+            return;
           try {
             const formData = new FormData();
             formData.append("file", avatarToUpload.value);
@@ -2604,7 +3207,7 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
         ElMessage({ message: "success", type: "success", duration: 3e3 });
         ShowCreateBot.value = false;
         emit("createBotSuccess");
-        updateBotList();
+        UpdateBotAndSetPanel();
       });
     };
     const selectModel = ref(BotStore.getModelOptions[0]);
@@ -2618,7 +3221,9 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
       formData1.value.model_vendor = props.bot.model_vendor;
       formData1.value.model_params = props.bot.model_params;
       console.log("bot", props.bot);
-      selectModel.value = BotStore.getModelOptions.find((item) => item.name === props.bot?.model_name);
+      selectModel.value = BotStore.getModelOptions.find(
+        (item) => item.name === props.bot?.model_name
+      );
     } else {
       formData1.value = {
         title: "",
@@ -2638,7 +3243,8 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
         return;
       const file = files[0];
       console.log(file);
-      if (file.size > 2e7) {
+      if (file.size > 1e7) {
+        ElMessage({ message: "File size is too large, > 10M  allowed", type: "error", duration: 3e3 });
         return;
       }
       filesToUpload.value.push(file);
@@ -2676,9 +3282,12 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
           }, {
             default: withCtx(() => [
               createVNode(_component_el_form, {
-                ref: "ruleFormRef1",
+                ref_key: "ruleFormRef1",
+                ref: ruleFormRef1,
                 model: formData1.value,
+                rules,
                 "label-position": "top",
+                "scroll-to-error": "",
                 style: { "width": "100%", "display": "flex", "flex-direction": "column", "justify-content": "center" }
               }, {
                 default: withCtx(() => [
@@ -2702,7 +3311,7 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
                       ])
                     ]),
                     createBaseVNode("div", _hoisted_9$7, [
-                      createVNode(_component_el_form_item, null, {
+                      createVNode(_component_el_form_item, { prop: "title" }, {
                         default: withCtx(() => [
                           createVNode(_component_el_input, {
                             modelValue: formData1.value.title,
@@ -2835,18 +3444,18 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
                   }, null, 32)
                 ]),
                 _: 1
-              }, 8, ["model"]),
+              }, 8, ["model", "rules"]),
               createBaseVNode("div", _hoisted_40$3, [
                 _hoisted_41$3,
                 createBaseVNode("div", {
-                  onClick: createBot2,
+                  onClick: _cache[4] || (_cache[4] = ($event) => handleSubmit(ruleFormRef1.value)),
                   class: "cursor-pointer absolute right-[40px] w-[143px] z-10 h-11 pl-3 pr-3 py-3 bg-[#5F44FF] rounded-tl-[6px] rounded-bl-[6px] justify-center items-center gap-2 inline-flex"
                 }, [
                   createBaseVNode("div", _hoisted_42$3, toDisplayString(formData1.value.visibility === 2 ? "Create public bot" : "Create secret bot"), 1)
                 ]),
                 createVNode(_component_el_select, {
                   modelValue: formData1.value.visibility,
-                  "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => formData1.value.visibility = $event),
+                  "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => formData1.value.visibility = $event),
                   class: "w-[183px] createBotButton",
                   "suffix-icon": unref(arrow_down_bold_default)
                 }, {
@@ -2864,7 +3473,7 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
                       default: withCtx(() => [
                         createBaseVNode("div", _hoisted_48$2, [
                           _hoisted_49$2,
-                          formData1.value.visibility == 2 ? (openBlock(), createElementBlock("svg", _hoisted_50$2, _hoisted_52$2)) : createCommentVNode("", true)
+                          formData1.value.visibility == 2 ? (openBlock(), createElementBlock("svg", _hoisted_50$2, _hoisted_52$1)) : createCommentVNode("", true)
                         ])
                       ]),
                       _: 1
@@ -2887,142 +3496,126 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const createBotTab_vue_vue_type_style_index_0_scoped_a6b011d5_lang = "";
-const createBotTab = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-a6b011d5"]]);
-const _withScopeId$6 = (n) => (pushScopeId("data-v-0ca1e3c4"), n = n(), popScopeId(), n);
+const createBotTab_vue_vue_type_style_index_0_scoped_182e241b_lang = "";
+const createBotTab = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-182e241b"]]);
+const _withScopeId$6 = (n) => (pushScopeId("data-v-61b10f32"), n = n(), popScopeId(), n);
 const _hoisted_1$9 = {
   class: "flex-row flex gap-6",
   style: { "height": "170px" }
 };
-const _hoisted_2$9 = {
-  for: "Bot-avatar-upload",
-  class: "avatar-uploader"
-};
-const _hoisted_3$8 = { style: { "position": "relative" } };
-const _hoisted_4$8 = {
+const _hoisted_2$9 = { style: { "position": "relative" } };
+const _hoisted_3$8 = {
   key: 0,
   class: "headimg-txt"
 };
-const _hoisted_5$6 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("use", { href: "#emptyAvatar" }, null, -1));
-const _hoisted_6$6 = [
-  _hoisted_5$6
+const _hoisted_4$8 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("use", { href: "#emptyAvatar" }, null, -1));
+const _hoisted_5$6 = [
+  _hoisted_4$8
 ];
-const _hoisted_7$6 = ["src"];
-const _hoisted_8$6 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("svg", { class: "img-edit" }, [
+const _hoisted_6$6 = ["src"];
+const _hoisted_7$6 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("svg", { class: "img-edit" }, [
   /* @__PURE__ */ createBaseVNode("use", { href: "" })
 ], -1));
-const _hoisted_9$6 = { class: "flex flex-col w-full" };
-const _hoisted_10$5 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-medium font-['RobotoMedium'] leading-normal pb-2" }, " Base Bot ", -1));
-const _hoisted_11$5 = { class: "w-full gap-3 flex flex-row" };
-const _hoisted_12$5 = { class: "flex flex-row mr-[5px] ml-[5px]" };
-const _hoisted_13$5 = ["src"];
-const _hoisted_14$5 = { class: "flex flex-row ml-3 my-2" };
-const _hoisted_15$5 = ["src"];
-const _hoisted_16$4 = { class: "font-medium text-[14px] leading-[20px] font-Roboto text-[rgb(124,135,142)] pl-[14px]" };
-const _hoisted_17$3 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("use", { href: "#modelSetting" }, null, -1));
-const _hoisted_18$3 = [
-  _hoisted_17$3
+const _hoisted_8$6 = { class: "flex flex-col w-full" };
+const _hoisted_9$6 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-medium font-['RobotoMedium'] leading-normal pb-2" }, " Base Bot ", -1));
+const _hoisted_10$5 = { class: "w-full gap-3 flex flex-row" };
+const _hoisted_11$5 = { class: "flex flex-row mr-[5px] ml-[5px]" };
+const _hoisted_12$5 = ["src"];
+const _hoisted_13$5 = { class: "flex flex-row ml-3 my-2" };
+const _hoisted_14$5 = ["src"];
+const _hoisted_15$5 = { class: "font-medium text-[14px] leading-[20px] font-Roboto text-[rgb(124,135,142)] pl-[14px]" };
+const _hoisted_16$4 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("use", { href: "#modelSetting" }, null, -1));
+const _hoisted_17$3 = [
+  _hoisted_16$4
 ];
-const _hoisted_19$3 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-medium font-['RobotoMedium'] leading-normal pb-2" }, " Upload files ", -1));
-const _hoisted_20$3 = { class: "bot-file-uploader" };
-const _hoisted_21$3 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("label", {
-  for: "Bot-file-upload",
-  style: { "position": "absolute", "inset": "0" }
-}, null, -1));
-const _hoisted_22$3 = {
+const _hoisted_18$3 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-medium font-['RobotoMedium'] leading-normal pb-2" }, " Upload files ", -1));
+const _hoisted_19$3 = { class: "bot-file-uploader" };
+const _hoisted_20$3 = {
   key: 0,
   class: "flex gap-1 flex-row items-center overflow-scroll pb-2"
 };
-const _hoisted_23$3 = ["onClick"];
-const _hoisted_24$3 = { class: "relative m-3" };
-const _hoisted_25$3 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("svg", { class: "h-10 w-8" }, [
+const _hoisted_21$3 = ["onClick"];
+const _hoisted_22$3 = { class: "relative m-3" };
+const _hoisted_23$3 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("svg", { class: "h-10 w-8" }, [
   /* @__PURE__ */ createBaseVNode("use", { href: "#fileIcon" })
 ], -1));
-const _hoisted_26$3 = {
+const _hoisted_24$3 = {
   key: 0,
   class: "loader"
 };
-const _hoisted_27$3 = {
+const _hoisted_25$3 = {
   key: 1,
   class: "top-0 text-[10px] text-center bottom-0 right-0 left-0 absolute leading-[40px]"
 };
-const _hoisted_28$3 = { class: "flex-col" };
-const _hoisted_29$3 = { class: "truncate w-40 pr-5" };
-const _hoisted_30$3 = { class: "text-sm" };
-const _hoisted_31$3 = { class: "max-h-80 overflow-scroll m-3" };
-const _hoisted_32$3 = { class: "absolute top-2 right-2 cursor-pointer" };
-const _hoisted_33$3 = ["onClick"];
-const _hoisted_34$3 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("use", { href: "#delete" }, null, -1));
-const _hoisted_35$3 = [
-  _hoisted_34$3
+const _hoisted_26$3 = { class: "flex-col" };
+const _hoisted_27$3 = { class: "truncate w-40 pr-5" };
+const _hoisted_28$3 = { class: "text-sm" };
+const _hoisted_29$3 = { class: "max-h-80 overflow-scroll m-3" };
+const _hoisted_30$3 = { class: "absolute top-2 right-2 cursor-pointer" };
+const _hoisted_31$3 = ["onClick"];
+const _hoisted_32$3 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("use", { href: "#delete" }, null, -1));
+const _hoisted_33$3 = [
+  _hoisted_32$3
 ];
-const _hoisted_36$3 = {
-  key: 1,
-  class: "flex gap-1 flex-row items-center overflow-scroll pb-2"
-};
-const _hoisted_37$3 = ["onClick"];
-const _hoisted_38$3 = { class: "relative m-3" };
-const _hoisted_39$2 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("svg", { class: "h-10 w-8" }, [
+const _hoisted_34$3 = ["onClick"];
+const _hoisted_35$3 = { class: "relative m-3" };
+const _hoisted_36$3 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("svg", { class: "h-10 w-8" }, [
   /* @__PURE__ */ createBaseVNode("use", { href: "#fileIcon" })
 ], -1));
-const _hoisted_40$2 = {
+const _hoisted_37$3 = {
   key: 0,
   class: "loader"
 };
-const _hoisted_41$2 = {
+const _hoisted_38$3 = {
   key: 1,
   class: "top-0 text-[10px] text-center bottom-0 right-0 left-0 absolute leading-[40px]"
 };
-const _hoisted_42$2 = { class: "flex-col" };
-const _hoisted_43$1 = { class: "truncate w-40 pr-5" };
-const _hoisted_44$1 = { class: "text-sm" };
-const _hoisted_45$1 = { class: "max-h-80 overflow-scroll m-3" };
-const _hoisted_46$1 = { class: "absolute top-2 right-2 cursor-pointer" };
-const _hoisted_47$1 = ["onClick"];
-const _hoisted_48$1 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("use", { href: "#delete" }, null, -1));
-const _hoisted_49$1 = [
-  _hoisted_48$1
+const _hoisted_39$2 = { class: "flex-col" };
+const _hoisted_40$2 = { class: "truncate w-40 pr-5" };
+const _hoisted_41$2 = { class: "text-sm" };
+const _hoisted_42$2 = { class: "max-h-80 overflow-scroll m-3" };
+const _hoisted_43$1 = { class: "absolute top-2 right-2 cursor-pointer" };
+const _hoisted_44$1 = ["onClick"];
+const _hoisted_45$1 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("use", { href: "#delete" }, null, -1));
+const _hoisted_46$1 = [
+  _hoisted_45$1
 ];
-const _hoisted_50$1 = {
-  key: 2,
-  for: "Bot-file-upload",
-  class: "w-[432.22px] h-[54px] left-[183.47px] top-[32px] flex-col justify-start items-center gap-4 inline-flex"
-};
-const _hoisted_51$1 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("svg", { class: "w-6 h-6 p-0.5 justify-center items-center inline-flex" }, [
+const _hoisted_47$1 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("svg", { class: "w-6 h-6 p-0.5 justify-center items-center inline-flex" }, [
   /* @__PURE__ */ createBaseVNode("use", { href: "#addFile" })
 ], -1));
-const _hoisted_52$1 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-center text-gray-500 text-[14px] font-['RobotoRegular'] leading-[14px]" }, " DOC, EXE, HTML or PDF files less than 10MB allowed ", -1));
-const _hoisted_53$1 = [
-  _hoisted_51$1,
-  _hoisted_52$1
+const _hoisted_48$1 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-center text-gray-500 text-[14px] font-['RobotoRegular'] leading-[14px]" }, " DOC, EXE, HTML or PDF files less than 10MB allowed ", -1));
+const _hoisted_49$1 = [
+  _hoisted_47$1,
+  _hoisted_48$1
 ];
-const _hoisted_54 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-medium font-['RobotoMedium'] leading-normal pb-2" }, " Collaborators ", -1));
-const _hoisted_55 = { class: "border rounded-[8px] w-full border-[var(--second-border-color)] mb-12" };
-const _hoisted_56 = { class: "flex flex-row items-center" };
-const _hoisted_57 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "flex flex-row p-2 items-center text-[rgb(124,135,142)] hover:text-white" }, [
+const _hoisted_50$1 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-medium font-['RobotoMedium'] leading-normal pb-2" }, " Collaborators ", -1));
+const _hoisted_51$1 = { class: "border rounded-[8px] w-full border-[var(--second-border-color)] mb-12" };
+const _hoisted_52 = { class: "flex flex-row items-center" };
+const _hoisted_53 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "flex flex-row p-2 items-center text-[rgb(124,135,142)] hover:text-white" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "text-[14px] leading-[20px] font-['RobotoRegular']" }, "read")
 ], -1));
-const _hoisted_58 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "flex flex-row p-2 items-center text-[rgb(124,135,142)] hover:text-white" }, [
+const _hoisted_54 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "flex flex-row p-2 items-center text-[rgb(124,135,142)] hover:text-white" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "text-[14px] leading-[20px] font-['RobotoRegular']" }, "edit")
 ], -1));
-const _hoisted_59 = { class: "border-t border-[#393E44] w-full" };
-const _hoisted_60 = { class: "p-4 flex flex-row items-center justify-between" };
-const _hoisted_61 = { class: "flex flex-row items-center gap-3" };
-const _hoisted_62 = ["src"];
-const _hoisted_63 = {
+const _hoisted_55 = { class: "border-t border-[#393E44] w-full" };
+const _hoisted_56 = { class: "p-4 flex flex-row items-center justify-between" };
+const _hoisted_57 = { class: "flex flex-row items-center gap-3" };
+const _hoisted_58 = ["src"];
+const _hoisted_59 = {
   key: 1,
   class: "h-8 w-8 bg-green-500 rounded-[50%] text-white text-center leading-8"
 };
-const _hoisted_64 = { class: "flex flex-col justify-start items-start gap-1.5" };
-const _hoisted_65 = { class: "text-white text-sm font-medium font-['RobotoMedium'] leading-[14px]" };
-const _hoisted_66 = { key: 0 };
-const _hoisted_67 = ["src"];
-const _hoisted_68 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "w-[81px] h-11 px-6 py-3 rounded-[6px] border border-[#393E44] justify-center items-center gap-2 inline-flex" }, [
+const _hoisted_60 = { class: "flex flex-col justify-start items-start gap-1.5" };
+const _hoisted_61 = { class: "text-white text-sm font-medium font-['RobotoMedium'] leading-[14px]" };
+const _hoisted_62 = { key: 0 };
+const _hoisted_63 = ["src"];
+const _hoisted_64 = { class: "flex flex-row justify-end gap-4 relative" };
+const _hoisted_65 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "w-[81px] h-11 px-6 py-3 rounded-[6px] border border-[#393E44] justify-center items-center gap-2 inline-flex" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "cursor-pointer text-white text-sm font-['RobotoMedium'] leading-normal" }, " Preview ")
 ], -1));
-const _hoisted_69 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-['RobotoMedium'] leading-normal" }, "Save", -1));
-const _hoisted_70 = [
-  _hoisted_69
+const _hoisted_66 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-['RobotoMedium'] leading-normal" }, "Save", -1));
+const _hoisted_67 = [
+  _hoisted_66
 ];
 const _sfc_main$9 = /* @__PURE__ */ defineComponent({
   __name: "editBotTab",
@@ -3040,6 +3633,7 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
     const showBasebotSetting = ref(false);
     const inviteEmail = ref("");
     const inviteEmailPermission = ref("3");
+    const ruleFormRef1 = ref();
     const collaborators = ref([]);
     const defaultHeadImgTxt = () => {
       return authStore.getUserInfo.username.charAt(0).toUpperCase();
@@ -3048,6 +3642,8 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
     const filesToRemove = ref([]);
     const avatarToUpload = ref(null);
     const previewImage = ref("");
+    const BotAvatarUploadId = "Bot-avatar-upload" + props.bot.id;
+    const BotFileUploadId = "Bot-file-upload" + props.bot.id;
     const SendInvitationEmail = () => {
       apiSendInvitationEmail({
         type: 0,
@@ -3062,12 +3658,42 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
       console.log(newVal);
       formData1.value.model_params = newVal;
     };
+    const validateUsername = (rule, value, callback) => {
+      console.log(rule);
+      if (value === "") {
+        callback(new Error("Please input the Botname"));
+      } else {
+        const reg = /^[a-zA-Z0-9_.-]*$/;
+        if (!reg.test(value)) {
+          callback(new Error("Only letters, numbers, underscores, dots and dashes are allowed"));
+        } else {
+          callback();
+        }
+      }
+    };
+    const rules = reactive({
+      title: [
+        { required: true, message: "Please input Botname", trigger: "blur" },
+        { min: 3, max: 18, message: "Length should be 3 to 18", trigger: "blur" },
+        { validator: validateUsername, trigger: "blur" }
+      ]
+    });
+    const handleSubmit = async (formEl) => {
+      if (!formEl)
+        return;
+      await formEl.validate((valid, fields) => {
+        if (valid) {
+          updateBot();
+        } else {
+          console.log("error submit!", fields);
+        }
+      });
+    };
     const updateBot = () => {
-      console.log("updateBot");
-      console.log(formData1.value);
+      console.log("updateBot", formData1.value);
       apiBotUpdate({
         id: formData1.value.id,
-        title: formData1.value.title,
+        name: formData1.value.title,
         description: formData1.value.description,
         visibility: formData1.value.visibility,
         model_name: selectModel.value.name,
@@ -3076,27 +3702,30 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
       }).then(async (res) => {
         console.log("updateBot", res);
         const uploadFiles = async () => {
-          if (filesToUpload.value.length === 0)
-            return;
-          for (const file of filesToUpload.value) {
-            try {
-              const loading = ElLoading.service({
-                lock: true,
-                text: "Uploading " + file.name,
-                background: "rgba(0, 0, 0, 0.7)"
-              });
-              const formData = new FormData();
-              formData.append("file", file);
-              const response = await apiBotFileAdd({
-                formData,
-                id: res.data.id
-              });
-              console.log(response);
-              loading.close();
-            } catch (error) {
-              console.error(error);
+          let loading;
+          if (filesToUpload.value.length > 0) {
+            for (const file of filesToUpload.value) {
+              try {
+                loading = ElLoading.service({
+                  lock: true,
+                  text: "Uploading " + file.name,
+                  background: "rgba(0, 0, 0, 0.7)"
+                });
+                const formData = new FormData();
+                formData.append("file", file);
+                const response = await apiBotFileAdd({
+                  formData,
+                  id: res.data.id
+                });
+                console.log("response", response);
+                loading.close();
+              } catch (error) {
+                console.log("error", error);
+                loading.close();
+              }
             }
           }
+          console.log("avatarToUpload", avatarToUpload.value);
           if (avatarToUpload.value === null)
             return;
           try {
@@ -3126,17 +3755,18 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
             }
           }
         };
-        await uploadFiles();
         await removeFile();
+        await uploadFiles();
         ElMessage({ message: "Save success", type: "success", duration: 3e3 });
         emit("createBotSuccess");
-        updateBotList();
+        UpdateBotAndSetPanel();
       });
     };
     const selectModel = ref(BotStore.getModelOptions[0]);
     const formData1 = ref({});
     if (props.bot.id) {
       formData1.value = { ...props.bot };
+      formData1.value.title = props.bot.name;
       console.log("bot", props.bot);
       selectModel.value = BotStore.getModelOptions.find((item) => item.name === props.bot.model_name);
     } else {
@@ -3177,9 +3807,11 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
       const input = event.target;
       if (input.files && input.files[0]) {
         const file = input.files[0];
+        avatarToUpload.value = file;
         const reader = new FileReader();
         reader.onload = () => {
           previewImage.value = reader.result;
+          console.log(previewImage.value);
         };
         reader.readAsDataURL(file);
       }
@@ -3205,33 +3837,39 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
           }, {
             default: withCtx(() => [
               createVNode(_component_el_form, {
-                ref: "ruleFormRef1",
+                ref_key: "ruleFormRef1",
+                ref: ruleFormRef1,
                 model: formData1.value,
+                rules,
                 "label-position": "top",
+                "scroll-to-error": "",
                 style: { "width": "100%", "display": "flex", "flex-direction": "column", "justify-content": "center" }
               }, {
                 default: withCtx(() => [
                   createBaseVNode("div", _hoisted_1$9, [
                     createBaseVNode("input", {
-                      id: "Bot-avatar-upload",
+                      id: BotAvatarUploadId,
                       class: "hidden",
                       onChange: uploadAvatar,
                       type: "file",
                       accept: " .png, .jpg, .jpeg, .bmp, .gif, .svg,"
                     }, null, 32),
-                    createBaseVNode("label", _hoisted_2$9, [
-                      createBaseVNode("div", _hoisted_3$8, [
-                        formData1.value.avatar == "" && previewImage.value == "" ? (openBlock(), createElementBlock("svg", _hoisted_4$8, _hoisted_6$6)) : (openBlock(), createElementBlock("img", {
+                    createBaseVNode("label", {
+                      for: BotAvatarUploadId,
+                      class: "avatar-uploader"
+                    }, [
+                      createBaseVNode("div", _hoisted_2$9, [
+                        formData1.value.avatar == "" && previewImage.value == "" ? (openBlock(), createElementBlock("svg", _hoisted_3$8, _hoisted_5$6)) : (openBlock(), createElementBlock("img", {
                           key: 1,
                           class: "headimg-txt",
-                          src: formData1.value.avatar || previewImage.value,
+                          src: previewImage.value == "" ? formData1.value.avatar : previewImage.value,
                           alt: ""
-                        }, null, 8, _hoisted_7$6)),
-                        _hoisted_8$6
+                        }, null, 8, _hoisted_6$6)),
+                        _hoisted_7$6
                       ])
                     ]),
-                    createBaseVNode("div", _hoisted_9$6, [
-                      createVNode(_component_el_form_item, null, {
+                    createBaseVNode("div", _hoisted_8$6, [
+                      createVNode(_component_el_form_item, { prop: "title" }, {
                         default: withCtx(() => [
                           createVNode(_component_el_input, {
                             modelValue: formData1.value.title,
@@ -3257,8 +3895,8 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                       })
                     ])
                   ]),
-                  _hoisted_10$5,
-                  createBaseVNode("div", _hoisted_11$5, [
+                  _hoisted_9$6,
+                  createBaseVNode("div", _hoisted_10$5, [
                     createVNode(_component_el_form_item, { class: "w-full flex-1" }, {
                       default: withCtx(() => [
                         createVNode(_component_el_select, {
@@ -3269,12 +3907,12 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                           "suffix-icon": unref(arrow_down_bold_default)
                         }, {
                           prefix: withCtx(({}) => [
-                            createBaseVNode("div", _hoisted_12$5, [
+                            createBaseVNode("div", _hoisted_11$5, [
                               formData1.value.model_name ? (openBlock(), createElementBlock("img", {
                                 key: 0,
                                 class: "rounded w-5 h-5 object-cover",
                                 src: selectModel.value.avatar
-                              }, null, 8, _hoisted_13$5)) : createCommentVNode("", true)
+                              }, null, 8, _hoisted_12$5)) : createCommentVNode("", true)
                             ])
                           ]),
                           default: withCtx(() => [
@@ -3285,12 +3923,12 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                                 value: item.name
                               }, {
                                 default: withCtx(() => [
-                                  createBaseVNode("div", _hoisted_14$5, [
+                                  createBaseVNode("div", _hoisted_13$5, [
                                     createBaseVNode("img", {
                                       class: "rounded w-5 h-5 object-cover",
                                       src: item.avatar
-                                    }, null, 8, _hoisted_15$5),
-                                    createBaseVNode("div", _hoisted_16$4, toDisplayString(item.name), 1)
+                                    }, null, 8, _hoisted_14$5),
+                                    createBaseVNode("div", _hoisted_15$5, toDisplayString(item.name), 1)
                                   ])
                                 ]),
                                 _: 2
@@ -3310,7 +3948,7 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                         padding: showBasebotSetting.value ? "13px" : "12px"
                       }),
                       onClick: _cache[3] || (_cache[3] = ($event) => showBasebotSetting.value = !showBasebotSetting.value)
-                    }, _hoisted_18$3, 4))
+                    }, _hoisted_17$3, 4))
                   ]),
                   createVNode(botParamForm, {
                     "initial-bot-params": formData1.value.model_params,
@@ -3318,22 +3956,25 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                     modelParams: selectModel.value,
                     onChange: CreateBotFormChange
                   }, null, 8, ["initial-bot-params", "show-basebot-setting", "modelParams"]),
-                  _hoisted_19$3,
-                  createBaseVNode("div", _hoisted_20$3, [
-                    _hoisted_21$3,
-                    formData1.value.documents.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_22$3, [
+                  _hoisted_18$3,
+                  createBaseVNode("div", _hoisted_19$3, [
+                    createBaseVNode("label", {
+                      for: BotFileUploadId,
+                      style: { "position": "absolute", "inset": "0" }
+                    }),
+                    formData1.value.documents.length > 0 || filesToUpload.value.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_20$3, [
                       (openBlock(true), createElementBlock(Fragment, null, renderList(formData1.value.documents, (file) => {
                         return openBlock(), createElementBlock("div", {
                           onClick: withModifiers(($event) => file.showContent = true, ["stop"]),
                           class: "relative shadow p-1 rounded-xl bg-black flex items-center w-60"
                         }, [
-                          createBaseVNode("div", _hoisted_24$3, [
-                            _hoisted_25$3,
-                            file.loading ? (openBlock(), createElementBlock("div", _hoisted_26$3)) : (openBlock(), createElementBlock("div", _hoisted_27$3, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[2]), 1))
+                          createBaseVNode("div", _hoisted_22$3, [
+                            _hoisted_23$3,
+                            file.loading ? (openBlock(), createElementBlock("div", _hoisted_24$3)) : (openBlock(), createElementBlock("div", _hoisted_25$3, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[2]), 1))
                           ]),
-                          createBaseVNode("div", _hoisted_28$3, [
-                            createBaseVNode("div", _hoisted_29$3, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[1]), 1),
-                            createBaseVNode("div", _hoisted_30$3, toDisplayString(Math.round(file.size / 1e3) + " kb"), 1)
+                          createBaseVNode("div", _hoisted_26$3, [
+                            createBaseVNode("div", _hoisted_27$3, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[1]), 1),
+                            createBaseVNode("div", _hoisted_28$3, toDisplayString(Math.round(file.size / 1e3) + " kb"), 1)
                           ]),
                           createVNode(_component_el_dialog, {
                             modelValue: file.showContent,
@@ -3341,31 +3982,30 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                           }, {
                             header: withCtx(({}) => []),
                             default: withCtx(() => [
-                              createBaseVNode("div", _hoisted_31$3, toDisplayString(file.content), 1)
+                              createBaseVNode("div", _hoisted_29$3, toDisplayString(file.content), 1)
                             ]),
                             _: 2
                           }, 1032, ["modelValue", "onUpdate:modelValue"]),
-                          createBaseVNode("div", _hoisted_32$3, [
+                          createBaseVNode("div", _hoisted_30$3, [
                             (openBlock(), createElementBlock("svg", {
                               onClick: withModifiers(($event) => removeUploadedBotFile(file.id), ["stop"]),
                               class: "h-5 w-5"
-                            }, _hoisted_35$3, 8, _hoisted_33$3))
+                            }, _hoisted_33$3, 8, _hoisted_31$3))
                           ])
-                        ], 8, _hoisted_23$3);
-                      }), 256))
-                    ])) : filesToUpload.value.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_36$3, [
+                        ], 8, _hoisted_21$3);
+                      }), 256)),
                       (openBlock(true), createElementBlock(Fragment, null, renderList(filesToUpload.value, (file) => {
                         return openBlock(), createElementBlock("div", {
                           onClick: withModifiers(($event) => file.showContent = true, ["stop"]),
                           class: "relative shadow p-1 rounded-xl bg-black flex items-center w-60"
                         }, [
-                          createBaseVNode("div", _hoisted_38$3, [
-                            _hoisted_39$2,
-                            file.loading ? (openBlock(), createElementBlock("div", _hoisted_40$2)) : (openBlock(), createElementBlock("div", _hoisted_41$2, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[2]), 1))
+                          createBaseVNode("div", _hoisted_35$3, [
+                            _hoisted_36$3,
+                            file.loading ? (openBlock(), createElementBlock("div", _hoisted_37$3)) : (openBlock(), createElementBlock("div", _hoisted_38$3, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[2]), 1))
                           ]),
-                          createBaseVNode("div", _hoisted_42$2, [
-                            createBaseVNode("div", _hoisted_43$1, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[1]), 1),
-                            createBaseVNode("div", _hoisted_44$1, toDisplayString(Math.round(file.size / 1e3) + " kb"), 1)
+                          createBaseVNode("div", _hoisted_39$2, [
+                            createBaseVNode("div", _hoisted_40$2, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[1]), 1),
+                            createBaseVNode("div", _hoisted_41$2, toDisplayString(Math.round(file.size / 1e3) + " kb"), 1)
                           ]),
                           createVNode(_component_el_dialog, {
                             modelValue: file.showContent,
@@ -3373,30 +4013,34 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                           }, {
                             header: withCtx(({}) => []),
                             default: withCtx(() => [
-                              createBaseVNode("div", _hoisted_45$1, toDisplayString(file.content), 1)
+                              createBaseVNode("div", _hoisted_42$2, toDisplayString(file.content), 1)
                             ]),
                             _: 2
                           }, 1032, ["modelValue", "onUpdate:modelValue"]),
-                          createBaseVNode("div", _hoisted_46$1, [
+                          createBaseVNode("div", _hoisted_43$1, [
                             (openBlock(), createElementBlock("svg", {
                               onClick: withModifiers(($event) => filesToUpload.value.splice(filesToUpload.value.indexOf(file), 1), ["stop"]),
                               class: "h-5 w-5"
-                            }, _hoisted_49$1, 8, _hoisted_47$1))
+                            }, _hoisted_46$1, 8, _hoisted_44$1))
                           ])
-                        ], 8, _hoisted_37$3);
+                        ], 8, _hoisted_34$3);
                       }), 256))
-                    ])) : (openBlock(), createElementBlock("label", _hoisted_50$1, _hoisted_53$1))
+                    ])) : (openBlock(), createElementBlock("label", {
+                      key: 1,
+                      for: BotFileUploadId,
+                      class: "w-[432.22px] h-[54px] left-[183.47px] top-[32px] flex-col justify-start items-center gap-4 inline-flex"
+                    }, _hoisted_49$1))
                   ]),
                   createBaseVNode("input", {
-                    id: "Bot-file-upload",
+                    id: BotFileUploadId,
                     class: "hidden",
                     onChange: uploadFile,
                     type: "file",
                     accept: " .pdf, .docx, .html, .xlsx"
                   }, null, 32),
-                  _hoisted_54,
-                  createBaseVNode("div", _hoisted_55, [
-                    createBaseVNode("div", _hoisted_56, [
+                  _hoisted_50$1,
+                  createBaseVNode("div", _hoisted_51$1, [
+                    createBaseVNode("div", _hoisted_52, [
                       withDirectives(createBaseVNode("input", {
                         "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => inviteEmail.value = $event),
                         type: "text",
@@ -3417,7 +4061,7 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                             label: "read"
                           }, {
                             default: withCtx(() => [
-                              _hoisted_57
+                              _hoisted_53
                             ]),
                             _: 1
                           }),
@@ -3426,7 +4070,7 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                             label: "edit"
                           }, {
                             default: withCtx(() => [
-                              _hoisted_58
+                              _hoisted_54
                             ]),
                             _: 1
                           })
@@ -3438,9 +4082,9 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                         class: "cursor-pointer text-right text-indigo-400 text-base font-['RobotoRegular'] px-3 border-l-[1px] border-[#393E44]"
                       }, " Invite ")
                     ]),
-                    createBaseVNode("div", _hoisted_59, [
-                      createBaseVNode("div", _hoisted_60, [
-                        createBaseVNode("div", _hoisted_61, [
+                    createBaseVNode("div", _hoisted_55, [
+                      createBaseVNode("div", _hoisted_56, [
+                        createBaseVNode("div", _hoisted_57, [
                           unref(authStore).getUserInfo.avatar ? (openBlock(), createElementBlock("img", {
                             key: 0,
                             src: unref(authStore).getUserInfo.avatar,
@@ -3448,9 +4092,9 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                             height: "72",
                             class: "h-8 w-8",
                             alt: ""
-                          }, null, 8, _hoisted_62)) : (openBlock(), createElementBlock("div", _hoisted_63, toDisplayString(defaultHeadImgTxt()), 1)),
-                          createBaseVNode("div", _hoisted_64, [
-                            createBaseVNode("div", _hoisted_65, toDisplayString(unref(authStore).getUserInfo.username), 1)
+                          }, null, 8, _hoisted_58)) : (openBlock(), createElementBlock("div", _hoisted_59, toDisplayString(defaultHeadImgTxt()), 1)),
+                          createBaseVNode("div", _hoisted_60, [
+                            createBaseVNode("div", _hoisted_61, toDisplayString(unref(authStore).getUserInfo.username), 1)
                           ])
                         ]),
                         createVNode(_component_el_select, {
@@ -3460,7 +4104,7 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                           "suffix-icon": unref(arrow_down_bold_default)
                         }, null, 8, ["suffix-icon"])
                       ]),
-                      collaborators.value.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_66, [
+                      collaborators.value.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_62, [
                         (openBlock(true), createElementBlock(Fragment, null, renderList(collaborators.value, (userInfo) => {
                           return openBlock(), createElementBlock("div", {
                             key: userInfo.name
@@ -3468,7 +4112,7 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                             createBaseVNode("img", {
                               src: userInfo.avatar,
                               alt: ""
-                            }, null, 8, _hoisted_67),
+                            }, null, 8, _hoisted_63),
                             createBaseVNode("div", null, toDisplayString(userInfo.name), 1),
                             createVNode(_component_el_select, {
                               class: "readEditSelect w-[70px]",
@@ -3483,13 +4127,13 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
                   ])
                 ]),
                 _: 1
-              }, 8, ["model"]),
-              createBaseVNode("div", { class: "flex flex-row justify-end gap-4 relative" }, [
-                _hoisted_68,
+              }, 8, ["model", "rules"]),
+              createBaseVNode("div", _hoisted_64, [
+                _hoisted_65,
                 createBaseVNode("div", {
-                  onClick: updateBot,
+                  onClick: _cache[7] || (_cache[7] = ($event) => handleSubmit(ruleFormRef1.value)),
                   class: "rounded cursor-pointer w-[143px] z-10 h-11 pl-3 pr-3 py-3 bg-[#5F44FF] justify-center items-center gap-2 inline-flex"
-                }, _hoisted_70)
+                }, _hoisted_67)
               ])
             ]),
             _: 1
@@ -3505,8 +4149,8 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const editBotTab_vue_vue_type_style_index_0_scoped_0ca1e3c4_lang = "";
-const editBotTab = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-0ca1e3c4"]]);
+const editBotTab_vue_vue_type_style_index_0_scoped_61b10f32_lang = "";
+const editBotTab = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-61b10f32"]]);
 const _hoisted_1$8 = /* @__PURE__ */ createBaseVNode("div", { class: "pointer-events-none w-1/2 h-1/2 flex justify-center items-center flex-col" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "text-4xl font-bold" }, "Welcome to"),
   /* @__PURE__ */ createBaseVNode("div", { class: "text-6xl font-bold" }, "Benchyard"),
@@ -3528,7 +4172,6 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
     const botStore = useBotStore();
     const panelStore = usePanelStore();
     const authStore = useAuthStore();
-    const privateChatStore = usePrivateChatStore();
     const backgroundColor = ref("var(--window-bg)");
     const dragenter = (e) => {
       e.preventDefault();
@@ -3564,43 +4207,7 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
             tab.type = "privateChat";
             tab.chatId = bot.chatId;
           } else {
-            if (!bot.id || !bot.title || !bot.avatar)
-              return;
-            addPrivateChat({
-              id: "",
-              title: bot.title,
-              members: [
-                {
-                  id: bot.id,
-                  name: bot.title,
-                  avatar: bot.avatar
-                }
-              ],
-              messages: [
-                {
-                  id: (/* @__PURE__ */ new Date()).getTime().toString(),
-                  username: "name",
-                  content: "Welcome to Benchyard, I am " + bot.title,
-                  avatar: bot.avatar,
-                  cache: ""
-                }
-              ],
-              sendTo: "",
-              enableChatSend: false,
-              files: []
-            });
-            const chat = privateChatStore.getPrivateChat.at(-1);
-            if (!chat)
-              return;
-            const chatInstance = new SocketChat(bot.id, chat.id);
-            chatInstance.connectToSocketIO(chat, () => {
-              tab.title = name;
-              tab.type = "privateChat";
-              bot.chatId = chat.id;
-              tab.chatId = bot.chatId;
-              savePrivateChat();
-            });
-            chat.chatInstance = chatInstance;
+            console.log("bot.chatId is empty!");
           }
         }
       }
@@ -3690,7 +4297,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
 const avatarStack_vue_vue_type_style_index_0_scoped_47edd9fd_lang = "";
 const avatarStack = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-47edd9fd"]]);
 const splitpanes = "";
-const _withScopeId$5 = (n) => (pushScopeId("data-v-9718fa72"), n = n(), popScopeId(), n);
+const _withScopeId$5 = (n) => (pushScopeId("data-v-910dd0c3"), n = n(), popScopeId(), n);
 const _hoisted_1$6 = { style: { "height": "100%", "display": "flex", "flex-direction": "column" } };
 const _hoisted_2$6 = { class: "tabs-panel" };
 const _hoisted_3$6 = { class: "flex flex-row justify-start" };
@@ -3813,7 +4420,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
                               _hoisted_7$5,
                               (openBlock(), createElementBlock("svg", {
                                 class: "tab-delete hover:fill-white fill-gray-500",
-                                onClick: withModifiers(($event) => unref(removeTab)(window2.id, tab.id), ["stop"])
+                                onClick: withModifiers(($event) => unref(removeTabAndSave)(window2.id, tab.id), ["stop"])
                               }, _hoisted_10$4, 8, _hoisted_8$5))
                             ], 4)) : tab.type == "createBot" ? (openBlock(), createElementBlock("div", {
                               key: 1,
@@ -3826,7 +4433,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
                               _hoisted_12$4,
                               (openBlock(), createElementBlock("svg", {
                                 class: "tab-delete hover:fill-white fill-gray-500",
-                                onClick: withModifiers(($event) => unref(removeTab)(window2.id, tab.id), ["stop"])
+                                onClick: withModifiers(($event) => unref(removeTabAndSave)(window2.id, tab.id), ["stop"])
                               }, _hoisted_15$4, 8, _hoisted_13$4))
                             ], 4)) : tab.type == "editBot" ? (openBlock(), createElementBlock("div", {
                               key: 2,
@@ -3839,7 +4446,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
                               _hoisted_17$2,
                               (openBlock(), createElementBlock("svg", {
                                 class: "tab-delete hover:fill-white fill-gray-500",
-                                onClick: withModifiers(($event) => unref(removeTab)(window2.id, tab.id), ["stop"])
+                                onClick: withModifiers(($event) => unref(removeTabAndSave)(window2.id, tab.id), ["stop"])
                               }, _hoisted_20$2, 8, _hoisted_18$2))
                             ], 4)) : tab.type == "privateChat" ? (openBlock(), createElementBlock("div", {
                               key: 3,
@@ -3855,7 +4462,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
                               }, null, 8, ["avatar-urls"]),
                               (openBlock(), createElementBlock("svg", {
                                 class: "tab-delete hover:fill-white fill-gray-500",
-                                onClick: withModifiers(($event) => unref(removeTab)(window2.id, tab.id), ["stop"])
+                                onClick: withModifiers(($event) => unref(removeTabAndSave)(window2.id, tab.id), ["stop"])
                               }, _hoisted_24$2, 8, _hoisted_22$2))
                             ], 4)) : tab.type == "groupChat" ? (openBlock(), createElementBlock("div", {
                               key: 4,
@@ -3871,7 +4478,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
                               }, null, 8, ["avatar-urls"]),
                               (openBlock(), createElementBlock("svg", {
                                 class: "tab-delete hover:fill-white fill-gray-500",
-                                onClick: withModifiers(($event) => unref(removeTab)(window2.id, tab.id), ["stop"])
+                                onClick: withModifiers(($event) => unref(removeTabAndSave)(window2.id, tab.id), ["stop"])
                               }, _hoisted_28$2, 8, _hoisted_26$2))
                             ], 4)) : createCommentVNode("", true)
                           ], 12, _hoisted_5$5)
@@ -3879,14 +4486,14 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
                       }), 128)),
                       createBaseVNode("div", {
                         class: "cursor-pointer flex justify-center items-center px-5 py-3",
-                        onClick: ($event) => unref(addTab)(window2.id)
+                        onClick: ($event) => unref(addTabAndSave)(window2.id)
                       }, [
                         (openBlock(), createElementBlock("svg", _hoisted_30$2, _hoisted_32$2))
                       ], 8, _hoisted_29$2)
                     ]),
                     createBaseVNode("div", _hoisted_33$2, [
                       (openBlock(), createElementBlock("svg", {
-                        onClick: _cache[0] || (_cache[0] = ($event) => unref(addWindow)()),
+                        onClick: _cache[0] || (_cache[0] = ($event) => unref(addWindowAndSave)()),
                         class: "w-4 h-4 object-cover min-h-[16px] cursor-pointer hover:stroke-white stroke-gray-500"
                       }, _hoisted_35$2)),
                       _hoisted_36$2
@@ -3903,19 +4510,19 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
                         tab.type == "privateChat" ? (openBlock(), createBlock(privateChat, {
                           key: 0,
                           "window-id": window2.id,
-                          "chat-id": tab.chatId || ""
+                          "chat-id": tab.chatId?.toString() || ""
                         }, null, 8, ["window-id", "chat-id"])) : tab.type == "groupChat" ? (openBlock(), createBlock(groupChat, {
                           key: 1,
                           "window-id": window2.id,
-                          "chat-id": tab.chatId || ""
+                          "chat-id": tab.chatId?.toString() || ""
                         }, null, 8, ["window-id", "chat-id"])) : tab.type == "createBot" ? (openBlock(), createBlock(createBotTab, {
                           key: 2,
-                          onCreateBotSuccess: ($event) => unref(removeTab)(window2.id, window2.tabsId),
+                          onCreateBotSuccess: ($event) => unref(removeTabAndSave)(window2.id, window2.tabsId),
                           "window-id": window2.id,
                           bot: tab.bot
                         }, null, 8, ["onCreateBotSuccess", "window-id", "bot"])) : tab.type == "editBot" ? (openBlock(), createBlock(editBotTab, {
                           key: 3,
-                          onCreateBotSuccess: ($event) => unref(removeTab)(window2.id, window2.tabsId),
+                          onCreateBotSuccess: ($event) => unref(removeTabAndSave)(window2.id, window2.tabsId),
                           "window-id": window2.id,
                           bot: tab.bot || {}
                         }, null, 8, ["onCreateBotSuccess", "window-id", "bot"])) : tab.type == "welcome" ? (openBlock(), createBlock(_sfc_main$8, {
@@ -3936,11 +4543,11 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const tabIndex_vue_vue_type_style_index_0_scoped_9718fa72_lang = "";
-const tabIndex = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-9718fa72"]]);
+const tabIndex_vue_vue_type_style_index_0_scoped_910dd0c3_lang = "";
+const tabIndex = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-910dd0c3"]]);
 const _imports_0 = "" + new URL("notLogin-a655f18d.svg", import.meta.url).href;
-const _withScopeId$4 = (n) => (pushScopeId("data-v-bb8674ca"), n = n(), popScopeId(), n);
-const _hoisted_1$5 = /* @__PURE__ */ createStaticVNode('<div class="flex items-center gap-2 relative overflow-hidden" data-v-bb8674ca><div class="flex flex-col min-w-[39px]" data-v-bb8674ca><img src="' + _imports_0 + '" data-v-bb8674ca><svg class="w-9 h-9 object-cover grow min-h-[36px]" data-v-bb8674ca><use href="#notLogin" data-v-bb8674ca></use></svg></div><div class="flex flex-col min-w-[126px]" data-v-bb8674ca><div class="flex flex-col gap-y-1.5 grow relative" data-v-bb8674ca><div class="text-[14px] leading-none font-[RobotoMedium] text-white tracking-[-0.15px]" data-v-bb8674ca> Sign in </div><div class="text-[10px] leading-none font-[RobotoRegular] text-[rgb(124,135,142)] tracking-[-0.1px]" data-v-bb8674ca> Unlock the power of Al </div></div></div></div>', 1);
+const _withScopeId$4 = (n) => (pushScopeId("data-v-7f4c1c89"), n = n(), popScopeId(), n);
+const _hoisted_1$5 = /* @__PURE__ */ createStaticVNode('<div class="flex items-center gap-2 relative overflow-hidden" data-v-7f4c1c89><div class="flex flex-col min-w-[39px]" data-v-7f4c1c89><img src="' + _imports_0 + '" data-v-7f4c1c89><svg class="w-9 h-9 object-cover grow min-h-[36px]" data-v-7f4c1c89><use href="#notLogin" data-v-7f4c1c89></use></svg></div><div class="flex flex-col min-w-[126px]" data-v-7f4c1c89><div class="flex flex-col gap-y-1.5 grow relative" data-v-7f4c1c89><div class="text-[14px] leading-none font-[RobotoMedium] text-white tracking-[-0.15px]" data-v-7f4c1c89> Sign in </div><div class="text-[10px] leading-none font-[RobotoRegular] text-[rgb(124,135,142)] tracking-[-0.1px]" data-v-7f4c1c89> Unlock the power of Al </div></div></div></div>', 1);
 const _hoisted_2$5 = [
   _hoisted_1$5
 ];
@@ -3978,6 +4585,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   __name: "account",
   emits: ["panelChange", "loginSuccess"],
   setup(__props, { expose: __expose, emit }) {
+    const router = useRouter();
     const panelStore = usePanelStore();
     const authStore = useAuthStore();
     const route = useRoute();
@@ -4001,7 +4609,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     const handleLogout = () => {
       authStore.clear();
       console.log("logout");
-      authStore.loginRef.showModal();
+      router.push({ path: "/" });
     };
     onMounted(() => {
       if (route.query.token) {
@@ -4074,9 +4682,9 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const account_vue_vue_type_style_index_0_scoped_bb8674ca_lang = "";
-const account = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-bb8674ca"]]);
-const _withScopeId$3 = (n) => (pushScopeId("data-v-3a0beed5"), n = n(), popScopeId(), n);
+const account_vue_vue_type_style_index_0_scoped_7f4c1c89_lang = "";
+const account = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-7f4c1c89"]]);
+const _withScopeId$3 = (n) => (pushScopeId("data-v-75866d6d"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("use", { href: "#shrink" }, null, -1));
 const _hoisted_2$4 = [
   _hoisted_1$4
@@ -4172,13 +4780,13 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
                 !unref(panelStore).pinMenu ? (openBlock(), createElementBlock("svg", {
                   key: 0,
                   class: "panel-delete",
-                  onClick: withModifiers(($event) => unref(removePanel)(panel.id), ["stop"])
+                  onClick: withModifiers(($event) => unref(removePanelAndSave)(panel.id), ["stop"])
                 }, _hoisted_11$2, 8, _hoisted_9$3)) : createCommentVNode("", true)
               ], 44, _hoisted_6$3);
             }), 128)),
             createBaseVNode("div", {
               class: "menu-item",
-              onClick: _cache[1] || (_cache[1] = ($event) => unref(addPanel)())
+              onClick: _cache[1] || (_cache[1] = ($event) => unref(addPanelandSave)())
             }, _hoisted_14$2)
           ])
         ]),
@@ -4193,9 +4801,9 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const menu_vue_vue_type_style_index_0_scoped_3a0beed5_lang = "";
-const Menu = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-3a0beed5"]]);
-const _withScopeId$2 = (n) => (pushScopeId("data-v-3cab504e"), n = n(), popScopeId(), n);
+const menu_vue_vue_type_style_index_0_scoped_75866d6d_lang = "";
+const Menu = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-75866d6d"]]);
+const _withScopeId$2 = (n) => (pushScopeId("data-v-789248fe"), n = n(), popScopeId(), n);
 const _hoisted_1$3 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("svg", { class: "w-5 h-5 object-cover min-h-[20px] m-[6px]" }, [
   /* @__PURE__ */ createBaseVNode("use", { href: "#add" })
 ], -1));
@@ -4308,7 +4916,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
       if (authStore.getUserInfo == null) {
         authStore.loginRef.showModal();
       } else {
-        addTab(panelStore.windowId, {
+        addTabAndSave(panelStore.windowId, {
           id: (/* @__PURE__ */ new Date()).getTime().toString(),
           title: "Create Bot",
           editing: false,
@@ -4318,7 +4926,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
       }
     };
     const searchedBot = ref({
-      title: "",
+      name: "",
       description: "",
       avatar: "",
       visibility: 1,
@@ -4373,7 +4981,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
     const createBotFromFile = () => {
       console.log(loadBot.value);
-      addTab(panelStore.windowId, {
+      addTabAndSave(panelStore.windowId, {
         id: (/* @__PURE__ */ new Date()).getTime().toString(),
         title: "Create Bot",
         editing: false,
@@ -4539,7 +5147,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
               createBaseVNode("div", _hoisted_35$1, [
                 createBaseVNode("div", _hoisted_36$1, [
                   createBaseVNode("div", _hoisted_37$1, [
-                    createBaseVNode("div", _hoisted_38$1, toDisplayString(searchedBot.value.title), 1),
+                    createBaseVNode("div", _hoisted_38$1, toDisplayString(searchedBot.value.name), 1),
                     createBaseVNode("div", { class: "justify-start items-start gap-6 flex" }, [
                       createBaseVNode("div", {
                         onClick: installSearchedBot,
@@ -4559,8 +5167,8 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const createBot_vue_vue_type_style_index_0_scoped_3cab504e_lang = "";
-const createBot = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-3cab504e"]]);
+const createBot_vue_vue_type_style_index_0_scoped_789248fe_lang = "";
+const createBot = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-789248fe"]]);
 const _hoisted_1$2 = ["src"];
 const _hoisted_2$2 = {
   key: 1,
@@ -4632,7 +5240,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
 });
 const avatarStack2_vue_vue_type_style_index_0_scoped_f7bc0de3_lang = "";
 const avatarStack2 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-f7bc0de3"]]);
-const _withScopeId$1 = (n) => (pushScopeId("data-v-3401f1b7"), n = n(), popScopeId(), n);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-c5ce28ee"), n = n(), popScopeId(), n);
 const _hoisted_1$1 = { style: { "cursor": "pointer" } };
 const _hoisted_2$1 = ["href"];
 const _hoisted_3$1 = { class: "w-[200px] flex-1 transition-all duration-500" };
@@ -4688,36 +5296,32 @@ const _hoisted_36 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createB
 const _hoisted_37 = [
   _hoisted_36
 ];
-const _hoisted_38 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "menu-text2" }, "Download ConfigFile", -1));
-const _hoisted_39 = [
-  _hoisted_38
-];
-const _hoisted_40 = { class: "add-bot px-[10px] py-[10px] rounded-[6px] border border-[#676C72] justify-center items-center gap-2 inline-flex cursor-pointer" };
-const _hoisted_41 = {
+const _hoisted_38 = { class: "add-bot px-[10px] py-[10px] rounded-[6px] border border-[#676C72] justify-center items-center gap-2 inline-flex cursor-pointer" };
+const _hoisted_39 = {
   class: "w-5 h-5 object-cover",
   style: { "transform": "rotate(90deg)" }
 };
-const _hoisted_42 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("use", { href: "#vdot" }, null, -1));
+const _hoisted_40 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("use", { href: "#vdot" }, null, -1));
+const _hoisted_41 = [
+  _hoisted_40
+];
+const _hoisted_42 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "menu-text1" }, "Uninstall", -1));
 const _hoisted_43 = [
   _hoisted_42
 ];
-const _hoisted_44 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "menu-text1" }, "Uninstall", -1));
-const _hoisted_45 = [
-  _hoisted_44
-];
-const _hoisted_46 = { class: "justify-start items-center gap-2 inline-flex" };
-const _hoisted_47 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "w-6 h-6 relative" }, [
+const _hoisted_44 = { class: "justify-start items-center gap-2 inline-flex" };
+const _hoisted_45 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "w-6 h-6 relative" }, [
   /* @__PURE__ */ createBaseVNode("svg", { class: "w-6 h-6 left-0 top-0 absolute" }, [
     /* @__PURE__ */ createBaseVNode("use", { href: "#BYlogo" })
   ])
 ], -1));
-const _hoisted_48 = { class: "text-gray-500 text-sm font-medium font-['RobotoRegular'] leading-[14px]" };
-const _hoisted_49 = { class: "w-[682px] text-white text-base font-medium font-['RobotoRegular'] leading-normal" };
-const _hoisted_50 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm" }, "Copy to BOT CODE clipboard:", -1));
-const _hoisted_51 = { class: "flex flex-row items-center justify-center" };
-const _hoisted_52 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("use", { href: "#copy" }, null, -1));
-const _hoisted_53 = [
-  _hoisted_52
+const _hoisted_46 = { class: "text-gray-500 text-sm font-medium font-['RobotoRegular'] leading-[14px]" };
+const _hoisted_47 = { class: "w-[682px] text-white text-base font-medium font-['RobotoRegular'] leading-normal" };
+const _hoisted_48 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm" }, "Copy to BOT CODE clipboard:", -1));
+const _hoisted_49 = { class: "flex flex-row items-center justify-center" };
+const _hoisted_50 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createBaseVNode("use", { href: "#copy" }, null, -1));
+const _hoisted_51 = [
+  _hoisted_50
 ];
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "selectedBotCol",
@@ -4766,7 +5370,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         console.log(res);
         botInfo.value = res.data;
         botInfo.value.visibility = 1;
-        addTab(panelStore.windowId, {
+        addTabAndSave(panelStore.windowId, {
           id: (/* @__PURE__ */ new Date()).getTime().toString(),
           title: "Edit Bot",
           editing: false,
@@ -4785,7 +5389,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         console.log(res);
         botInfo.value = res.data;
         botInfo.value.visibility = 1;
-        addTab(panelStore.windowId, {
+        addTabAndSave(panelStore.windowId, {
           id: (/* @__PURE__ */ new Date()).getTime().toString(),
           title: "Edit Bot",
           editing: false,
@@ -4820,19 +5424,6 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         console.log(err);
       });
     };
-    const downloadConfigFile = () => {
-      apiBotInfo(botInfo.value.id).then((res) => {
-        const dataStr = JSON.stringify(res.data);
-        const dataBlob = new Blob([dataStr], { type: "text/plain" });
-        const url = URL.createObjectURL(dataBlob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = botInfo.value.title + ".botcfg";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      });
-    };
     const uninstallBot = () => {
       apiBotDelete({ id: botInfo.value.id }).then((res) => {
         console.log(res);
@@ -4857,7 +5448,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         console.log(privateChatStore.getPrivateChat);
         const chat = privateChatStore.getPrivateChatById(bot.chatId);
         console.log(chat);
-        addTab(panelStore.windowId, {
+        addTabAndSave(panelStore.windowId, {
           id: (/* @__PURE__ */ new Date()).getTime().toString(),
           title: bot.title || "",
           editing: false,
@@ -4865,53 +5456,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
           chatId: chat.id
         });
       } else {
-        if (bot.id && bot.title && bot.avatar) {
-          addPrivateChat({
-            id: "",
-            title: bot.title,
-            members: [
-              {
-                id: bot.id,
-                name: bot.title,
-                avatar: bot.avatar
-              }
-            ],
-            messages: [
-              {
-                id: (/* @__PURE__ */ new Date()).getTime().toString(),
-                username: "name",
-                content: "Welcome to Benchyard, I am " + bot.title,
-                avatar: bot.avatar,
-                cache: ""
-              }
-            ],
-            sendTo: "",
-            enableChatSend: false,
-            files: []
-          });
-          const chat = privateChatStore.getPrivateChat.at(-1);
-          if (!chat)
-            return;
-          const chatInstance = new SocketChat(bot.id, chat.id);
-          const loading = ElLoading.service({
-            lock: true,
-            text: "Connecting to " + bot.title + " ...",
-            background: "rgba(0, 0, 0, 0.95)"
-          });
-          chatInstance.connectToSocketIO(chat, () => {
-            addTab(panelStore.windowId, {
-              id: (/* @__PURE__ */ new Date()).getTime().toString(),
-              title: bot.title || "",
-              editing: false,
-              type: "privateChat",
-              chatId: chat.id
-            });
-            bot.chatId = chat.id;
-            savePrivateChat();
-            loading.close();
-          });
-          chat.chatInstance = chatInstance;
-        }
+        console.log("bot.chatId is empty");
       }
     };
     const openGroupChatWindow = (group) => {
@@ -4919,7 +5464,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         return;
       console.log(panelStore.openChatIfExistInTabs(group.id));
       console.log("openChatWindow");
-      addTab(panelStore.windowId, {
+      addTabAndSave(panelStore.windowId, {
         id: (/* @__PURE__ */ new Date()).getTime().toString(),
         title: group.title,
         editing: false,
@@ -5095,29 +5640,25 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
                           createBaseVNode("div", {
                             class: "menu-item",
                             onClick: _cache[1] || (_cache[1] = ($event) => shareBot(botInfo.value.id))
-                          }, _hoisted_37),
-                          createBaseVNode("div", {
-                            class: "menu-item",
-                            onClick: downloadConfigFile
-                          }, _hoisted_39)
+                          }, _hoisted_37)
                         ])
                       ]),
-                      createBaseVNode("div", _hoisted_40, [
-                        (openBlock(), createElementBlock("svg", _hoisted_41, _hoisted_43)),
+                      createBaseVNode("div", _hoisted_38, [
+                        (openBlock(), createElementBlock("svg", _hoisted_39, _hoisted_41)),
                         createBaseVNode("div", { class: "absolute left-0 bg-[#292d32] account-menu w-full rounded-[6px] overflow-hidden" }, [
                           createBaseVNode("div", {
                             class: "menu-item",
                             onClick: uninstallBot
-                          }, _hoisted_45)
+                          }, _hoisted_43)
                         ])
                       ])
                     ])
                   ]),
-                  createBaseVNode("div", _hoisted_46, [
-                    _hoisted_47,
-                    createBaseVNode("div", _hoisted_48, toDisplayString(botInfo.value.creator_name), 1)
+                  createBaseVNode("div", _hoisted_44, [
+                    _hoisted_45,
+                    createBaseVNode("div", _hoisted_46, toDisplayString(botInfo.value.creator_name), 1)
                   ]),
-                  createBaseVNode("div", _hoisted_49, toDisplayString(botInfo.value.description), 1)
+                  createBaseVNode("div", _hoisted_47, toDisplayString(botInfo.value.description), 1)
                 ])
               ])
             ])
@@ -5133,8 +5674,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         }, {
           header: withCtx(({}) => []),
           default: withCtx(() => [
-            _hoisted_50,
-            createBaseVNode("div", _hoisted_51, [
+            _hoisted_48,
+            createBaseVNode("div", _hoisted_49, [
               withDirectives(createBaseVNode("textarea", {
                 class: "text-white text-lg bg-transparent resize-none",
                 id: "botCode",
@@ -5146,7 +5687,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               (openBlock(), createElementBlock("svg", {
                 class: "w-6 h-6",
                 onClick: _cache[4] || (_cache[4] = ($event) => copyTextToClipboard(botCode.value))
-              }, _hoisted_53))
+              }, _hoisted_51))
             ])
           ]),
           _: 1
@@ -5155,8 +5696,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const selectedBotCol_vue_vue_type_style_index_0_scoped_3401f1b7_lang = "";
-const selectedBotCol = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-3401f1b7"]]);
+const selectedBotCol_vue_vue_type_style_index_0_scoped_c5ce28ee_lang = "";
+const selectedBotCol = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-c5ce28ee"]]);
 const _withScopeId = (n) => (pushScopeId("data-v-c0999639"), n = n(), popScopeId(), n);
 const _hoisted_1 = { class: "main" };
 const _hoisted_2 = /* @__PURE__ */ createStaticVNode('<div class="absolute top-0 right-0 left-0 h-10 flex flex-row items-center justify-center bg-[#1D2126]" data-v-c0999639><div class="w-[30%] h-full shrink-0 app-drag" data-v-c0999639></div><div class="bg-[var(--panel-bg)] rounded w-[40%] h-[30px] flex flex-row items-center justify-between px-5 py-[11px]" data-v-c0999639><div class="flex flex-row items-center gap-3 w-full" data-v-c0999639><svg class="w-4 h-4 object-cover min-h-[16px] cursor-pointer" data-v-c0999639><use href="#search" data-v-c0999639></use></svg><input type="text" class="w-full h-full bg-transparent outline-none text-[rgb(124,135,142)] tracking-[-0.15px] font-[RobotoRegular] text-[14px] leading-none" placeholder="Search..." data-v-c0999639></div></div><div class="w-[30%] h-full shrink-0 app-drag" data-v-c0999639></div></div>', 1);

@@ -1,8 +1,8 @@
-.chat-room-origin[data-v-8cb7a581] {
+.chat-room-origin[data-v-7120ee1b] {
   width: 100%;
   min-height: 407px;
 }
-.chat-room[data-v-8cb7a581] {
+.chat-room[data-v-7120ee1b] {
   min-width: 300px;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   height: 560px;
   overflow: hidden;
 }
-.options[data-v-8cb7a581] {
+.options[data-v-7120ee1b] {
   position: absolute;
   list-style: none;
   background-color: #f2f2f2;
@@ -20,14 +20,14 @@
   padding: 0;
   margin: 0;
 }
-.options li[data-v-8cb7a581] {
+.options li[data-v-7120ee1b] {
   padding: 5px 10px;
   cursor: pointer;
 }
-.options li[data-v-8cb7a581]:hover {
+.options li[data-v-7120ee1b]:hover {
   background-color: #ccc;
 }
-.input-area[data-v-8cb7a581] {
+.input-area[data-v-7120ee1b] {
   position: absolute;
   width: 100%;
   margin: auto;
@@ -37,7 +37,7 @@
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
 }
-.text-area[data-v-8cb7a581] {
+.text-area[data-v-7120ee1b] {
   z-index: 99;
   resize: none;
   overflow-y: auto;
@@ -55,7 +55,7 @@
   font-weight: 400;
   line-height: 26px;
 }
-.loader[data-v-8cb7a581] {
+.loader[data-v-7120ee1b] {
   position: absolute;
   inset: 4px 0;
   border: 4px solid #f3f3f3;
@@ -64,12 +64,12 @@
   /* 设置顶部边框的颜色 */
   border-radius: 50%;
   /* 设置loading的大小 */
-  animation: spin-8cb7a581 2s linear infinite;
+  animation: spin-7120ee1b 2s linear infinite;
   /* 设置旋转动画 */
   margin: auto;
   /* 居中显示 */
 }
-@keyframes spin-8cb7a581 {
+@keyframes spin-7120ee1b {
 0% {
     transform: rotate(0deg);
 }
@@ -79,7 +79,7 @@
 }
   /* 结束位置 */
 }
-.tribute-demo-input[data-v-8cb7a581] {
+.tribute-demo-input[data-v-7120ee1b] {
   background-color: #1668d4;
   outline: none;
   border: 1px solid #eee;
@@ -89,20 +89,20 @@
   min-height: 32px;
   cursor: text;
 }
-.tribute-demo-input[data-v-8cb7a581]:focus {
+.tribute-demo-input[data-v-7120ee1b]:focus {
   border-color: #d1d1d1;
 }
-[contenteditable='true'][data-v-8cb7a581]:empty:before {
+[contenteditable='true'][data-v-7120ee1b]:empty:before {
   content: attr(placeholder);
   display: block;
   color: #ccc;
 }
-#test-autocomplete-container[data-v-8cb7a581] {
+#test-autocomplete-container[data-v-7120ee1b] {
   position: relative;
 }
-#test-autocomplete-textarea-container[data-v-8cb7a581] {
+#test-autocomplete-textarea-container[data-v-7120ee1b] {
   position: relative;
 }
-.float-right[data-v-8cb7a581] {
+.float-right[data-v-7120ee1b] {
   float: right;
 }

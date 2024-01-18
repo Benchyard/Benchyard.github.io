@@ -1,6 +1,6 @@
-import { d as defineComponent, a as ref, s as reactive, h as resolveComponent, o as openBlock, z as createBlock, y as withCtx, c as createElementBlock, e as createVNode, G as withKeys, B as createTextVNode, b as createBaseVNode, ae as apiRegister, E as ElMessage, p as pushScopeId, g as popScopeId, af as useRouter, u as useAuthStore, V as ElLoading, ag as apiLogin, C as apiUserInfo, ah as getPanelandSet, H as withModifiers, ai as apiSendResetPasswordEmail, a5 as useRoute, aj as apiResetPassword, D as onMounted, a8 as apiGetBotInfoFromCode, t as toDisplayString, a9 as apiAcceptInvitation } from "./index-fb62e72d.js";
+import { d as defineComponent, a as ref, z as reactive, h as resolveComponent, o as openBlock, i as createBlock, w as withCtx, c as createElementBlock, e as createVNode, J as withKeys, j as createTextVNode, b as createBaseVNode, ae as apiRegister, E as ElMessage, p as pushScopeId, g as popScopeId, A as useRouter, u as useAuthStore, Y as ElLoading, af as apiLogin, D as apiGetUserInfo, X as UpdateBotAndSetPanel, K as withModifiers, ag as apiSendResetPasswordEmail, a5 as useRoute, ah as apiResetPassword, I as onMounted, a8 as apiGetBotInfoFromCode, t as toDisplayString, a9 as apiAcceptInvitation } from "./index-cf6e881d.js";
 import { _ as _export_sfc } from "./_plugin-vue_export-helper-cc2b3d55.js";
-const _withScopeId$4 = (n) => (pushScopeId("data-v-4d2ba85f"), n = n(), popScopeId(), n);
+const _withScopeId$4 = (n) => (pushScopeId("data-v-228575cd"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = {
   class: "logo",
   style: { "width": "68px", "height": "68px" }
@@ -54,10 +54,24 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
         callback();
       }
     };
+    const validateUsername = (rule, value, callback) => {
+      console.log(rule);
+      if (value === "") {
+        callback(new Error("Please input the username"));
+      } else {
+        const reg = /^[a-zA-Z0-9_.-]*$/;
+        if (!reg.test(value)) {
+          callback(new Error("Only letters, numbers, underscores, dots and dashes are allowed"));
+        } else {
+          callback();
+        }
+      }
+    };
     const rules = reactive({
       username: [
         { required: true, message: "Please input Username", trigger: "blur" },
-        { min: 3, max: 18, message: "Length should be 3 to 18", trigger: "blur" }
+        { min: 3, max: 18, message: "Length should be 3 to 18", trigger: "blur" },
+        { validator: validateUsername, trigger: "blur" }
       ],
       email: [
         { required: true, message: "Please input email", trigger: "blur" },
@@ -88,10 +102,10 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
       await formEl.validate((valid, fields) => {
         if (valid) {
           apiRegister({
-            "name": ruleForm.username,
-            "username": ruleForm.username,
-            "email": ruleForm.email,
-            "password": ruleForm.password
+            name: ruleForm.username,
+            username: ruleForm.username,
+            email: ruleForm.email,
+            password: ruleForm.password
           }).then((res) => {
             console.log(res);
             ElMessage({
@@ -214,7 +228,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
             _: 1
           }, 8, ["model", "rules"]),
           createBaseVNode("p", { class: "tips" }, [
-            createTextVNode("Already have an account? "),
+            createTextVNode(" Already have an account? "),
             createBaseVNode("a", {
               href: "javascript:;",
               onClick: toLogIn,
@@ -227,9 +241,9 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const register_vue_vue_type_style_index_0_scoped_4d2ba85f_lang = "";
-const CompRegister = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-4d2ba85f"]]);
-const _withScopeId$3 = (n) => (pushScopeId("data-v-90d4afa1"), n = n(), popScopeId(), n);
+const register_vue_vue_type_style_index_0_scoped_228575cd_lang = "";
+const CompRegister = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-228575cd"]]);
+const _withScopeId$3 = (n) => (pushScopeId("data-v-ff934cf5"), n = n(), popScopeId(), n);
 const _hoisted_1$3 = {
   class: "logo",
   style: { "width": "70px", "height": "70px" }
@@ -265,6 +279,8 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     });
     const showModal = () => {
       dialogVisible.value = true;
+      ruleForm.email = "";
+      ruleForm.password = "";
     };
     const hideModal = () => {
       dialogVisible.value = false;
@@ -294,13 +310,14 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
           document.addEventListener("keydown", (e) => {
             if (e.key === "Escape") {
               loading.close();
+              console.log("escape");
             }
           });
-          await apiLogin({ identifier: ruleForm.email, password: ruleForm.password });
           try {
-            const res = await apiUserInfo();
+            await apiLogin({ identifier: ruleForm.email, password: ruleForm.password });
+            const res = await apiGetUserInfo();
             authStore.setLogin(res.data);
-            await getPanelandSet();
+            await UpdateBotAndSetPanel();
             dialogVisible.value = false;
             router.push({ path: "/app" });
           } catch (err) {
@@ -412,8 +429,8 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const login_vue_vue_type_style_index_0_scoped_90d4afa1_lang = "";
-const CompLogin = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-90d4afa1"]]);
+const login_vue_vue_type_style_index_0_scoped_ff934cf5_lang = "";
+const CompLogin = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-ff934cf5"]]);
 const _withScopeId$2 = (n) => (pushScopeId("data-v-04d94de2"), n = n(), popScopeId(), n);
 const _hoisted_1$2 = {
   class: "logo",
@@ -746,7 +763,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
 });
 const resetPsd_vue_vue_type_style_index_0_scoped_9da50a3d_lang = "";
 const resetPsd = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-9da50a3d"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-6f9432a9"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-da7be994"), n = n(), popScopeId(), n);
 const _hoisted_1 = {
   class: "logo",
   style: { "width": "68px", "height": "68px" }
@@ -796,7 +813,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         default: withCtx(() => [
           (openBlock(), createElementBlock("svg", _hoisted_1, _hoisted_3)),
           _hoisted_4,
-          createTextVNode(" " + toDisplayString(searchBotInfo.value.title) + " " + toDisplayString(searchBotInfo.value.description) + " ", 1),
+          createTextVNode(" " + toDisplayString(searchBotInfo.value.name) + " " + toDisplayString(searchBotInfo.value.description) + " ", 1),
           createVNode(_component_el_button, {
             type: "primary",
             class: "submit",
@@ -825,8 +842,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const botInvitation_vue_vue_type_style_index_0_scoped_6f9432a9_lang = "";
-const botInvitation = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-6f9432a9"]]);
+const botInvitation_vue_vue_type_style_index_0_scoped_da7be994_lang = "";
+const botInvitation = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-da7be994"]]);
 export {
   CompRegister as C,
   CompLogin as a,

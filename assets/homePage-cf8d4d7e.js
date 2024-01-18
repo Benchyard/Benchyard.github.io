@@ -1,6 +1,6 @@
 import { _ as _imports_0 } from "./homeBackground-bf4b476d.js";
-import { C as CompRegister, a as CompLogin, b as CompFindPassword, r as resetPsd, c as botInvitation } from "./botInvitation-e56b6d88.js";
-import { d as defineComponent, u as useAuthStore, r as router, a as ref, c as createElementBlock, b as createBaseVNode, e as createVNode, F as Fragment, f as createStaticVNode, o as openBlock, p as pushScopeId, g as popScopeId } from "./index-fb62e72d.js";
+import { C as CompRegister, a as CompLogin, b as CompFindPassword, r as resetPsd, c as botInvitation } from "./botInvitation-db245019.js";
+import { d as defineComponent, u as useAuthStore, r as router, a as ref, c as createElementBlock, b as createBaseVNode, e as createVNode, F as Fragment, f as createStaticVNode, o as openBlock, p as pushScopeId, g as popScopeId } from "./index-cf6e881d.js";
 import { _ as _export_sfc } from "./_plugin-vue_export-helper-cc2b3d55.js";
 const _withScopeId = (n) => (pushScopeId("data-v-278a6a5f"), n = n(), popScopeId(), n);
 const _hoisted_1 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createBaseVNode("div", { class: "h-7 w-full app-drag z-20" }, null, -1));

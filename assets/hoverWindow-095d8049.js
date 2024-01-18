@@ -1,7 +1,7 @@
-import { d as defineComponent, q as usePanelStore, a as ref, u as useAuthStore, m as useBotStore, J as usePrivateChatStore, w as watch, D as onMounted, T as Tribute, h as resolveComponent, c as createElementBlock, i as withDirectives, v as vShow, e as createVNode, A as unref, k as createCommentVNode, b as createBaseVNode, G as withKeys, F as Fragment, j as renderList, n as normalizeStyle, E as ElMessage, o as openBlock, t as toDisplayString, y as withCtx, H as withModifiers, p as pushScopeId, g as popScopeId, I as apiFileAdd } from "./index-fb62e72d.js";
-import { s as scrollMessage } from "./scrollMessage-55360828.js";
+import { d as defineComponent, y as usePanelStore, a as ref, u as useAuthStore, x as useBotStore, L as usePrivateChatStore, k as watch, I as onMounted, T as Tribute, h as resolveComponent, c as createElementBlock, l as withDirectives, v as vShow, e as createVNode, C as unref, q as createCommentVNode, b as createBaseVNode, J as withKeys, F as Fragment, m as renderList, n as normalizeStyle, E as ElMessage, o as openBlock, t as toDisplayString, w as withCtx, K as withModifiers, p as pushScopeId, g as popScopeId, M as apiFileAdd } from "./index-cf6e881d.js";
+import { s as scrollMessage } from "./scrollMessage-75c3f3b8.js";
 import { _ as _export_sfc } from "./_plugin-vue_export-helper-cc2b3d55.js";
-const _withScopeId = (n) => (pushScopeId("data-v-8cb7a581"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-7120ee1b"), n = n(), popScopeId(), n);
 const _hoisted_1 = { class: "w-full h-full flex flex-col items-center justify-start" };
 const _hoisted_2 = {
   key: 0,
@@ -62,8 +62,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     const matchedBots = ref([]);
     const chat = ref({
       files: [],
-      members: [],
-      chatInstance: null
+      members: []
     });
     const inputAllChange = (e) => {
       console.log(e);
@@ -127,7 +126,25 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           }
         }
         const c = privateChat.getPrivateChatById(b.chatId);
-        c.chatInstance.sendMessage(sendTo.value);
+        showChat.value = true;
+        privateChat.sio.sendMessage(c.id, sendTo.value);
+        c.messages.push({
+          id: (/* @__PURE__ */ new Date()).getTime().toString(),
+          username: authStore.getUserInfo?.username,
+          avatar: authStore.getUserInfo?.avatar,
+          role: "user",
+          content: sendTo.value,
+          cache: ""
+        });
+        c.messages.push({
+          id: (/* @__PURE__ */ new Date()).getTime().toString(),
+          username: authStore.getUserInfo?.username,
+          role: "assistant",
+          avatar: c.members[0].avatar,
+          content: "",
+          cache: "",
+          refs: []
+        });
       };
       if (matchedBots.value.length === 0) {
         sendToBotByName(panelStore.setting.defaultBot.name);
@@ -214,7 +231,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
     const innerHTML2SendTo = (innerHTML) => {
       sendTo.value = innerHTML;
-      const regex = /<span contenteditable="false"><a style="color:#7C82FF">@(.{1,20})<\/a><\/span>/g;
+      const regex = /<span contenteditable="false"><a style="color:#7C82FF">(.{1,20})<\/a><\/span>/g;
       let match;
       matchedBots.value = [];
       while ((match = regex.exec(sendTo.value)) !== null) {
@@ -256,7 +273,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           return '<img class="icon" src="' + item.original.icon + '"><div style:"flex:1">' + item.string + "</div>";
         },
         selectTemplate: function(item) {
-          return '<span contenteditable="false" ><a style="color:#7C82FF">@' + item.original.value + "</a></span>";
+          return '<span contenteditable="false" ><a style="color:#7C82FF">' + item.original.value + "</a></span>";
         }
       });
       const textarea = document.getElementById(textareaId);
@@ -272,6 +289,11 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         textarea.style.height = "5px";
         textarea.style.height = textarea.scrollHeight + "px";
         moveCaretToVisible();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          console.log("escape");
+        }
       });
     });
     return (_ctx, _cache) => {
@@ -350,8 +372,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const hoverWindow_vue_vue_type_style_index_0_scoped_8cb7a581_lang = "";
-const hoverWindow = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-8cb7a581"]]);
+const hoverWindow_vue_vue_type_style_index_0_scoped_7120ee1b_lang = "";
+const hoverWindow = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-7120ee1b"]]);
 export {
   hoverWindow as default
 };

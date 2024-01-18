@@ -1979,6 +1979,7 @@ td {
   font-size: 14px !important;
   line-height: 14px !important;
   max-width: 100% !important;
+  text-align: justify !important;
 }body {
   height: 100%;
   scrollbar-width: none;
@@ -2979,6 +2980,12 @@ video {
 .right-2 {
   right: 0.5rem;
 }
+.right-\[-20px\] {
+  right: -20px;
+}
+.right-\[-40px\] {
+  right: -40px;
+}
 .right-\[40px\] {
   right: 40px;
 }
@@ -3188,6 +3195,9 @@ video {
 .h-\[34px\] {
   height: 34px;
 }
+.h-\[400px\] {
+  height: 400px;
+}
 .h-\[458px\] {
   height: 458px;
 }
@@ -3386,6 +3396,9 @@ video {
 }
 .w-px {
   width: 1px;
+}
+.min-w-20 {
+  min-width: 5rem;
 }
 .min-w-\[126px\] {
   min-width: 126px;
@@ -3907,6 +3920,9 @@ video {
 }
 .text-right {
   text-align: right;
+}
+.text-justify {
+  text-align: justify;
 }
 .font-\[\'RobotoMedium\'\] {
   font-family: 'RobotoMedium';

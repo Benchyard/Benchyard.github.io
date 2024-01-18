@@ -11109,34 +11109,34 @@ const pageRouter = [
   {
     path: "/",
     name: "home",
-    component: () => __vitePreload(() => import("./homePage-f6efb115.js"), true ? ["./homePage-f6efb115.js","./homeBackground-bf4b476d.js","./botInvitation-e56b6d88.js","./_plugin-vue_export-helper-cc2b3d55.js","./botInvitation-f99d2318.css","./homePage-66e6dbd5.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./homePage-cf8d4d7e.js"), true ? ["./homePage-cf8d4d7e.js","./homeBackground-bf4b476d.js","./botInvitation-db245019.js","./_plugin-vue_export-helper-cc2b3d55.js","./botInvitation-e335dc40.css","./homePage-66e6dbd5.css"] : void 0, import.meta.url)
   },
   {
     path: "/app",
     name: "app",
     // meta: {isAuth: true},
-    component: () => __vitePreload(() => import("./home-fdd6d677.js"), true ? ["./home-fdd6d677.js","./_plugin-vue_export-helper-cc2b3d55.js","./scrollMessage-55360828.js","./scrollMessage-700a3347.css","./botInvitation-e56b6d88.js","./botInvitation-f99d2318.css","./home-d5fe4aaa.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./home-ec3b155e.js"), true ? ["./home-ec3b155e.js","./_plugin-vue_export-helper-cc2b3d55.js","./scrollMessage-75c3f3b8.js","./scrollMessage-07a94ea0.css","./botInvitation-db245019.js","./botInvitation-e335dc40.css","./home-cde6abac.css"] : void 0, import.meta.url)
   },
   {
     path: "/account",
     name: "account",
-    component: () => __vitePreload(() => import("./accountManage-a7198dcf.js"), true ? ["./accountManage-a7198dcf.js","./botInvitation-e56b6d88.js","./_plugin-vue_export-helper-cc2b3d55.js","./botInvitation-f99d2318.css","./accountManage-4e6d0308.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./accountManage-e92e0dde.js"), true ? ["./accountManage-e92e0dde.js","./botInvitation-db245019.js","./_plugin-vue_export-helper-cc2b3d55.js","./botInvitation-e335dc40.css","./accountManage-4e6d0308.css"] : void 0, import.meta.url)
   },
   {
     path: "/reset-password/:token?",
     name: "resetPassword",
-    component: () => __vitePreload(() => import("./home-fdd6d677.js"), true ? ["./home-fdd6d677.js","./_plugin-vue_export-helper-cc2b3d55.js","./scrollMessage-55360828.js","./scrollMessage-700a3347.css","./botInvitation-e56b6d88.js","./botInvitation-f99d2318.css","./home-d5fe4aaa.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./home-ec3b155e.js"), true ? ["./home-ec3b155e.js","./_plugin-vue_export-helper-cc2b3d55.js","./scrollMessage-75c3f3b8.js","./scrollMessage-07a94ea0.css","./botInvitation-db245019.js","./botInvitation-e335dc40.css","./home-cde6abac.css"] : void 0, import.meta.url)
   },
   {
     path: "/invitation/:code?",
     name: "invitation",
-    component: () => __vitePreload(() => import("./home-fdd6d677.js"), true ? ["./home-fdd6d677.js","./_plugin-vue_export-helper-cc2b3d55.js","./scrollMessage-55360828.js","./scrollMessage-700a3347.css","./botInvitation-e56b6d88.js","./botInvitation-f99d2318.css","./home-d5fe4aaa.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./home-ec3b155e.js"), true ? ["./home-ec3b155e.js","./_plugin-vue_export-helper-cc2b3d55.js","./scrollMessage-75c3f3b8.js","./scrollMessage-07a94ea0.css","./botInvitation-db245019.js","./botInvitation-e335dc40.css","./home-cde6abac.css"] : void 0, import.meta.url)
   },
   {
     path: "/hoverWindow",
     name: "hoverWindow",
     // meta: {isAuth: true},
-    component: () => __vitePreload(() => import("./hoverWindow-daa94301.js"), true ? ["./hoverWindow-daa94301.js","./scrollMessage-55360828.js","./_plugin-vue_export-helper-cc2b3d55.js","./scrollMessage-700a3347.css","./hoverWindow-6a787531.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./hoverWindow-095d8049.js"), true ? ["./hoverWindow-095d8049.js","./scrollMessage-75c3f3b8.js","./_plugin-vue_export-helper-cc2b3d55.js","./scrollMessage-07a94ea0.css","./hoverWindow-5a865d98.css"] : void 0, import.meta.url)
   },
   {
     path: "/404",
@@ -11145,7 +11145,7 @@ const pageRouter = [
       title: "Page not found",
       isAuth: false
     },
-    component: () => __vitePreload(() => import("./404View-144794ff.js"), true ? ["./404View-144794ff.js","./homeBackground-bf4b476d.js","./_plugin-vue_export-helper-cc2b3d55.js","./404View-14ad2032.css"] : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./404View-b82bd753.js"), true ? ["./404View-b82bd753.js","./homeBackground-bf4b476d.js","./_plugin-vue_export-helper-cc2b3d55.js","./404View-14ad2032.css"] : void 0, import.meta.url)
   },
   {
     path: "/:catchAll(.*)",
@@ -11431,6 +11431,49 @@ const usePanelStore = defineStore("panel", {
       const window2 = this.getWindowById(windowId);
       const index2 = window2.tabs.findIndex((t) => t.id === window2.tabsId);
       return window2.tabs[index2];
+    },
+    addWindow() {
+      const windowId = (/* @__PURE__ */ new Date()).getTime().toString();
+      this.getCurrentPanel.windows.push({
+        id: windowId,
+        tabs: [
+          {
+            id: windowId + "1",
+            title: "welcome",
+            chat: [],
+            editing: false,
+            type: "welcome"
+          }
+        ],
+        tabsId: windowId + "1"
+      });
+      this.windowId = windowId;
+    },
+    addPanel() {
+      const windowId = (/* @__PURE__ */ new Date()).getTime().toString();
+      const panelId = (/* @__PURE__ */ new Date()).getTime().toString();
+      this.panels.push({
+        id: panelId,
+        title: "new panel",
+        editing: false,
+        color: defaultColor[this.panels.length % defaultColor.length],
+        windows: [
+          {
+            id: windowId,
+            tabs: [
+              {
+                id: windowId + "1",
+                title: "welcome",
+                editing: false,
+                type: "welcome"
+              }
+            ],
+            tabsId: windowId + "1"
+          }
+        ]
+      });
+      this.panelId = panelId;
+      this.windowId = windowId;
     }
   }
 });
@@ -86413,7 +86456,8 @@ instance.interceptors.response.use((response) => {
 const apiRegister = (data) => instance.post("/api/user/register", data);
 const apiLogin = (data) => instance.post("/api/user/login", data);
 const refreshToken = (data) => instance.post("/api/user/token/refresh", data);
-const apiUserInfo = () => instance.get("/api/user/info");
+const apiGetUserInfo = () => instance.get("/api/user/info");
+const apiUpdateUserInfo = (data) => instance.post("/api/user/info", data);
 const apiUserInfoAttributeGet = (data) => {
   let _url = "/api/user/info/attribute";
   _url += "?key=" + data;
@@ -86442,12 +86486,7 @@ const apiBotUploadAvatar = (data) => {
   _url += "?id=" + data.id;
   return instance.post(_url, data.formData);
 };
-const apiBotFileRemove = (data) => {
-  let _url = "/api/bot/file/remove";
-  _url += "?id=" + data.id;
-  _url += "&file_id=" + data.file_id;
-  return instance.post(_url);
-};
+const apiBotFileRemove = (data) => instance.post("/api/bot/file/remove", data);
 const apiBotInfo = (data) => {
   let _url = "/api/bot/info";
   _url += "?id=" + data;
@@ -89726,6 +89765,106 @@ Object.assign(lookup, {
   io: lookup,
   connect: lookup
 });
+class SocketIO {
+  sio;
+  authStore;
+  privateChatStore;
+  wsConfig;
+  constructor() {
+    this.authStore = useAuthStore();
+    this.privateChatStore = usePrivateChatStore();
+    this.wsConfig = {
+      path: "/ws",
+      auth: {
+        token: this.authStore.token
+      },
+      transports: ["websocket"],
+      reconnectionAttempts: 5
+    };
+  }
+  connectToSocketIO() {
+    return new Promise((resolve2) => {
+      console.log("连接socketio");
+      this.sio = lookup("https://api-test.benchyard.com", this.wsConfig);
+      this.sio.on("connect", () => {
+        console.log("连接成功");
+        resolve2(true);
+      });
+      this.handleMsgEvent();
+      this.handleDisconnectAndError();
+    });
+  }
+  disconnectFromSocketIO() {
+    this.sio ? this.sio.disconnect() : console.log("sio is null");
+  }
+  handleDisconnectAndError() {
+    this.sio.on("disconnect", () => {
+      console.log("连接断开");
+    });
+    this.sio.on("connect_error", (error) => {
+      console.log("连接错误:", error);
+      ElMessage({ message: error, type: "error", duration: 3e3 });
+      refreshToken({
+        refresh_token: this.authStore.userInfo?.refresh_token
+      });
+    });
+  }
+  handleMsgEvent() {
+    this.sio.on("message", (data) => {
+      const chat = this.privateChatStore.getPrivateChatById(data.chat_id);
+      if (data.type === "human" || data.type === "file-add") {
+        chat.enableChatSend = false;
+        if (data.type === "file-add") {
+          chat.messages.push({
+            id: (/* @__PURE__ */ new Date()).getTime().toString(),
+            username: this.authStore.getUserInfo?.username,
+            avatar: this.authStore.getUserInfo?.avatar,
+            role: "user",
+            content: data.body.metadata,
+            cache: ""
+          });
+        }
+      } else {
+        console.log(data);
+        const msg = chat.messages.at(-1) || { cache: "", content: "", id: "" };
+        msg.id = data.id;
+        chat.enableChatSend = true;
+        setTimeout(() => {
+          savePrivateChat();
+        }, 2e3);
+      }
+    });
+    this.sio.on("message-update", (data) => {
+      const chat = this.privateChatStore.getPrivateChatById(data.chat_id);
+      const lastMsg = chat.messages[chat.messages.length - 1];
+      lastMsg.content += data.body.text;
+      console.log("message-update", data);
+      const metadata = data.body.metadata;
+      if (metadata.references) {
+        console.log("reference", metadata);
+        lastMsg.refs.push(metadata?.references[0]);
+        lastMsg.content += "<a herf='#" + lastMsg.id + "'  class='cursor-pointer'><sup>[" + lastMsg.refs.length + "]</sup></a>";
+      }
+    });
+  }
+  sendMessage(chatId, userInput) {
+    apiUserInput({
+      id: chatId,
+      body: {
+        text: userInput
+      }
+    }).then((res) => {
+      console.log("消息发送成功:", res.data);
+    }).catch((err) => {
+      console.log(err.response);
+      if (err.response.data.message == "Unauthorized") {
+        refreshToken({
+          refresh_token: this.authStore.userInfo?.refresh_token
+        });
+      }
+    });
+  }
+}
 const useChatGroupStore = defineStore("chatGroup", {
   //  set the state to chatGroup and set the type to Chat arrary
   state: () => ({ chatGroup: [] }),
@@ -89750,7 +89889,7 @@ const useChatGroupStore = defineStore("chatGroup", {
 });
 const usePrivateChatStore = defineStore("privateChat", {
   //  set the state to chatGroup and set the type to Chat arrary
-  state: () => ({ privateChat: [] }),
+  state: () => ({ privateChat: [], sio: {} }),
   getters: {
     getPrivateChat() {
       return this.privateChat;
@@ -89760,173 +89899,43 @@ const usePrivateChatStore = defineStore("privateChat", {
     getPrivateChatById(chatId) {
       const index2 = this.privateChat.findIndex((b2) => b2.id == chatId);
       return this.privateChat[index2];
+    },
+    async initSocket() {
+      this.sio = new SocketIO();
+      await this.sio.connectToSocketIO();
+    },
+    async initChat(bot_id) {
+      try {
+        const res = await apiInitChat({ bot_id });
+        return res.data.id;
+      } catch (e) {
+        console.log(e);
+      }
+    },
+    async closeSocket() {
+      this.sio.disconnectFromSocketIO();
+    },
+    sendMsg(chatId, msg) {
+      this.sio.sendMessage(chatId, msg);
     }
   }
 });
-console.log("sockio.ts");
-class SocketChat {
-  botId;
-  messages;
-  chatId;
-  sio;
-  authStore;
-  privateChatStore;
-  constructor(botId, chatId) {
-    this.botId = botId;
-    this.messages = "";
-    this.chatId = chatId ? chatId : "";
-    this.authStore = useAuthStore();
-    this.privateChatStore = usePrivateChatStore();
-  }
-  connectToSocketIO(chat, callback) {
-    console.log("连接socketio");
-    this.sio = lookup("https://api-test.benchyard.com", {
-      path: "/ws",
-      auth: {
-        token: this.authStore.token
-      },
-      transports: ["websocket"]
-    });
-    this.sio.on("connect", () => {
-      console.log("连接成功");
-      if (this.chatId == "") {
-        apiInitChat({ bot_id: this.botId }).then((res) => {
-          this.chatId = res.data.id;
-          console.log("chatId:", this.chatId);
-          chat.id = this.chatId.toString();
-          callback();
-        });
-      } else {
-        callback();
-      }
-    });
-    this.sio.on("disconnect", () => {
-      console.log("连接断开");
-    });
-    this.sio.on("connect_error", (error) => {
-      console.log("连接错误:", error);
-      refreshToken({
-        refresh_token: this.authStore.userInfo?.refresh_token
-      }).then(() => {
-        if (this.chatId == "") {
-          this.connectToSocketIO(chat, callback);
-        }
-      });
-    });
-    this.sio.on("message", (data) => {
-      if (this.chatId == data.chat_id) {
-        console.log(data.type);
-        if (data.type === "human" || data.type === "file-add") {
-          console.log(data.body);
-          chat.enableChatSend = false;
-          if (data.type === "file-add") {
-            chat.messages.push({
-              id: (/* @__PURE__ */ new Date()).getTime().toString(),
-              username: this.authStore.getUserInfo?.username,
-              avatar: this.authStore.getUserInfo?.avatar,
-              role: "user",
-              content: data.body.metadata,
-              cache: ""
-            });
-          }
-          if (data.type === "human") {
-            chat.messages.push({
-              id: (/* @__PURE__ */ new Date()).getTime().toString(),
-              username: this.authStore.getUserInfo?.username,
-              avatar: this.authStore.getUserInfo?.avatar,
-              role: "user",
-              content: data.body.text,
-              cache: ""
-            });
-            chat.messages.push({
-              id: (/* @__PURE__ */ new Date()).getTime().toString(),
-              username: this.authStore.getUserInfo?.username,
-              role: "assistant",
-              avatar: chat.members[0].avatar,
-              content: "",
-              cache: "",
-              refs: []
-            });
-          }
-          const setIntervalInstance = setInterval(() => {
-            const msg = chat.messages.at(-1) || { cache: "", content: "" };
-            if (msg.cache.length > 0) {
-              msg.content += msg.cache;
-              msg.cache = "";
-            } else if (chat.enableChatSend) {
-              clearInterval(setIntervalInstance);
-            }
-          }, 1);
-        } else {
-          console.log(data);
-          chat.enableChatSend = true;
-          setTimeout(() => {
-            savePrivateChat();
-          }, 2e3);
-        }
-      }
-    });
-    this.sio.on("message-update", (data) => {
-      const lastMsg = chat.messages[chat.messages.length - 1];
-      if (this.chatId == data.chat_id) {
-        if (data.body.metadata.references) {
-          console.log("reference", data.body.metadata);
-          lastMsg.refs.push(data.body.metadata?.references[0]);
-          lastMsg.cache += "<a herf='#" + lastMsg + "'  class='cursor-pointer'><sup>[" + lastMsg.refs.length + "]</sup></a>";
-        }
-        if (chat.messages.length > 0) {
-          chat.messages[chat.messages.length - 1].cache += data.body.text;
-        }
-      }
-    });
-  }
-  disconnectFromSocketIO() {
-    if (this.sio) {
-      this.sio.disconnect();
-    }
-  }
-  sendMessage(userInput) {
-    apiUserInput({
-      id: this.chatId,
-      body: {
-        text: userInput
-      }
-    }).then((res) => {
-      console.log("消息发送成功:", res.data);
-      this.messages = "";
-    }).catch((err) => {
-      console.log(err.response);
-      if (err.response.data.message == "Unauthorized") {
-        refreshToken({
-          refresh_token: this.authStore.userInfo?.refresh_token
-        });
-      }
-    });
-  }
-  // sendUserInput(userInput: string) {
-  //   this.sendMessage(this.chatId, userInput)
-  // }
-}
 const updateBotList = async () => {
   const botStore = useBotStore();
   const res = await apiUserInfoAttributeGet("bots");
   const botsChatId = res.data.value ? res.data.value : [];
   console.log("botsChatId", botsChatId);
   apiUserBotList({}).then((res2) => {
-    console.log("get bot list");
+    console.log("get bot list", res2.data);
     botStore.bots.splice(0, botStore.bots.length);
-    console.log(res2.data);
     res2.data.forEach((bot) => {
-      const index2 = botsChatId.findIndex((b2) => b2.id === bot.id);
-      if (index2 !== -1) {
-        bot.chatId = botsChatId[index2].chatId;
-      }
+      const botChatId = botsChatId.find((b2) => b2.id === bot.id);
       botStore.bots.push({
         title: bot.name,
         avatar: bot.avatar,
         model_vendor: bot.model_vendor,
         id: bot.id,
-        chatId: bot.chatId,
+        chatId: botChatId ? botChatId.chatId : "",
         description: bot.description,
         model_name: bot.model_name,
         user_permission: bot.user_permission,
@@ -89935,57 +89944,46 @@ const updateBotList = async () => {
       });
     });
   }).catch((err) => {
-    console.log("get bot list error");
-    console.log(err);
+    console.log("get bot list error", err);
   });
   await updateModelOptions();
 };
 const updateModelOptions = async () => {
-  const botStore = useBotStore();
   const res = await apiModelList({});
-  console.log("get model list");
-  console.log(res.data);
-  botStore.modelOptions = res.data;
+  console.log("get model list", res.data);
+  useBotStore().modelOptions = res.data;
 };
 const saveBots = async () => {
-  const botStore = useBotStore();
-  const bots = [];
-  for (let i2 = 0; i2 < botStore.bots.length; i2++) {
-    const { id, chatId } = botStore.bots[i2];
-    bots.push({ id, chatId });
-  }
+  const bots = useBotStore().bots.map(({ id, chatId }) => ({ id, chatId }));
   apiUserInfoAttributeSet({ key: "bots", value: bots });
 };
 const savePrivateChat = async () => {
-  const privateChatStore = usePrivateChatStore();
-  const chats = [];
-  for (let i2 = 0; i2 < privateChatStore.privateChat.length; i2++) {
-    const { id, title, type: type4, members, files, sendTo, messages: messages2 } = privateChatStore.privateChat[i2];
-    chats.push({ id, title, type: type4, members, files, sendTo, messages: messages2 });
-  }
+  const chats = usePrivateChatStore().privateChat.map(
+    ({ id, title, type: type4, members, files, sendTo, messages: messages2 }) => ({
+      id,
+      title,
+      type: type4,
+      members,
+      files,
+      sendTo,
+      messages: messages2
+    })
+  );
   console.log("save private chat", chats);
   apiUserInfoAttributeSet({ key: "privateChat", value: chats });
-  saveBots();
 };
 const getPrivateChatandSet = async () => {
   const privateChatStore = usePrivateChatStore();
+  await privateChatStore.initSocket();
   const resPrivateChat = await apiUserInfoAttributeGet("privateChat");
   privateChatStore.privateChat = resPrivateChat.data.value || [];
-  privateChatStore.privateChat.forEach((chat) => {
-    if (chat.chatInstance == null) {
-      const chatInstance = new SocketChat(chat.members[0].id, chat.id);
-      chatInstance.connectToSocketIO(chat, () => {
-        savePrivateChat();
-      });
-      chat.chatInstance = chatInstance;
-    }
-  });
   const botStore = useBotStore();
-  botStore.bots.forEach((bot, index2) => {
+  botStore.bots.forEach(async (bot) => {
+    console.log("bot", bot.chatId);
     if (!bot.chatId) {
       if (!bot.id || !bot.title || !bot.avatar)
         return;
-      addPrivateChat({
+      const chat = {
         id: "",
         title: bot.title,
         members: [
@@ -90007,118 +90005,55 @@ const getPrivateChatandSet = async () => {
         sendTo: "",
         enableChatSend: false,
         files: []
-      });
-      const chat = privateChatStore.getPrivateChat.at(-1);
-      if (!chat)
+      };
+      bot.chatId = await privateChatStore.initChat(bot.id);
+      if (!bot.chatId) {
+        console.log("init bot chat failed");
         return;
-      const chatInstance = new SocketChat(bot.id, chat.id);
-      chatInstance.connectToSocketIO(chat, () => {
-        bot.chatId = chat.id;
-        if (index2 == botStore.bots.length - 1) {
-          savePrivateChat();
-          console.log("saveChat");
-        }
-      });
-      chat.chatInstance = chatInstance;
+      }
+      chat.id = bot.chatId;
+      saveBots();
+      addPrivateChat(chat);
     }
   });
 };
 const addPrivateChat = (chat) => {
-  const privateChatStore = usePrivateChatStore();
-  privateChatStore.privateChat.push(chat);
-  if (chat.id) {
-    savePrivateChat();
-  } else {
-    console.log("chat id is null");
-  }
+  usePrivateChatStore().privateChat.push(chat);
+  chat.id ? savePrivateChat() : console.log("chat id is null");
 };
-const getPanelandSet = async () => {
-  const loading = ElLoading.service({
-    lock: true,
-    text: "Loading",
-    background: "rgba(0, 0, 0, 0.7)"
-  });
-  const panelStore = usePanelStore();
+const UpdateBotAndSetPanel = async () => {
   await updateBotList();
   await getPrivateChatandSet();
   const resPanels = await apiUserInfoAttributeGet("panels");
-  panelStore.setPanels(resPanels.data.value || defaultPanel);
-  loading.close();
+  usePanelStore().setPanels(resPanels.data.value || defaultPanel);
 };
 const savePanels = () => {
-  const panelStore = usePanelStore();
-  apiUserInfoAttributeSet({ key: "panels", value: panelStore.panels });
+  apiUserInfoAttributeSet({ key: "panels", value: usePanelStore().panels });
 };
-const addPanel = () => {
-  const panelStore = usePanelStore();
-  panelStore.windowId = (/* @__PURE__ */ new Date()).getTime().toString();
-  panelStore.panels.push({
+const addPanelandSave = () => {
+  usePanelStore().addPanel();
+  savePanels();
+};
+const addWindowAndSave = () => {
+  usePanelStore().addWindow();
+  savePanels();
+};
+const addTabAndSave = (windowId, tab) => {
+  const window2 = usePanelStore().getWindowById(windowId);
+  const newTab = tab ? tab : {
     id: (/* @__PURE__ */ new Date()).getTime().toString(),
-    title: "new panel",
+    title: "welcome",
     editing: false,
-    color: defaultColor[panelStore.panels.length % defaultColor.length],
-    windows: [
-      {
-        id: panelStore.windowId,
-        tabs: [
-          {
-            id: panelStore.windowId + "1",
-            title: "welcome",
-            editing: false,
-            type: "welcome"
-          }
-        ],
-        tabsId: panelStore.windowId + "1"
-      }
-    ]
-  });
-  panelStore.panelId = panelStore.panels[panelStore.panels.length - 1].id;
+    type: "welcome"
+  };
+  window2.tabs.push(newTab);
+  window2.tabsId = newTab.id;
   savePanels();
 };
-const addWindow = () => {
+const removePanelAndSave = (panelId) => {
   const panelStore = usePanelStore();
-  const windowId = (/* @__PURE__ */ new Date()).getTime().toString();
-  panelStore.getCurrentPanel.windows.push({
-    id: windowId,
-    tabs: [
-      {
-        id: windowId + "1",
-        title: "welcome",
-        chat: [],
-        editing: false,
-        type: "welcome"
-      }
-    ],
-    tabsId: windowId + "1"
-  });
-  panelStore.windowId = windowId;
-  savePanels();
-};
-const addTab = (windowId, tab) => {
-  const panelStore = usePanelStore();
-  const window2 = panelStore.getWindowById(windowId);
-  if (tab) {
-    window2.tabs.push(tab);
-    window2.tabsId = tab.id;
-    console.log(tab);
-  } else {
-    const id = (/* @__PURE__ */ new Date()).getTime().toString();
-    window2.tabs.push({
-      id,
-      title: "welcome",
-      editing: false,
-      type: "welcome"
-    });
-    window2.tabsId = id;
-    console.log(window2.tabs.at(-1));
-  }
-  savePanels();
-};
-const removePanel = (panelId) => {
-  const panelStore = usePanelStore();
-  if (panelStore.getPanels.length === 1) {
+  if (panelStore.getPanels.length === 1)
     return;
-  }
   const removeIndex = panelStore.panels.findIndex((panel) => panel.id === panelId);
   const currentIndex = panelStore.panels.findIndex((panel) => panel.id === panelStore.panelId);
   if (removeIndex <= currentIndex && currentIndex != 0) {
@@ -90132,13 +90067,12 @@ const removeTabByChatId = (chatId) => {
   panelStore.getWindows.forEach((w2) => {
     w2.tabs.forEach((t) => {
       if (t.chatId === chatId) {
-        removeTab(w2.id, t.id);
+        removeTabAndSave(w2.id, t.id);
       }
     });
   });
-  savePanels();
 };
-const removeTab = (windowId, tabId) => {
+const removeTabAndSave = (windowId, tabId) => {
   const panelStore = usePanelStore();
   console.log("removeTab");
   const window2 = panelStore.getWindowById(windowId);
@@ -90154,8 +90088,6 @@ const removeTab = (windowId, tabId) => {
   }
   const removeIndex = window2.tabs.findIndex((tab) => tab.id === tabId);
   const currentIndex = window2.tabs.findIndex((tab) => tab.id === window2.tabsId);
-  console.log("removeIndex", removeIndex);
-  console.log("currentIndex", currentIndex);
   if (removeIndex === currentIndex) {
     if (removeIndex === 0) {
       window2.tabsId = window2.tabs[1].id;
@@ -90187,7 +90119,7 @@ const tokenHandle = async () => {
     if (authStore.getUserInfo == null)
       return;
     await refreshToken({ refresh_token: authStore.userInfo?.refresh_token });
-    await getPanelandSet();
+    await UpdateBotAndSetPanel();
   } catch (e) {
     authStore.clear();
   }
@@ -90197,7 +90129,12 @@ const tokenHandle = async () => {
       console.log("refresh token");
       if (authStore.getUserInfo == null)
         return;
-      refreshToken({ refresh_token: authStore.userInfo?.refresh_token }).catch(() => {
+      refreshToken({ refresh_token: authStore.userInfo?.refresh_token }).then(() => {
+        usePrivateChatStore().closeSocket();
+        setTimeout(() => {
+          usePrivateChatStore().initSocket();
+        }, 1e3);
+      }).catch(() => {
         authStore.clear();
       });
     },
@@ -90208,43 +90145,43 @@ if (authStore.getUserInfo) {
   tokenHandle();
 }
 export {
-  apiBotFileRemove as $,
-  unref as A,
-  createTextVNode as B,
-  apiUserInfo as C,
-  onMounted as D,
+  vModelText as $,
+  useRouter as A,
+  resolveDirective as B,
+  unref as C,
+  apiGetUserInfo as D,
   ElMessage as E,
   Fragment as F,
-  withKeys as G,
-  withModifiers as H,
-  apiFileAdd as I,
-  usePrivateChatStore as J,
-  useChatGroupStore as K,
-  addTab as L,
-  nextTick$1 as M,
-  arrow_left_bold_default as N,
-  arrow_right_bold_default as O,
-  vModelCheckbox as P,
-  h$1 as Q,
-  arrow_down_bold_default as R,
-  apiBotCreate as S,
+  apiUpdateUserInfo as G,
+  apiUserInfoAttributeSet as H,
+  onMounted as I,
+  withKeys as J,
+  withModifiers as K,
+  usePrivateChatStore as L,
+  apiFileAdd as M,
+  useChatGroupStore as N,
+  addTabAndSave as O,
+  nextTick$1 as P,
+  arrow_left_bold_default as Q,
+  arrow_right_bold_default as R,
+  vModelCheckbox as S,
   Tribute as T,
-  updateBotList as U,
-  ElLoading as V,
-  apiBotFileAdd as W,
-  apiBotUploadAvatar as X,
-  vModelText as Y,
-  apiSendInvitationEmail as Z,
-  apiBotUpdate as _,
+  h$1 as U,
+  arrow_down_bold_default as V,
+  apiBotCreate as W,
+  UpdateBotAndSetPanel as X,
+  ElLoading as Y,
+  apiBotFileAdd as Z,
+  apiBotUploadAvatar as _,
   ref as a,
-  addPrivateChat as a0,
-  SocketChat as a1,
-  savePrivateChat as a2,
-  removeTab as a3,
-  addWindow as a4,
+  apiSendInvitationEmail as a0,
+  apiBotUpdate as a1,
+  apiBotFileRemove as a2,
+  removeTabAndSave as a3,
+  addWindowAndSave as a4,
   useRoute as a5,
-  removePanel as a6,
-  addPanel as a7,
+  removePanelAndSave as a6,
+  addPanelandSave as a7,
   apiGetBotInfoFromCode as a8,
   apiAcceptInvitation as a9,
   apiBotInfo as aa,
@@ -90252,11 +90189,9 @@ export {
   apiBotDelete as ac,
   removeTabByChatId as ad,
   apiRegister as ae,
-  useRouter as af,
-  apiLogin as ag,
-  getPanelandSet as ah,
-  apiSendResetPasswordEmail as ai,
-  apiResetPassword as aj,
+  apiLogin as af,
+  apiSendResetPasswordEmail as ag,
+  apiResetPassword as ah,
   createBaseVNode as b,
   createElementBlock as c,
   defineComponent as d,
@@ -90264,22 +90199,22 @@ export {
   createStaticVNode as f,
   popScopeId as g,
   resolveComponent as h,
-  withDirectives as i,
-  renderList as j,
-  createCommentVNode as k,
-  renderSlot as l,
-  useBotStore as m,
+  createBlock as i,
+  createTextVNode as j,
+  watch as k,
+  withDirectives as l,
+  renderList as m,
   normalizeStyle as n,
   openBlock as o,
   pushScopeId as p,
-  usePanelStore as q,
+  createCommentVNode as q,
   router as r,
-  reactive as s,
+  renderSlot as s,
   toDisplayString as t,
   useAuthStore as u,
   vShow as v,
-  watch as w,
-  resolveDirective as x,
-  withCtx as y,
-  createBlock as z
+  withCtx as w,
+  useBotStore as x,
+  usePanelStore as y,
+  reactive as z
 };
