@@ -1,7 +1,7 @@
 import { _ as _export_sfc } from "./_plugin-vue_export-helper-cc2b3d55.js";
-import { o as openBlock, c as createElementBlock, f as createStaticVNode, d as defineComponent, a as ref, h as resolveComponent, i as createBlock, w as withCtx, p as pushScopeId, g as popScopeId, b as createBaseVNode, j as createTextVNode, e as createVNode, k as watch, n as normalizeStyle, l as withDirectives, v as vShow, F as Fragment, m as renderList, t as toDisplayString, q as createCommentVNode, s as renderSlot, u as useAuthStore, x as useBotStore, y as usePanelStore, z as reactive, A as useRouter, B as resolveDirective, C as unref, E as ElMessage, D as apiGetUserInfo, G as apiUpdateUserInfo, H as apiUserInfoAttributeSet, I as onMounted, T as Tribute, J as withKeys, K as withModifiers, L as usePrivateChatStore, M as apiFileAdd, N as useChatGroupStore, O as addTabAndSave, P as nextTick, Q as arrow_left_bold_default, R as arrow_right_bold_default, S as vModelCheckbox, U as h, V as arrow_down_bold_default, W as apiBotCreate, X as UpdateBotAndSetPanel, Y as ElLoading, Z as apiBotFileAdd, _ as apiBotUploadAvatar, $ as vModelText, a0 as apiSendInvitationEmail, a1 as apiBotUpdate, a2 as apiBotFileRemove, a3 as removeTabAndSave, a4 as addWindowAndSave, a5 as useRoute, a6 as removePanelAndSave, a7 as addPanelandSave, a8 as apiGetBotInfoFromCode, a9 as apiAcceptInvitation, aa as apiBotInfo, ab as apiShareCode, ac as apiBotDelete, ad as removeTabByChatId } from "./index-cf6e881d.js";
-import { s as scrollMessage } from "./scrollMessage-75c3f3b8.js";
-import { C as CompRegister, a as CompLogin, b as CompFindPassword, r as resetPsd, c as botInvitation } from "./botInvitation-db245019.js";
+import { o as openBlock, c as createElementBlock, f as createStaticVNode, d as defineComponent, a as ref, h as resolveComponent, i as createBlock, w as withCtx, p as pushScopeId, g as popScopeId, b as createBaseVNode, j as createTextVNode, e as createVNode, k as watch, n as normalizeStyle, l as withDirectives, v as vShow, F as Fragment, m as renderList, t as toDisplayString, q as createCommentVNode, s as renderSlot, u as useAuthStore, x as useBotStore, y as usePanelStore, z as reactive, A as useRouter, B as resolveDirective, C as unref, E as ElMessage, D as apiGetUserInfo, G as apiUpdateUserInfo, H as apiUserInfoAttributeSet, I as onMounted, T as Tribute, J as withKeys, K as withModifiers, L as usePrivateChatStore, M as apiFileAdd, N as useChatGroupStore, O as addTabAndSave, P as nextTick, Q as arrow_left_bold_default, R as arrow_right_bold_default, S as vModelCheckbox, U as h, V as arrow_down_bold_default, W as apiBotCreate, X as UpdateBotAndSetPanel, Y as ElLoading, Z as apiBotFileAdd, _ as apiBotUploadAvatar, $ as vModelText, a0 as apiSendInvitationEmail, a1 as apiBotUpdate, a2 as apiBotFileRemove, a3 as removeTabAndSave, a4 as addWindowAndSave, a5 as useRoute, a6 as removePanelAndSave, a7 as addPanelandSave, a8 as apiGetBotInfoFromCode, a9 as apiAcceptInvitation, aa as apiBotInfo, ab as apiShareCode, ac as apiBotDelete, ad as removeTabByChatId } from "./index-86235965.js";
+import { s as scrollMessage } from "./scrollMessage-d07a3a47.js";
+import { C as CompRegister, a as CompLogin, b as CompFindPassword, r as resetPsd, c as botInvitation } from "./botInvitation-424ef224.js";
 const baseUrl = "https://api-test.benchyard.com";
 const _sfc_main$m = {};
 const _hoisted_1$l = { class: "partial-code main no-scrollbar" };
@@ -1199,7 +1199,7 @@ const _hoisted_17$6 = { class: "flex flex-row items-center gap-2" };
 const _hoisted_18$6 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-right text-gray-500 text-sm font-['RobotoMedium'] leading-[14px] w-[100px] mr-11" }, " FastPanel ", -1));
 const _hoisted_19$6 = { class: "w-[294px] h-9 px-[120px] py-2 bg-zinc-600 rounded-lg flex-col justify-center items-center gap-2 inline-flex" };
 const _hoisted_20$6 = { class: "text-white text-center text-sm font-['RobotoMedium'] leading-[14px] cursor-pointer w-[100px]" };
-const _hoisted_21$5 = { class: "flex flex-row items-center gap-2" };
+const _hoisted_21$6 = { class: "flex flex-row items-center gap-2" };
 const _hoisted_22$5 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-right text-gray-500 text-sm font-['RobotoMedium'] leading-[14px] w-[100px] mr-11" }, " Menu bar icon ", -1));
 const _hoisted_23$5 = /* @__PURE__ */ _withScopeId$c(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-['RobotoMedium'] leading-[14px]" }, " Show Benchyard in menu bar ", -1));
 const _hoisted_24$5 = { class: "flex flex-row items-center gap-2" };
@@ -1449,7 +1449,7 @@ const _sfc_main$h = /* @__PURE__ */ defineComponent({
                     _: 1
                   }, 8, ["shortcut"])
                 ]),
-                createBaseVNode("div", _hoisted_21$5, [
+                createBaseVNode("div", _hoisted_21$6, [
                   _hoisted_22$5,
                   createVNode(_component_el_checkbox, {
                     modelValue: appSetting.showTray,
@@ -1690,51 +1690,46 @@ const _sfc_main$h = /* @__PURE__ */ defineComponent({
 });
 const settings_vue_vue_type_style_index_0_scoped_4c5ba795_lang = "";
 const setting = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["__scopeId", "data-v-4c5ba795"]]);
-const _withScopeId$b = (n) => (pushScopeId("data-v-50f1aaf3"), n = n(), popScopeId(), n);
-const _hoisted_1$f = {
-  class: "input-area",
-  style: {}
-};
+const _withScopeId$b = (n) => (pushScopeId("data-v-5cd4d311"), n = n(), popScopeId(), n);
+const _hoisted_1$f = ["id"];
 const _hoisted_2$d = { class: "flex flex-row justify-between items-center" };
 const _hoisted_3$c = ["onKeydown"];
-const _hoisted_4$c = /* @__PURE__ */ _withScopeId$b(() => /* @__PURE__ */ createBaseVNode("label", {
-  for: "file-upload",
-  class: "rounded-xl cursor-pointer mr-3"
-}, [
-  /* @__PURE__ */ createBaseVNode("svg", { class: "h-8 w-8 p-[7px]" }, [
-    /* @__PURE__ */ createBaseVNode("use", { href: "#uploadFile" })
-  ])
+const _hoisted_4$c = /* @__PURE__ */ _withScopeId$b(() => /* @__PURE__ */ createBaseVNode("svg", { class: "h-8 w-8 p-[7px]" }, [
+  /* @__PURE__ */ createBaseVNode("use", { href: "#uploadFile" })
 ], -1));
-const _hoisted_5$a = /* @__PURE__ */ _withScopeId$b(() => /* @__PURE__ */ createBaseVNode("use", { href: "#send" }, null, -1));
-const _hoisted_6$a = [
-  _hoisted_5$a
+const _hoisted_5$a = [
+  _hoisted_4$c
 ];
-const _hoisted_7$9 = {
+const _hoisted_6$a = /* @__PURE__ */ _withScopeId$b(() => /* @__PURE__ */ createBaseVNode("use", { href: "#send" }, null, -1));
+const _hoisted_7$9 = [
+  _hoisted_6$a
+];
+const _hoisted_8$9 = {
   key: 0,
   class: "flex gap-1 flex-wrap items-center"
 };
-const _hoisted_8$9 = ["onClick"];
-const _hoisted_9$9 = { class: "relative m-3" };
-const _hoisted_10$8 = /* @__PURE__ */ _withScopeId$b(() => /* @__PURE__ */ createBaseVNode("svg", { class: "h-10 w-8" }, [
+const _hoisted_9$9 = ["onClick"];
+const _hoisted_10$8 = { class: "relative m-3" };
+const _hoisted_11$8 = /* @__PURE__ */ _withScopeId$b(() => /* @__PURE__ */ createBaseVNode("svg", { class: "h-10 w-8" }, [
   /* @__PURE__ */ createBaseVNode("use", { href: "#fileIcon" })
 ], -1));
-const _hoisted_11$8 = {
+const _hoisted_12$7 = {
   key: 0,
   class: "loader"
 };
-const _hoisted_12$7 = {
+const _hoisted_13$7 = {
   key: 1,
   class: "top-0 text-[10px] text-center bottom-0 right-0 left-0 absolute leading-[40px]"
 };
-const _hoisted_13$7 = { class: "flex-col" };
-const _hoisted_14$7 = { class: "truncate w-40" };
-const _hoisted_15$7 = { class: "text-sm" };
-const _hoisted_16$6 = { class: "max-h-80 overflow-scroll m-3" };
-const _hoisted_17$5 = { class: "absolute top-2 right-2 cursor-pointer" };
-const _hoisted_18$5 = ["onClick"];
-const _hoisted_19$5 = /* @__PURE__ */ _withScopeId$b(() => /* @__PURE__ */ createBaseVNode("use", { href: "#delete" }, null, -1));
-const _hoisted_20$5 = [
-  _hoisted_19$5
+const _hoisted_14$7 = { class: "flex-col" };
+const _hoisted_15$7 = { class: "truncate w-40" };
+const _hoisted_16$6 = { class: "text-sm" };
+const _hoisted_17$5 = { class: "max-h-80 overflow-scroll m-3" };
+const _hoisted_18$5 = { class: "absolute top-2 right-2 cursor-pointer" };
+const _hoisted_19$5 = ["onClick"];
+const _hoisted_20$5 = /* @__PURE__ */ _withScopeId$b(() => /* @__PURE__ */ createBaseVNode("use", { href: "#delete" }, null, -1));
+const _hoisted_21$5 = [
+  _hoisted_20$5
 ];
 const _sfc_main$g = /* @__PURE__ */ defineComponent({
   __name: "inputArea",
@@ -1744,19 +1739,15 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
       required: true
     }
   },
-  emits: ["login"],
-  setup(__props, { emit }) {
+  setup(__props) {
     const props = __props;
     const sendTo = ref("");
     const authStore = useAuthStore();
     const textareaId = "myTextarea" + props.chat.id;
+    const fileUploadId = "file-upload" + props.chat.id;
     const inputAllChange = (e) => {
       innerHTML2SendTo(e.target.innerHTML);
-      const textarea = document.getElementById(textareaId);
-      if (textarea == null)
-        return;
-      textarea.style.height = "5px";
-      textarea.style.height = textarea.scrollHeight + "px";
+      textareaAutoHeight();
     };
     const enterToSend = (e) => {
       e.preventDefault();
@@ -1801,10 +1792,6 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
         showInputMessage("Please input something,ok?");
         return;
       }
-      if (authStore.getUserInfo == null) {
-        emit("login");
-        return;
-      }
       const privateChatStore = usePrivateChatStore();
       privateChatStore.sio.sendMessage(chat.id, sendTo.value);
       chat.messages.push({
@@ -1834,21 +1821,24 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
     };
     const uploadFile = async (event) => {
       console.log("upload file");
-      const files = event.target.files;
-      if (files == null)
+      const file = event.target.files?.[0];
+      if (file == null)
         return;
-      const file = files[0];
       console.log(file);
       const formData = new FormData();
       formData.append("file", file);
-      if (file.size > 2e7) {
+      if (file.size > 1e7) {
         showInputMessage("File size is too large");
         return;
       }
+      props.chat.enableChatSend = false;
       apiFileAdd({ id: props.chat.id, formData }).then((res) => {
         console.log(res);
+        props.chat.enableChatSend = true;
       }).catch((err) => {
         console.log(err);
+        showInputMessage("File upload failed");
+        props.chat.enableChatSend = true;
       });
       const input = document.getElementById("file-upload");
       if (input == null)
@@ -1856,14 +1846,14 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
       input.value = "";
     };
     const showInputMessage = (string) => {
-      const textarea = document.getElementById(textareaId);
+      const textarea = document.getElementById("input" + textareaId);
       if (textarea == null)
         return;
       ElMessage({
         message: string,
         type: "info",
         offset: -50,
-        duration: 1e3,
+        duration: 3e3,
         appendTo: textarea
       });
     };
@@ -1965,14 +1955,24 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
         var text = e.clipboardData.getData("text/plain");
         pasteTextAtCaret(text);
         innerHTML2SendTo(textarea.innerHTML);
-        textarea.style.height = "5px";
-        textarea.style.height = textarea.scrollHeight + "px";
+        textareaAutoHeight();
         moveCaretToVisible();
       });
     });
+    const textareaAutoHeight = () => {
+      const textarea = document.getElementById(textareaId);
+      if (textarea == null)
+        return;
+      textarea.style.height = "5px";
+      textarea.style.height = textarea.scrollHeight + "px";
+    };
     return (_ctx, _cache) => {
       const _component_el_dialog = resolveComponent("el-dialog");
-      return openBlock(), createElementBlock("div", _hoisted_1$f, [
+      return openBlock(), createElementBlock("div", {
+        id: "input" + textareaId,
+        class: "input-area",
+        style: {}
+      }, [
         createBaseVNode("div", _hoisted_2$d, [
           createBaseVNode("p", {
             id: textareaId,
@@ -1983,9 +1983,12 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
             onKeydown: withKeys(enterToSend, ["enter"]),
             onKeyup: addBrTolastChild
           }, null, 40, _hoisted_3$c),
-          _hoisted_4$c,
+          createBaseVNode("label", {
+            for: fileUploadId,
+            class: "rounded-xl cursor-pointer mr-3"
+          }, _hoisted_5$a),
           createBaseVNode("input", {
-            id: "file-upload",
+            id: fileUploadId,
             class: "hidden",
             onChange: uploadFile,
             type: "file",
@@ -1994,22 +1997,22 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
           (openBlock(), createElementBlock("svg", {
             onClick: sendMessage,
             class: "h-8 w-8 p-[7px] rounded-xl cursor-pointer"
-          }, _hoisted_6$a))
+          }, _hoisted_7$9))
         ]),
-        __props.chat.files.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_7$9, [
+        __props.chat.files.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_8$9, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(__props.chat.files, (file) => {
             return openBlock(), createElementBlock("div", {
               onClick: ($event) => file.dialogVisible = true,
               key: file.name,
               class: "relative shadow p-1 rounded-xl bg-black flex items-center w-60"
             }, [
-              createBaseVNode("div", _hoisted_9$9, [
-                _hoisted_10$8,
-                file.loading ? (openBlock(), createElementBlock("div", _hoisted_11$8)) : (openBlock(), createElementBlock("div", _hoisted_12$7, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[2]), 1))
+              createBaseVNode("div", _hoisted_10$8, [
+                _hoisted_11$8,
+                file.loading ? (openBlock(), createElementBlock("div", _hoisted_12$7)) : (openBlock(), createElementBlock("div", _hoisted_13$7, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[2]), 1))
               ]),
-              createBaseVNode("div", _hoisted_13$7, [
-                createBaseVNode("div", _hoisted_14$7, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[1]), 1),
-                createBaseVNode("div", _hoisted_15$7, toDisplayString(Math.round(file.size / 1e3) + " kb"), 1)
+              createBaseVNode("div", _hoisted_14$7, [
+                createBaseVNode("div", _hoisted_15$7, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[1]), 1),
+                createBaseVNode("div", _hoisted_16$6, toDisplayString(Math.round(file.size / 1e3) + " kb"), 1)
               ]),
               createVNode(_component_el_dialog, {
                 modelValue: file.dialogVisible,
@@ -2017,25 +2020,25 @@ const _sfc_main$g = /* @__PURE__ */ defineComponent({
               }, {
                 header: withCtx(({}) => []),
                 default: withCtx(() => [
-                  createBaseVNode("div", _hoisted_16$6, toDisplayString(file.content), 1)
+                  createBaseVNode("div", _hoisted_17$5, toDisplayString(file.content), 1)
                 ]),
                 _: 2
               }, 1032, ["modelValue", "onUpdate:modelValue"]),
-              createBaseVNode("div", _hoisted_17$5, [
+              createBaseVNode("div", _hoisted_18$5, [
                 (openBlock(), createElementBlock("svg", {
                   onClick: withModifiers(($event) => __props.chat.files.splice(__props.chat.files.indexOf(file), 1), ["stop"]),
                   class: "h-5 w-5"
-                }, _hoisted_20$5, 8, _hoisted_18$5))
+                }, _hoisted_21$5, 8, _hoisted_19$5))
               ])
-            ], 8, _hoisted_8$9);
+            ], 8, _hoisted_9$9);
           }), 128))
         ])) : createCommentVNode("", true)
-      ]);
+      ], 8, _hoisted_1$f);
     };
   }
 });
-const inputArea_vue_vue_type_style_index_0_scoped_50f1aaf3_lang = "";
-const inputArea = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["__scopeId", "data-v-50f1aaf3"]]);
+const inputArea_vue_vue_type_style_index_0_scoped_5cd4d311_lang = "";
+const inputArea = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["__scopeId", "data-v-5cd4d311"]]);
 const _withScopeId$a = (n) => (pushScopeId("data-v-2695738b"), n = n(), popScopeId(), n);
 const _hoisted_1$e = /* @__PURE__ */ _withScopeId$a(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white font-[RobotoMedium] text-[20px]" }, " Create a new group chat ? ", -1));
 const _sfc_main$f = /* @__PURE__ */ defineComponent({
@@ -2993,110 +2996,102 @@ function P(e, i, s, n, t, a) {
   ], 4);
 }
 const g = /* @__PURE__ */ S(x, [["render", P]]);
-const _withScopeId$7 = (n) => (pushScopeId("data-v-182e241b"), n = n(), popScopeId(), n);
+const _withScopeId$7 = (n) => (pushScopeId("data-v-e667ff48"), n = n(), popScopeId(), n);
 const _hoisted_1$a = {
   class: "flex-row flex gap-6",
   style: { "height": "170px" }
 };
-const _hoisted_2$a = {
-  for: "Bot-avatar-upload",
-  class: "avatar-uploader"
-};
-const _hoisted_3$9 = { style: { "position": "relative" } };
-const _hoisted_4$9 = {
+const _hoisted_2$a = ["id"];
+const _hoisted_3$9 = ["for"];
+const _hoisted_4$9 = { style: { "position": "relative" } };
+const _hoisted_5$7 = {
   key: 0,
   class: "headimg-txt"
 };
-const _hoisted_5$7 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("use", { href: "#emptyAvatar" }, null, -1));
-const _hoisted_6$7 = [
-  _hoisted_5$7
+const _hoisted_6$7 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("use", { href: "#emptyAvatar" }, null, -1));
+const _hoisted_7$7 = [
+  _hoisted_6$7
 ];
-const _hoisted_7$7 = ["src"];
-const _hoisted_8$7 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "img-edit" }, [
+const _hoisted_8$7 = ["src"];
+const _hoisted_9$7 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "img-edit" }, [
   /* @__PURE__ */ createBaseVNode("use", { href: "" })
 ], -1));
-const _hoisted_9$7 = { class: "flex flex-col w-full" };
-const _hoisted_10$6 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-medium font-['RobotoMedium'] leading-normal pb-2" }, " Base Bot ", -1));
-const _hoisted_11$6 = { class: "w-full gap-3 flex flex-row" };
-const _hoisted_12$6 = { class: "flex flex-row mr-[5px] ml-[5px]" };
-const _hoisted_13$6 = ["src"];
-const _hoisted_14$6 = { class: "flex flex-row ml-3 my-2" };
-const _hoisted_15$6 = ["src"];
-const _hoisted_16$5 = { class: "font-medium text-[14px] leading-[20px] font-Roboto text-[rgb(124,135,142)] pl-[14px]" };
-const _hoisted_17$4 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("use", { href: "#modelSetting" }, null, -1));
-const _hoisted_18$4 = [
-  _hoisted_17$4
+const _hoisted_10$6 = { class: "flex flex-col w-full" };
+const _hoisted_11$6 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-medium font-['RobotoMedium'] leading-normal pb-2" }, " Base Bot ", -1));
+const _hoisted_12$6 = { class: "w-full gap-3 flex flex-row" };
+const _hoisted_13$6 = { class: "flex flex-row mr-[5px] ml-[5px]" };
+const _hoisted_14$6 = ["src"];
+const _hoisted_15$6 = { class: "flex flex-row ml-3 my-2" };
+const _hoisted_16$5 = ["src"];
+const _hoisted_17$4 = { class: "font-medium text-[14px] leading-[20px] font-Roboto text-[rgb(124,135,142)] pl-[14px]" };
+const _hoisted_18$4 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("use", { href: "#modelSetting" }, null, -1));
+const _hoisted_19$4 = [
+  _hoisted_18$4
 ];
-const _hoisted_19$4 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-medium font-['RobotoMedium'] leading-normal pb-2" }, " Upload files ", -1));
-const _hoisted_20$4 = { class: "bot-file-uploader" };
-const _hoisted_21$4 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("label", {
-  for: "Bot-file-upload",
-  style: { "position": "absolute", "inset": "0" }
-}, null, -1));
-const _hoisted_22$4 = {
+const _hoisted_20$4 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-white text-sm font-medium font-['RobotoMedium'] leading-normal pb-2" }, " Upload files ", -1));
+const _hoisted_21$4 = { class: "bot-file-uploader" };
+const _hoisted_22$4 = ["for"];
+const _hoisted_23$4 = {
   key: 0,
   class: "flex gap-1 flex-row items-center overflow-scroll pb-2"
 };
-const _hoisted_23$4 = ["onClick"];
-const _hoisted_24$4 = { class: "relative m-3" };
-const _hoisted_25$4 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "h-10 w-8" }, [
+const _hoisted_24$4 = ["onClick"];
+const _hoisted_25$4 = { class: "relative m-3" };
+const _hoisted_26$4 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "h-10 w-8" }, [
   /* @__PURE__ */ createBaseVNode("use", { href: "#fileIcon" })
 ], -1));
-const _hoisted_26$4 = {
+const _hoisted_27$4 = {
   key: 0,
   class: "loader"
 };
-const _hoisted_27$4 = {
+const _hoisted_28$4 = {
   key: 1,
   class: "top-0 text-[10px] text-center bottom-0 right-0 left-0 absolute leading-[40px]"
 };
-const _hoisted_28$4 = { class: "flex-col" };
-const _hoisted_29$4 = { class: "truncate w-40 pr-5" };
-const _hoisted_30$4 = { class: "text-sm" };
-const _hoisted_31$4 = { class: "max-h-80 overflow-scroll m-3" };
-const _hoisted_32$4 = { class: "absolute top-2 right-2 cursor-pointer" };
-const _hoisted_33$4 = ["onClick"];
-const _hoisted_34$4 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("use", { href: "#delete" }, null, -1));
-const _hoisted_35$4 = [
-  _hoisted_34$4
+const _hoisted_29$4 = { class: "flex-col" };
+const _hoisted_30$4 = { class: "truncate w-40 pr-5" };
+const _hoisted_31$4 = { class: "text-sm" };
+const _hoisted_32$4 = { class: "max-h-80 overflow-scroll m-3" };
+const _hoisted_33$4 = { class: "absolute top-2 right-2 cursor-pointer" };
+const _hoisted_34$4 = ["onClick"];
+const _hoisted_35$4 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("use", { href: "#delete" }, null, -1));
+const _hoisted_36$4 = [
+  _hoisted_35$4
 ];
-const _hoisted_36$4 = {
-  key: 1,
-  for: "Bot-file-upload",
-  class: "w-[432.22px] h-[54px] left-[183.47px] top-[32px] flex-col justify-start items-center gap-4 inline-flex"
-};
-const _hoisted_37$4 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "w-6 h-6 p-0.5 justify-center items-center inline-flex" }, [
+const _hoisted_37$4 = ["for"];
+const _hoisted_38$4 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("svg", { class: "w-6 h-6 p-0.5 justify-center items-center inline-flex" }, [
   /* @__PURE__ */ createBaseVNode("use", { href: "#addFile" })
 ], -1));
-const _hoisted_38$4 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-center text-gray-500 text-[14px] font-['RobotoRegular'] leading-[14px]" }, " DOC, EXE, HTML or PDF files less than 10MB allowed ", -1));
-const _hoisted_39$3 = [
-  _hoisted_37$4,
-  _hoisted_38$4
+const _hoisted_39$3 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("div", { class: "text-center text-gray-500 text-[14px] font-['RobotoRegular'] leading-[14px]" }, " DOC, EXE, HTML or PDF files less than 10MB allowed ", -1));
+const _hoisted_40$3 = [
+  _hoisted_38$4,
+  _hoisted_39$3
 ];
-const _hoisted_40$3 = { class: "flex flex-row justify-end gap-4 relative" };
-const _hoisted_41$3 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("div", { class: "w-[81px] h-11 px-6 py-3 rounded-[6px] border border-[#393E44] justify-center items-center gap-2 inline-flex" }, [
+const _hoisted_41$3 = ["id"];
+const _hoisted_42$3 = { class: "flex flex-row justify-end gap-4 relative" };
+const _hoisted_43$2 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("div", { class: "w-[81px] h-11 px-6 py-3 rounded-[6px] border border-[#393E44] justify-center items-center gap-2 inline-flex" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "cursor-pointer text-white text-sm font-['RobotoMedium'] leading-normal" }, " Preview ")
 ], -1));
-const _hoisted_42$3 = { class: "text-white text-sm font-['RobotoMedium'] leading-normal" };
-const _hoisted_43$2 = { class: "flex flex-row py-2 text-[rgb(124,135,142)] hover:text-white" };
-const _hoisted_44$2 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("div", { class: "font-medium text-[14px] leading-[20px] font-['RobotoRegular'] pl-3" }, " Create secret bot ", -1));
-const _hoisted_45$2 = {
+const _hoisted_44$2 = { class: "text-white text-sm font-['RobotoMedium'] leading-normal" };
+const _hoisted_45$2 = { class: "flex flex-row py-2 text-[rgb(124,135,142)] hover:text-white" };
+const _hoisted_46$2 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("div", { class: "font-medium text-[14px] leading-[20px] font-['RobotoRegular'] pl-3" }, " Create secret bot ", -1));
+const _hoisted_47$2 = {
   key: 0,
   class: "w-5 h-5 object-cover min-h-[16px] cursor-pointer ml-5"
 };
-const _hoisted_46$2 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("use", { href: "#tick" }, null, -1));
-const _hoisted_47$2 = [
-  _hoisted_46$2
+const _hoisted_48$2 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("use", { href: "#tick" }, null, -1));
+const _hoisted_49$2 = [
+  _hoisted_48$2
 ];
-const _hoisted_48$2 = { class: "flex flex-row py-2 text-[rgb(124,135,142)] hover:text-white" };
-const _hoisted_49$2 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("div", { class: "font-medium text-[14px] leading-[20px] font-['RobotoRegular'] pl-3" }, " Create public bot ", -1));
-const _hoisted_50$2 = {
+const _hoisted_50$2 = { class: "flex flex-row py-2 text-[rgb(124,135,142)] hover:text-white" };
+const _hoisted_51$2 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("div", { class: "font-medium text-[14px] leading-[20px] font-['RobotoRegular'] pl-3" }, " Create public bot ", -1));
+const _hoisted_52$1 = {
   key: 0,
   class: "w-5 h-5 object-cover min-h-[16px] cursor-pointer ml-5"
 };
-const _hoisted_51$2 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("use", { href: "#tick" }, null, -1));
-const _hoisted_52$1 = [
-  _hoisted_51$2
+const _hoisted_53$1 = /* @__PURE__ */ _withScopeId$7(() => /* @__PURE__ */ createBaseVNode("use", { href: "#tick" }, null, -1));
+const _hoisted_54$1 = [
+  _hoisted_53$1
 ];
 const _sfc_main$a = /* @__PURE__ */ defineComponent({
   __name: "createBotTab",
@@ -3112,8 +3107,10 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
     const showBasebotSetting = ref(false);
     const ruleFormRef1 = ref();
     const filesToUpload = ref([]);
+    const BotFileUploadId = (/* @__PURE__ */ new Date()).getTime().toString();
     const avatarToUpload = ref(null);
     const previewImage = ref("");
+    const BotAvatarUploadId = (/* @__PURE__ */ new Date()).getTime().toString();
     const validateUsername = (rule, value, callback) => {
       console.log(rule);
       if (value === "") {
@@ -3293,24 +3290,27 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
                 default: withCtx(() => [
                   createBaseVNode("div", _hoisted_1$a, [
                     createBaseVNode("input", {
-                      id: "Bot-avatar-upload",
+                      id: unref(BotAvatarUploadId),
                       class: "hidden",
                       onChange: uploadAvatar,
                       type: "file",
                       accept: " .png, .jpg, .jpeg, .bmp, .gif, .svg,"
-                    }, null, 32),
-                    createBaseVNode("label", _hoisted_2$a, [
-                      createBaseVNode("div", _hoisted_3$9, [
-                        formData1.value.avatar == "" && previewImage.value == "" ? (openBlock(), createElementBlock("svg", _hoisted_4$9, _hoisted_6$7)) : (openBlock(), createElementBlock("img", {
+                    }, null, 40, _hoisted_2$a),
+                    createBaseVNode("label", {
+                      for: unref(BotAvatarUploadId),
+                      class: "avatar-uploader"
+                    }, [
+                      createBaseVNode("div", _hoisted_4$9, [
+                        formData1.value.avatar == "" && previewImage.value == "" ? (openBlock(), createElementBlock("svg", _hoisted_5$7, _hoisted_7$7)) : (openBlock(), createElementBlock("img", {
                           key: 1,
                           class: "headimg-txt",
                           src: formData1.value.avatar || previewImage.value,
                           alt: ""
-                        }, null, 8, _hoisted_7$7)),
-                        _hoisted_8$7
+                        }, null, 8, _hoisted_8$7)),
+                        _hoisted_9$7
                       ])
-                    ]),
-                    createBaseVNode("div", _hoisted_9$7, [
+                    ], 8, _hoisted_3$9),
+                    createBaseVNode("div", _hoisted_10$6, [
                       createVNode(_component_el_form_item, { prop: "title" }, {
                         default: withCtx(() => [
                           createVNode(_component_el_input, {
@@ -3337,8 +3337,8 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
                       })
                     ])
                   ]),
-                  _hoisted_10$6,
-                  createBaseVNode("div", _hoisted_11$6, [
+                  _hoisted_11$6,
+                  createBaseVNode("div", _hoisted_12$6, [
                     createVNode(_component_el_form_item, { class: "w-full flex-1" }, {
                       default: withCtx(() => [
                         createVNode(_component_el_select, {
@@ -3349,12 +3349,12 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
                           "suffix-icon": unref(arrow_down_bold_default)
                         }, {
                           prefix: withCtx(({}) => [
-                            createBaseVNode("div", _hoisted_12$6, [
+                            createBaseVNode("div", _hoisted_13$6, [
                               formData1.value.model_name ? (openBlock(), createElementBlock("img", {
                                 key: 0,
                                 class: "rounded w-5 h-5 object-cover",
                                 src: selectModel.value.avatar
-                              }, null, 8, _hoisted_13$6)) : createCommentVNode("", true)
+                              }, null, 8, _hoisted_14$6)) : createCommentVNode("", true)
                             ])
                           ]),
                           default: withCtx(() => [
@@ -3365,12 +3365,12 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
                                 value: item.name
                               }, {
                                 default: withCtx(() => [
-                                  createBaseVNode("div", _hoisted_14$6, [
+                                  createBaseVNode("div", _hoisted_15$6, [
                                     createBaseVNode("img", {
                                       class: "rounded w-5 h-5 object-cover",
                                       src: item.avatar
-                                    }, null, 8, _hoisted_15$6),
-                                    createBaseVNode("div", _hoisted_16$5, toDisplayString(item.name), 1)
+                                    }, null, 8, _hoisted_16$5),
+                                    createBaseVNode("div", _hoisted_17$4, toDisplayString(item.name), 1)
                                   ])
                                 ]),
                                 _: 2
@@ -3390,7 +3390,7 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
                         padding: showBasebotSetting.value ? "13px" : "12px"
                       }),
                       onClick: _cache[3] || (_cache[3] = ($event) => showBasebotSetting.value = !showBasebotSetting.value)
-                    }, _hoisted_18$4, 4))
+                    }, _hoisted_19$4, 4))
                   ]),
                   createVNode(botParamForm, {
                     "initial-bot-params": formData1.value.model_params,
@@ -3398,22 +3398,25 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
                     modelParams: selectModel.value,
                     onChange: CreateBotFormChange
                   }, null, 8, ["initial-bot-params", "show-basebot-setting", "modelParams"]),
-                  _hoisted_19$4,
-                  createBaseVNode("div", _hoisted_20$4, [
-                    _hoisted_21$4,
-                    filesToUpload.value.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_22$4, [
+                  _hoisted_20$4,
+                  createBaseVNode("div", _hoisted_21$4, [
+                    createBaseVNode("label", {
+                      for: unref(BotFileUploadId),
+                      style: { "position": "absolute", "inset": "0" }
+                    }, null, 8, _hoisted_22$4),
+                    filesToUpload.value.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_23$4, [
                       (openBlock(true), createElementBlock(Fragment, null, renderList(filesToUpload.value, (file) => {
                         return openBlock(), createElementBlock("div", {
                           onClick: withModifiers(($event) => file.showContent = true, ["stop"]),
                           class: "relative shadow p-1 rounded-xl bg-black flex items-center w-60"
                         }, [
-                          createBaseVNode("div", _hoisted_24$4, [
-                            _hoisted_25$4,
-                            file.loading ? (openBlock(), createElementBlock("div", _hoisted_26$4)) : (openBlock(), createElementBlock("div", _hoisted_27$4, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[2]), 1))
+                          createBaseVNode("div", _hoisted_25$4, [
+                            _hoisted_26$4,
+                            file.loading ? (openBlock(), createElementBlock("div", _hoisted_27$4)) : (openBlock(), createElementBlock("div", _hoisted_28$4, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[2]), 1))
                           ]),
-                          createBaseVNode("div", _hoisted_28$4, [
-                            createBaseVNode("div", _hoisted_29$4, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[1]), 1),
-                            createBaseVNode("div", _hoisted_30$4, toDisplayString(Math.round(file.size / 1e3) + " kb"), 1)
+                          createBaseVNode("div", _hoisted_29$4, [
+                            createBaseVNode("div", _hoisted_30$4, toDisplayString(file.name.match(/^(.*?)\.([^.]+)$/)[1]), 1),
+                            createBaseVNode("div", _hoisted_31$4, toDisplayString(Math.round(file.size / 1e3) + " kb"), 1)
                           ]),
                           createVNode(_component_el_dialog, {
                             modelValue: file.showContent,
@@ -3421,37 +3424,41 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
                           }, {
                             header: withCtx(({}) => []),
                             default: withCtx(() => [
-                              createBaseVNode("div", _hoisted_31$4, toDisplayString(file.content), 1)
+                              createBaseVNode("div", _hoisted_32$4, toDisplayString(file.content), 1)
                             ]),
                             _: 2
                           }, 1032, ["modelValue", "onUpdate:modelValue"]),
-                          createBaseVNode("div", _hoisted_32$4, [
+                          createBaseVNode("div", _hoisted_33$4, [
                             (openBlock(), createElementBlock("svg", {
                               onClick: withModifiers(($event) => filesToUpload.value.splice(filesToUpload.value.indexOf(file), 1), ["stop"]),
                               class: "h-5 w-5"
-                            }, _hoisted_35$4, 8, _hoisted_33$4))
+                            }, _hoisted_36$4, 8, _hoisted_34$4))
                           ])
-                        ], 8, _hoisted_23$4);
+                        ], 8, _hoisted_24$4);
                       }), 256))
-                    ])) : (openBlock(), createElementBlock("label", _hoisted_36$4, _hoisted_39$3))
+                    ])) : (openBlock(), createElementBlock("label", {
+                      key: 1,
+                      for: unref(BotFileUploadId),
+                      class: "w-[432.22px] h-[54px] left-[183.47px] top-[32px] flex-col justify-start items-center gap-4 inline-flex"
+                    }, _hoisted_40$3, 8, _hoisted_37$4))
                   ]),
                   createBaseVNode("input", {
-                    id: "Bot-file-upload",
+                    id: unref(BotFileUploadId),
                     class: "hidden",
                     onChange: uploadFile,
                     type: "file",
                     accept: " .pdf, .docx, .html, .xlsx"
-                  }, null, 32)
+                  }, null, 40, _hoisted_41$3)
                 ]),
                 _: 1
               }, 8, ["model", "rules"]),
-              createBaseVNode("div", _hoisted_40$3, [
-                _hoisted_41$3,
+              createBaseVNode("div", _hoisted_42$3, [
+                _hoisted_43$2,
                 createBaseVNode("div", {
                   onClick: _cache[4] || (_cache[4] = ($event) => handleSubmit(ruleFormRef1.value)),
                   class: "cursor-pointer absolute right-[40px] w-[143px] z-10 h-11 pl-3 pr-3 py-3 bg-[#5F44FF] rounded-tl-[6px] rounded-bl-[6px] justify-center items-center gap-2 inline-flex"
                 }, [
-                  createBaseVNode("div", _hoisted_42$3, toDisplayString(formData1.value.visibility === 2 ? "Create public bot" : "Create secret bot"), 1)
+                  createBaseVNode("div", _hoisted_44$2, toDisplayString(formData1.value.visibility === 2 ? "Create public bot" : "Create secret bot"), 1)
                 ]),
                 createVNode(_component_el_select, {
                   modelValue: formData1.value.visibility,
@@ -3462,18 +3469,18 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
                   default: withCtx(() => [
                     createVNode(_component_el_option, { value: 1 }, {
                       default: withCtx(() => [
-                        createBaseVNode("div", _hoisted_43$2, [
-                          _hoisted_44$2,
-                          formData1.value.visibility == 1 ? (openBlock(), createElementBlock("svg", _hoisted_45$2, _hoisted_47$2)) : createCommentVNode("", true)
+                        createBaseVNode("div", _hoisted_45$2, [
+                          _hoisted_46$2,
+                          formData1.value.visibility == 1 ? (openBlock(), createElementBlock("svg", _hoisted_47$2, _hoisted_49$2)) : createCommentVNode("", true)
                         ])
                       ]),
                       _: 1
                     }),
                     createVNode(_component_el_option, { value: 2 }, {
                       default: withCtx(() => [
-                        createBaseVNode("div", _hoisted_48$2, [
-                          _hoisted_49$2,
-                          formData1.value.visibility == 2 ? (openBlock(), createElementBlock("svg", _hoisted_50$2, _hoisted_52$1)) : createCommentVNode("", true)
+                        createBaseVNode("div", _hoisted_50$2, [
+                          _hoisted_51$2,
+                          formData1.value.visibility == 2 ? (openBlock(), createElementBlock("svg", _hoisted_52$1, _hoisted_54$1)) : createCommentVNode("", true)
                         ])
                       ]),
                       _: 1
@@ -3484,11 +3491,6 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
               ])
             ]),
             _: 1
-          }),
-          createVNode(unref(g), {
-            "max-size": "50",
-            "min-size": "30",
-            style: { "height": "100%" }
           })
         ]),
         _: 1
@@ -3496,9 +3498,9 @@ const _sfc_main$a = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const createBotTab_vue_vue_type_style_index_0_scoped_182e241b_lang = "";
-const createBotTab = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-182e241b"]]);
-const _withScopeId$6 = (n) => (pushScopeId("data-v-61b10f32"), n = n(), popScopeId(), n);
+const createBotTab_vue_vue_type_style_index_0_scoped_e667ff48_lang = "";
+const createBotTab = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-e667ff48"]]);
+const _withScopeId$6 = (n) => (pushScopeId("data-v-c4444e3f"), n = n(), popScopeId(), n);
 const _hoisted_1$9 = {
   class: "flex-row flex gap-6",
   style: { "height": "170px" }
@@ -4149,8 +4151,8 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const editBotTab_vue_vue_type_style_index_0_scoped_61b10f32_lang = "";
-const editBotTab = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-61b10f32"]]);
+const editBotTab_vue_vue_type_style_index_0_scoped_c4444e3f_lang = "";
+const editBotTab = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-c4444e3f"]]);
 const _hoisted_1$8 = /* @__PURE__ */ createBaseVNode("div", { class: "pointer-events-none w-1/2 h-1/2 flex justify-center items-center flex-col" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "text-4xl font-bold" }, "Welcome to"),
   /* @__PURE__ */ createBaseVNode("div", { class: "text-6xl font-bold" }, "Benchyard"),
@@ -4546,8 +4548,8 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
 const tabIndex_vue_vue_type_style_index_0_scoped_910dd0c3_lang = "";
 const tabIndex = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-910dd0c3"]]);
 const _imports_0 = "" + new URL("notLogin-a655f18d.svg", import.meta.url).href;
-const _withScopeId$4 = (n) => (pushScopeId("data-v-7f4c1c89"), n = n(), popScopeId(), n);
-const _hoisted_1$5 = /* @__PURE__ */ createStaticVNode('<div class="flex items-center gap-2 relative overflow-hidden" data-v-7f4c1c89><div class="flex flex-col min-w-[39px]" data-v-7f4c1c89><img src="' + _imports_0 + '" data-v-7f4c1c89><svg class="w-9 h-9 object-cover grow min-h-[36px]" data-v-7f4c1c89><use href="#notLogin" data-v-7f4c1c89></use></svg></div><div class="flex flex-col min-w-[126px]" data-v-7f4c1c89><div class="flex flex-col gap-y-1.5 grow relative" data-v-7f4c1c89><div class="text-[14px] leading-none font-[RobotoMedium] text-white tracking-[-0.15px]" data-v-7f4c1c89> Sign in </div><div class="text-[10px] leading-none font-[RobotoRegular] text-[rgb(124,135,142)] tracking-[-0.1px]" data-v-7f4c1c89> Unlock the power of Al </div></div></div></div>', 1);
+const _withScopeId$4 = (n) => (pushScopeId("data-v-1a9ee975"), n = n(), popScopeId(), n);
+const _hoisted_1$5 = /* @__PURE__ */ createStaticVNode('<div class="flex items-center gap-2 relative overflow-hidden" data-v-1a9ee975><div class="flex flex-col min-w-[39px]" data-v-1a9ee975><img src="' + _imports_0 + '" data-v-1a9ee975></div><div class="flex flex-col min-w-[126px]" data-v-1a9ee975><div class="flex flex-col gap-y-1.5 grow relative" data-v-1a9ee975><div class="text-[14px] leading-none font-[RobotoMedium] text-white tracking-[-0.15px]" data-v-1a9ee975> Sign in </div><div class="text-[10px] leading-none font-[RobotoRegular] text-[rgb(124,135,142)] tracking-[-0.1px]" data-v-1a9ee975> Unlock the power of Al </div></div></div></div>', 1);
 const _hoisted_2$5 = [
   _hoisted_1$5
 ];
@@ -4583,8 +4585,7 @@ const _hoisted_16$2 = [
 ];
 const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   __name: "account",
-  emits: ["panelChange", "loginSuccess"],
-  setup(__props, { expose: __expose, emit }) {
+  setup(__props, { expose: __expose }) {
     const router = useRouter();
     const panelStore = usePanelStore();
     const authStore = useAuthStore();
@@ -4682,9 +4683,9 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const account_vue_vue_type_style_index_0_scoped_7f4c1c89_lang = "";
-const account = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-7f4c1c89"]]);
-const _withScopeId$3 = (n) => (pushScopeId("data-v-75866d6d"), n = n(), popScopeId(), n);
+const account_vue_vue_type_style_index_0_scoped_1a9ee975_lang = "";
+const account = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-1a9ee975"]]);
+const _withScopeId$3 = (n) => (pushScopeId("data-v-568188b3"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = /* @__PURE__ */ _withScopeId$3(() => /* @__PURE__ */ createBaseVNode("use", { href: "#shrink" }, null, -1));
 const _hoisted_2$4 = [
   _hoisted_1$4
@@ -4716,8 +4717,7 @@ const _hoisted_14$2 = [
 const _hoisted_15$2 = { style: { "cursor": "pointer" } };
 const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   __name: "menu",
-  emits: ["update:panelId", "update:tabsId", "loginSuccess", "logOut"],
-  setup(__props, { emit }) {
+  setup(__props) {
     const panelStore = usePanelStore();
     const accountRef = ref();
     const panelRenameRef = ref();
@@ -4793,19 +4793,18 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
         createBaseVNode("div", _hoisted_15$2, [
           createVNode(account, {
             ref_key: "accountRef",
-            ref: accountRef,
-            onPanelChange: _cache[2] || (_cache[2] = ($event) => emit("update:panelId", -1))
+            ref: accountRef
           }, null, 512)
         ])
       ], 4);
     };
   }
 });
-const menu_vue_vue_type_style_index_0_scoped_75866d6d_lang = "";
-const Menu = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-75866d6d"]]);
-const _withScopeId$2 = (n) => (pushScopeId("data-v-789248fe"), n = n(), popScopeId(), n);
-const _hoisted_1$3 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("svg", { class: "w-5 h-5 object-cover min-h-[20px] m-[6px]" }, [
-  /* @__PURE__ */ createBaseVNode("use", { href: "#add" })
+const menu_vue_vue_type_style_index_0_scoped_568188b3_lang = "";
+const Menu = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-568188b3"]]);
+const _withScopeId$2 = (n) => (pushScopeId("data-v-1c539ec7"), n = n(), popScopeId(), n);
+const _hoisted_1$3 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("svg", { class: "w-[28px] h-[28px] object-cover min-h-[20px] m-[6px]" }, [
+  /* @__PURE__ */ createBaseVNode("use", { href: "#Bot" })
 ], -1));
 const _hoisted_2$3 = /* @__PURE__ */ _withScopeId$2(() => /* @__PURE__ */ createBaseVNode("div", { class: "menu-text1" }, "Install Bot", -1));
 const _hoisted_3$3 = [
@@ -5167,8 +5166,8 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const createBot_vue_vue_type_style_index_0_scoped_789248fe_lang = "";
-const createBot = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-789248fe"]]);
+const createBot_vue_vue_type_style_index_0_scoped_1c539ec7_lang = "";
+const createBot = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-1c539ec7"]]);
 const _hoisted_1$2 = ["src"];
 const _hoisted_2$2 = {
   key: 1,
@@ -5698,9 +5697,9 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
 });
 const selectedBotCol_vue_vue_type_style_index_0_scoped_c5ce28ee_lang = "";
 const selectedBotCol = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-c5ce28ee"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-c0999639"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-c0a56682"), n = n(), popScopeId(), n);
 const _hoisted_1 = { class: "main" };
-const _hoisted_2 = /* @__PURE__ */ createStaticVNode('<div class="absolute top-0 right-0 left-0 h-10 flex flex-row items-center justify-center bg-[#1D2126]" data-v-c0999639><div class="w-[30%] h-full shrink-0 app-drag" data-v-c0999639></div><div class="bg-[var(--panel-bg)] rounded w-[40%] h-[30px] flex flex-row items-center justify-between px-5 py-[11px]" data-v-c0999639><div class="flex flex-row items-center gap-3 w-full" data-v-c0999639><svg class="w-4 h-4 object-cover min-h-[16px] cursor-pointer" data-v-c0999639><use href="#search" data-v-c0999639></use></svg><input type="text" class="w-full h-full bg-transparent outline-none text-[rgb(124,135,142)] tracking-[-0.15px] font-[RobotoRegular] text-[14px] leading-none" placeholder="Search..." data-v-c0999639></div></div><div class="w-[30%] h-full shrink-0 app-drag" data-v-c0999639></div></div>', 1);
+const _hoisted_2 = /* @__PURE__ */ createStaticVNode('<div class="absolute top-0 right-0 left-0 h-10 flex flex-row items-center justify-center bg-[#1D2126]" data-v-c0a56682><div class="w-[30%] h-full shrink-0 app-drag" data-v-c0a56682></div><div class="app-drag rounded w-[40%] h-[30px] flex flex-row items-center justify-between px-5 py-[11px]" data-v-c0a56682><div class="flex flex-row items-center gap-3 w-full" data-v-c0a56682></div></div><div class="w-[30%] h-full shrink-0 app-drag" data-v-c0a56682></div></div>', 1);
 const _hoisted_3 = {
   key: 0,
   class: "main-view"
@@ -5758,8 +5757,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const home_vue_vue_type_style_index_0_scoped_c0999639_lang = "";
-const home = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-c0999639"]]);
+const home_vue_vue_type_style_index_0_scoped_c0a56682_lang = "";
+const home = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-c0a56682"]]);
 export {
   home as default
 };

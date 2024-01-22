@@ -1,5 +1,5 @@
-import { C as CompRegister, a as CompLogin, b as CompFindPassword, r as resetPsd, c as botInvitation } from "./botInvitation-db245019.js";
-import { d as defineComponent, u as useAuthStore, a5 as useRoute, a as ref, I as onMounted, c as createElementBlock, e as createVNode, F as Fragment, o as openBlock } from "./index-cf6e881d.js";
+import { C as CompRegister, a as CompLogin, b as CompFindPassword, r as resetPsd, c as botInvitation } from "./botInvitation-424ef224.js";
+import { d as defineComponent, u as useAuthStore, a5 as useRoute, a as ref, I as onMounted, c as createElementBlock, e as createVNode, F as Fragment, o as openBlock } from "./index-86235965.js";
 import { _ as _export_sfc } from "./_plugin-vue_export-helper-cc2b3d55.js";
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "accountManage",

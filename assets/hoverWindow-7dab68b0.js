@@ -1,5 +1,5 @@
-import { d as defineComponent, y as usePanelStore, a as ref, u as useAuthStore, x as useBotStore, L as usePrivateChatStore, k as watch, I as onMounted, T as Tribute, h as resolveComponent, c as createElementBlock, l as withDirectives, v as vShow, e as createVNode, C as unref, q as createCommentVNode, b as createBaseVNode, J as withKeys, F as Fragment, m as renderList, n as normalizeStyle, E as ElMessage, o as openBlock, t as toDisplayString, w as withCtx, K as withModifiers, p as pushScopeId, g as popScopeId, M as apiFileAdd } from "./index-cf6e881d.js";
-import { s as scrollMessage } from "./scrollMessage-75c3f3b8.js";
+import { d as defineComponent, y as usePanelStore, a as ref, u as useAuthStore, x as useBotStore, L as usePrivateChatStore, k as watch, I as onMounted, T as Tribute, h as resolveComponent, c as createElementBlock, l as withDirectives, v as vShow, e as createVNode, C as unref, q as createCommentVNode, b as createBaseVNode, J as withKeys, F as Fragment, m as renderList, n as normalizeStyle, E as ElMessage, o as openBlock, t as toDisplayString, w as withCtx, K as withModifiers, p as pushScopeId, g as popScopeId, M as apiFileAdd } from "./index-86235965.js";
+import { s as scrollMessage } from "./scrollMessage-d07a3a47.js";
 import { _ as _export_sfc } from "./_plugin-vue_export-helper-cc2b3d55.js";
 const _withScopeId = (n) => (pushScopeId("data-v-7120ee1b"), n = n(), popScopeId(), n);
 const _hoisted_1 = { class: "w-full h-full flex flex-col items-center justify-start" };

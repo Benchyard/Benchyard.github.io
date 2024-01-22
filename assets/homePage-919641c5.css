@@ -1,16 +1,16 @@
-.app-drag[data-v-278a6a5f] {
+.app-drag[data-v-8398da5f] {
   -webkit-app-region: drag;
   flex-shrink: 0;
 }
-.bg-gridient[data-v-278a6a5f] {
+.bg-gridient[data-v-8398da5f] {
   transition: all 0.3s ease-in-out;
 }
-.bg-gridient[data-v-278a6a5f]:hover {
+.bg-gridient[data-v-8398da5f]:hover {
   background: linear-gradient(359deg, #1f183c -1.35%, rgba(0, 0, 0, 0) 99.04%, rgba(32, 24, 64, 0) 99.04%);
   transform-origin: bottom;
   transform: translateY(-60px);
 }
-.text-gridient1[data-v-278a6a5f] {
+.text-gridient1[data-v-8398da5f] {
   text-align: center;
   font-family: InterBold;
   font-size: 70px;
@@ -23,7 +23,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.text-gridient2[data-v-278a6a5f] {
+.text-gridient2[data-v-8398da5f] {
   text-align: center;
   font-family: InterBold;
   font-size: 36px;
@@ -36,11 +36,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.rotate[data-v-278a6a5f] {
-  animation: rotateAnimation-278a6a5f 60s linear infinite;
+.rotate[data-v-8398da5f] {
+  animation: rotateAnimation-8398da5f 60s linear infinite;
   /* 设置动画名称、时长、速度曲线和重复次数 */
 }
-@keyframes rotateAnimation-278a6a5f {
+@keyframes rotateAnimation-8398da5f {
 0% {
     transform: rotate(0deg);
 }
