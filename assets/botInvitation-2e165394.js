@@ -1,4 +1,4 @@
-import { d as defineComponent, a as ref, z as reactive, h as resolveComponent, o as openBlock, i as createBlock, w as withCtx, c as createElementBlock, e as createVNode, J as withKeys, j as createTextVNode, b as createBaseVNode, ae as apiRegister, E as ElMessage, p as pushScopeId, g as popScopeId, A as useRouter, u as useAuthStore, Y as ElLoading, af as apiLogin, D as apiGetUserInfo, X as UpdateBotAndSetPanel, K as withModifiers, ag as apiSendResetPasswordEmail, a5 as useRoute, ah as apiResetPassword, I as onMounted, a8 as apiGetBotInfoFromCode, t as toDisplayString, a9 as apiAcceptInvitation } from "./index-86235965.js";
+import { d as defineComponent, a as ref, z as reactive, h as resolveComponent, o as openBlock, i as createBlock, w as withCtx, c as createElementBlock, e as createVNode, J as withKeys, j as createTextVNode, b as createBaseVNode, ab as apiRegister, E as ElMessage, p as pushScopeId, g as popScopeId, A as useRouter, u as useAuthStore, N as ElLoading, ac as apiLogin, G as apiGetUserInfo, X as UpdateBotAndSetPanel, K as withModifiers, ad as apiSendResetPasswordEmail, a2 as useRoute, ae as apiResetPassword, I as onMounted, a4 as apiGetBotInfoFromCode, t as toDisplayString, a5 as apiAcceptInvitation } from "./index-f728f539.js";
 import { _ as _export_sfc } from "./_plugin-vue_export-helper-cc2b3d55.js";
 const _withScopeId$4 = (n) => (pushScopeId("data-v-228575cd"), n = n(), popScopeId(), n);
 const _hoisted_1$4 = {
@@ -243,7 +243,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
 });
 const register_vue_vue_type_style_index_0_scoped_228575cd_lang = "";
 const CompRegister = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-228575cd"]]);
-const _withScopeId$3 = (n) => (pushScopeId("data-v-ff934cf5"), n = n(), popScopeId(), n);
+const _withScopeId$3 = (n) => (pushScopeId("data-v-496d4c46"), n = n(), popScopeId(), n);
 const _hoisted_1$3 = {
   class: "logo",
   style: { "width": "70px", "height": "70px" }
@@ -429,8 +429,8 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const login_vue_vue_type_style_index_0_scoped_ff934cf5_lang = "";
-const CompLogin = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-ff934cf5"]]);
+const login_vue_vue_type_style_index_0_scoped_496d4c46_lang = "";
+const CompLogin = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-496d4c46"]]);
 const _withScopeId$2 = (n) => (pushScopeId("data-v-04d94de2"), n = n(), popScopeId(), n);
 const _hoisted_1$2 = {
   class: "logo",

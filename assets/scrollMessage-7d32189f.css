@@ -54,7 +54,7 @@
 }
 }
 /* Style for the scroll view container */
-.messages[data-v-e75fe221] {
+.messages[data-v-032e788b] {
   -webkit-user-select: text;
      -moz-user-select: text;
           user-select: text;
@@ -64,23 +64,23 @@
   overflow-y: scroll;
   width: 100%;
 }
-.messages[data-v-e75fe221]::-webkit-scrollbar {
+.messages[data-v-032e788b]::-webkit-scrollbar {
   width: 10px;
   padding-top: 10px;
 }
-.messages[data-v-e75fe221]::-webkit-scrollbar-track {
+.messages[data-v-032e788b]::-webkit-scrollbar-track {
   background-color: transparent !important;
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.messages[data-v-e75fe221]::-webkit-scrollbar-thumb {
+.messages[data-v-032e788b]::-webkit-scrollbar-thumb {
   background-color: #393e44 !important;
   border-radius: 5px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.messages .message[data-v-e75fe221] {
+.messages .message[data-v-032e788b] {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -89,7 +89,7 @@
   width: 100%;
   margin-bottom: 12px;
 }
-.messages .message .avatar[data-v-e75fe221] {
+.messages .message .avatar[data-v-032e788b] {
   font-family: RobotoMedium;
   width: 32px;
   height: 32px;
@@ -100,7 +100,7 @@
   color: #fff;
   font-size: 24px;
 }
-.messages .message .message-content[data-v-e75fe221] {
+.messages .message .message-content[data-v-032e788b] {
   display: inline-flex;
   padding: 8px 12px;
   width: -moz-fit-content;
@@ -108,25 +108,25 @@
   max-width: 90%;
   height: -moz-fit-content;
   height: fit-content;
-  border-radius: 0px 8px 8px 8px;
+  border-radius: 0px 6px 6px 6px;
   background: #393e44;
   text-align: justify;
 }
-.messages .message .message-content .copy-icon[data-v-e75fe221] {
+.messages .message .message-content .copy-icon[data-v-032e788b] {
   visibility: hidden;
   transition: all 1s;
 }
-.messages .message .message-content:hover .copy-icon[data-v-e75fe221] {
+.messages .message .message-content:hover .copy-icon[data-v-032e788b] {
   visibility: visible;
 }
-.messages .message .message-content .message-header[data-v-e75fe221] {
+.messages .message .message-content .message-header[data-v-032e788b] {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   gap: 4px;
 }
-.messages .message .message-content .message-header .message-name[data-v-e75fe221] {
+.messages .message .message-content .message-header .message-name[data-v-032e788b] {
   color: #fff;
   font-family: RobotoMedium;
   font-size: 14px;
@@ -134,7 +134,7 @@
   /* 100% */
   letter-spacing: -0.14px;
 }
-.messages .message .message-content .message-header .message-time[data-v-e75fe221] {
+.messages .message .message-content .message-header .message-time[data-v-032e788b] {
   color: #7c878e;
   font-family: RobotoMedium;
   font-size: 12px;
@@ -142,7 +142,7 @@
   /* 100% */
   letter-spacing: -0.12px;
 }
-.messages .message .message-content .message-text[data-v-e75fe221] {
+.messages .message .message-content .message-text[data-v-032e788b] {
   color: #fff;
   font-family: RobotoMedium;
   font-size: 14px;
@@ -151,16 +151,59 @@
   letter-spacing: -0.14px;
   text-align: justify;
 }
-.messages .message .ref[data-v-e75fe221] {
+.messages .message .ref[data-v-032e788b] {
   display: flex;
   flex-direction: column;
   font-family: 'RobotoRegular';
-  font-size: 11px;
+  font-size: 14px;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0px;
   width: 300px;
-  margin-bottom: 12px;
-  overflow: scroll;
+  padding: 12px;
+  margin-top: 12px;
+  overflow-y: scroll;
   max-height: 100px;
+  background-color: #292D32;
+  color: #7C878E;
+}
+.messages .message .ref[data-v-032e788b]::-webkit-scrollbar {
+  width: 10px;
+  padding-top: 10px;
+}
+.messages .message .ref[data-v-032e788b]::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.messages .message .ref[data-v-032e788b]::-webkit-scrollbar-thumb {
+  background-color: #393e44 !important;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.loader[data-v-032e788b] {
+  position: absolute;
+  inset: 4px 0;
+  border: 4px solid #f3f3f3;
+  /* 设置边框大小和颜色 */
+  border-top: 4px solid #3498db;
+  /* 设置顶部边框的颜色 */
+  border-radius: 50%;
+  /* 设置loading的大小 */
+  animation: spin-032e788b 2s linear infinite;
+  /* 设置旋转动画 */
+  margin: auto;
+  /* 居中显示 */
+}
+@keyframes spin-032e788b {
+0% {
+    transform: rotate(0deg);
+}
+  /* 起始位置 */
+100% {
+    transform: rotate(360deg);
+}
+  /* 结束位置 */
 }
